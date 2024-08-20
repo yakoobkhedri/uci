@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="../../dist/output.css" rel="stylesheet">
+    <title>صفحه اصلی</title>
+</head>
+
+<body class="max-w-[1536px] w-full mx-auto relative rtl:font-yekanBakhRegular ltr:font-Astonia">
+
+    <!-- shape -->
+    <img alt="shape" src="../img/Frame 1.png"
+        class="absolute z-0 top-0 rtl:left-0 ltr:right-0 ltr:[transform:rotateY(180deg)]">
+
+    <!-- header -->
+    <header class="relative">
+        <div class="max-w-content mx-auto px-4 flex-between gap-3 py-6">
+            <div class="flex-center gap-6">
+                <div class="relative language-link">
+                    <a class="flex items-center gap-4 p-2 rtl:pr-4 relative rounded-[30px] border border-[#B9B9B9]">
+                        <p class="font-semibold text-lg" id="langText">فارسی</p>
+                        <img alt="lang" src="../img/Mask group.png" class="w-9 langIcon h-9 rounded-full block">
+                    </a>
+                    <!-- language dropdown -->
+                    <div
+                        class="langDropdown rounded-[21px] hidden mt-6 top-9 bg-white absolute ltr:left-0 ltr:right-auto right-0 shadow w-36 sm:w-44">
+                        <div data-id="1"
+                            class="flex items-center gap-3 cursor-pointer rounded-[21px] p-2 transition hover:bg-gray-100">
+                            <img alt="lang" src="../img/circle-flags_uk (2).png" class="w-7 h-7 rounded-full block">
+                            <div class="text-dark">
+                                <p>English</p>
+                                <p class="text-sm opacity-50">انگلیسی</p>
+                            </div>
+                        </div>
+                        <div data-id="2"
+                            class="flex items-center gap-3 cursor-pointer rounded-[21px] p-2 transition-all hover:bg-gray-100">
+                            <img alt="lang" src="../img/Mask group.png" class="w-7 h-7 rounded-full block">
+                            <div class="text-dark">
+                                <p>فارسی</p>
+                                <p class="text-sm opacity-50">Persian</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="flex-center gap-3 rtl:font-yekanBakhBold">
+                    <div>
+                        <p class="text-secondary text-2xl font-extrabold">
+                            <span class="font-semibold text-lg text-black">۰۲۱-</span>۱۲۳۴۵۶۷
+                        </p>
+                        <p class="text-sm font-semibold text-[#393939] rtl:font-yekanBakhRegular">پاسخگویی سریع</p>
+                    </div>
+                    <img alt="icon" src="../img/svg/call.svg" class="block w-7 h-7">
+                </a>
+            </div>
+            <div class="flex-center gap-3">
+                <a class="w-[52px] h-[52px] flex-shrink-0 rounded-full relative bg-[#00D222] flex-center">
+                    <!-- cart num -->
+                    <p
+                        class="absolute font-bold rtl:font-yekanBakhBold text-sm w-5 h-5 bg-white rounded-full flex-center top-0 rtl:-right-1 ltr:-left-1 text-[#393939]">
+                        10</p>
+                    <!--  -->
+                    <img alt="icon" src="../img/svg/shopping-cart.svg" class="block w-6 h-6">
+                </a>
+                <a class="h-[52px] rounded-[30px] flex-center gap-[10px] px-6 py-3 bg-white">
+                    <p class="font-semibold text-lg">حساب کاربری</p>
+                    <img alt="icon" src="../img/svg/arrow-down.svg" class="block w-6 h-6">
+                </a>
+            </div>
+        </div>
+        <div class="max-w-content mx-auto px-4">
+            <div class="rounded-[80px] bg-white rtl:pr-9 ltr:pl-9 py-5 px-4 shadow-header flex-between gap-3">
+                <div class="flex items-center gap-11">
+                    <!-- logo -->
+                    <a><img alt="logo" src="../img/UCI Logo 1.png" class="block w-[87px] h-[70px]"></a>
+                    <!-- menu -->
+                    <ul class="flex items-center gap-9 text-lg font-semibold">
+                        <li><a>صفحه اصلی</a></li>
+                        <li><a>محصولات</a></li>
+                        <li><a>راهکارها</a></li>
+                        <li><a>کسب و کارها</a></li>
+                        <li><a>درباره ما</a></li>
+                        <li><a>تماس با ما</a></li>
+                    </ul>
+                </div>
+                <a
+                    class="rounded-[30px] btnHover bg-primary px-3 h-[52px] flex-shrink-0 flex-center gap-2 text-white text-lg font-semibold">
+                    <img alt="icon" src="../img/svg/profile.svg">
+                    <p>پنل مشتریان</p>
+                    <img alt="icon" src="../img/svg/arrow-down (2).svg">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="relative">
+
+        <!-- banner -->
+        <section class="mt-8">
+            <div class="max-w-content mx-auto px-4 items-center grid grid-cols-12 gap-14">
+                <div class="col-span-5">
+                    <h1 class="text-[52px] font-bold font-yekanBakhBold leading-[80px]">
+                        نــوآوری در <span class="text-primary">تجهیــزات</span>
+                        و
+                        <span class="text-primary">نرم افزارهای بانکی</span>
+                    </h1>
+                    <p class="mt-8 font-semibold text-lg text-[#A4A4A4] leading-7">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است لورم
+                        ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                    </p>
+                    <div class="mt-12 flex-between gap-3">
+                        <a
+                            class="flex-center btnHover rounded-[30px] bg-secondary gap-[10px] text-white shadow-1 px-5 h-14 flex-grow">
+                            <p class="text-xl font-bold">خرید آنلاین</p>
+                            <img alt="icon" src="../img/svg/arrow-left.svg">
+                        </a>
+                        <a
+                            class="flex-center rounded-[30px] gap-4 text-[#393939] border border-[#393939] px-5 h-14 flex-grow">
+                            <img alt="icon" src="../img/svg/headphone.svg">
+                            <p class="text-xl font-bold">دریافت مشاوره</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-span-7">
+                    <div class="relative">
+                        <!-- shape -->
+                          <div class="absolute rtl:-right-3 ltr:-left-3 -top-3 bg-[#06038E21] rounded-[30px] h-[434px] w-[98%]"></div>
+                        <!--  -->
+                        <div class="rounded-[30px] bg-[#06038E] relative">
+                            <!-- shape -->
+                              <img alt="shape" src="../img/svg/Rectangle 28.svg" class="absolute -bottom-0.5 right-[92px]">
+                            <!--  -->
+                            <div class="relative banner">
+                                <div dir="ltr"
+                                    class="swiper text-right bannerSwiper pt-16 rtl:pr-12 ltr:pl-12 ltr:pr-14 rtl:pl-14 pb-[90px]">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="flex-between gap-4">
+                                                <img alt="img" src="../img/point-sale-machine-design-resource 1.png" class="w-[292px] block">
+                                                <div class="max-w-[290px] w-full">
+                                                    <h1 class="rtl:font-yekanBakhBold text-[39px] font-bold text-white">فروش انواع
+                                                        دستگاه های پوز</h1>
+                                                    <a
+                                                        class="h-[61px] px-9 mt-14 font-semibold text-xl border border-white rounded-[30px] flex-center gap-1 text-white">
+                                                        <img alt="icon" src="../img/svg/arrow-left (2).svg">
+                                                        <p class="flex-shrink-0">مشاهده محصولات</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="flex-between gap-4">
+                                                <img alt="img" src="../img/point-sale-machine-design-resource 1.png" class="w-[292px] block">
+                                                <div class="max-w-[290px] w-full">
+                                                    <h1 class="rtl:font-yekanBakhBold text-[39px] font-bold text-white">فروش انواع
+                                                        دستگاه های پوز</h1>
+                                                    <a
+                                                        class="h-[61px] px-9 mt-14 font-semibold text-xl border border-white rounded-[30px] flex-center gap-1 text-white">
+                                                        <img alt="icon" src="../img/svg/arrow-left (2).svg">
+                                                        <p class="flex-shrink-0">مشاهده محصولات</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="flex-between gap-4">
+                                                <img alt="img" src="../img/point-sale-machine-design-resource 1.png" class="w-[292px] block">
+                                                <div class="max-w-[290px] w-full">
+                                                    <h1 class="rtl:font-yekanBakhBold text-[39px] font-bold text-white">فروش انواع
+                                                        دستگاه های پوز</h1>
+                                                    <a
+                                                        class="h-[61px] px-9 mt-14 font-semibold text-xl border border-white rounded-[30px] flex-center gap-1 text-white">
+                                                        <img alt="icon" src="../img/svg/arrow-left (2).svg">
+                                                        <p class="flex-shrink-0">مشاهده محصولات</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="flex-between gap-4">
+                                                <img alt="img" src="../img/point-sale-machine-design-resource 1.png" class="w-[292px] block">
+                                                <div class="max-w-[290px] w-full">
+                                                    <h1 class="rtl:font-yekanBakhBold text-[39px] font-bold text-white">فروش انواع
+                                                        دستگاه های پوز</h1>
+                                                    <a
+                                                        class="h-[61px] px-9 mt-14 font-semibold text-xl border border-white rounded-[30px] flex-center gap-1 text-white">
+                                                        <img alt="icon" src="../img/svg/arrow-left (2).svg">
+                                                        <p class="flex-shrink-0">مشاهده محصولات</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="flex-between gap-4">
+                                                <img alt="img" src="../img/point-sale-machine-design-resource 1.png" class="w-[292px] block">
+                                                <div class="max-w-[290px] w-full">
+                                                    <h1 class="rtl:font-yekanBakhBold text-[39px] font-bold text-white">فروش انواع
+                                                        دستگاه های پوز</h1>
+                                                    <a
+                                                        class="h-[61px] px-9 mt-14 font-semibold text-xl border border-white rounded-[30px] flex-center gap-1 text-white">
+                                                        <img alt="icon" src="../img/svg/arrow-left (2).svg">
+                                                        <p class="flex-shrink-0">مشاهده محصولات</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination right-32 !-bottom-0.5 flex items-center"></div>
+                                <div class="swiper-button-next absolute !left-11 !right-auto top-auto !bottom-6"></div>
+                                <div class="swiper-button-prev absolute top-auto !bottom-6"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- category -->
+         <section class="mt-24 relative">
+            <div class="max-w-content mx-auto">
+              <div dir="ltr" class="swiper categorySwiper p-4">
+               <div class="swiper-wrapper">
+                <div class="swiper-slide text-center">
+                  <a>
+                    <div class="rounded-[18px] bg-white flex-center shadow-2 p-8">
+                      <img alt="img" src="../img/image 15.png" class="h-44">
+                    </div>
+                    <p class="text-xl font-extrabold text-[#393939] mt-4 rtl:font-yekanBakhBold">کش لس</p>
+                    <div class="rounded-[18px] bg-primary text-white font-bold text-xl p-[14px] mt-8 relative">
+                        <!-- arrow -->
+                         <img alt="arrow" src="../img/svg/Polygon 1.svg" class="absolute inset-x-0 -top-4 mx-auto">
+                        <!--  -->
+                        ۱۲۳۴ محصول
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide text-center">
+                  <a>
+                    <div class="rounded-[18px] bg-white flex-center shadow-2 p-8">
+                      <img alt="img" src="../img/image 16.png" class="h-44">
+                    </div>
+                    <p class="text-xl font-extrabold text-[#393939] mt-4 rtl:font-yekanBakhBold">کیوسک پرداخت خودکار</p>
+                    <div class="rounded-[18px] bg-primary text-white font-bold text-xl p-[14px] mt-8 relative">
+                        <!-- arrow -->
+                         <img alt="arrow" src="../img/svg/Polygon 1.svg" class="absolute inset-x-0 -top-4 mx-auto">
+                        <!--  -->
+                        ۱۲۳۴ محصول
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide text-center">
+                  <a>
+                    <div class="rounded-[18px] bg-white flex-center shadow-2 p-8">
+                      <img alt="img" src="../img/image 17.png" class="h-44">
+                    </div>
+                    <p class="text-xl font-extrabold text-[#393939] mt-4 rtl:font-yekanBakhBold">کیوسک بانکی</p>
+                    <div class="rounded-[18px] bg-primary text-white font-bold text-xl p-[14px] mt-8 relative">
+                        <!-- arrow -->
+                         <img alt="arrow" src="../img/svg/Polygon 1.svg" class="absolute inset-x-0 -top-4 mx-auto">
+                        <!--  -->
+                        ۱۲۳۴ محصول
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide text-center">
+                  <a>
+                    <div class="rounded-[18px] bg-white flex-center shadow-2 p-8">
+                      <img alt="img" src="../img/image 18.png" class="h-44">
+                    </div>
+                    <p class="text-xl font-extrabold text-[#393939] mt-4 rtl:font-yekanBakhBold">صندوق فروشگاهی</p>
+                    <div class="rounded-[18px] bg-primary text-white font-bold text-xl p-[14px] mt-8 relative">
+                        <!-- arrow -->
+                         <img alt="arrow" src="../img/svg/Polygon 1.svg" class="absolute inset-x-0 -top-4 mx-auto">
+                        <!--  -->
+                        ۱۲۳۴ محصول
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide text-center">
+                  <a>
+                    <div class="rounded-[18px] bg-white flex-center shadow-2 p-8">
+                      <img alt="img" src="../img/image 22.png" class="h-44">
+                    </div>
+                    <p class="text-xl font-extrabold text-[#393939] mt-4 rtl:font-yekanBakhBold">پوز کیوسک</p>
+                    <div class="rounded-[18px] bg-primary text-white font-bold text-xl p-[14px] mt-8 relative">
+                        <!-- arrow -->
+                         <img alt="arrow" src="../img/svg/Polygon 1.svg" class="absolute inset-x-0 -top-4 mx-auto">
+                        <!--  -->
+                        ۱۲۳۴ محصول
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide text-center">
+                  <a>
+                    <div class="rounded-[18px] bg-white flex-center shadow-2 p-8">
+                      <img alt="img" src="../img/image 19.png" class="h-44">
+                    </div>
+                    <p class="text-xl font-extrabold text-[#393939] mt-4 rtl:font-yekanBakhBold">صندوق فروشگاهی</p>
+                    <div class="rounded-[18px] bg-primary text-white font-bold text-xl p-[14px] mt-8 relative">
+                        <!-- arrow -->
+                         <img alt="arrow" src="../img/svg/Polygon 1.svg" class="absolute inset-x-0 -top-4 mx-auto">
+                        <!--  -->
+                        ۱۲۳۴ محصول
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide text-center">
+                  <a>
+                    <div class="rounded-[18px] bg-white flex-center shadow-2 p-8">
+                      <img alt="img" src="../img/image 20.png" class="h-44">
+                    </div>
+                    <p class="text-xl font-extrabold text-[#393939] mt-4 rtl:font-yekanBakhBold">کامپیوتر و الکترونیک</p>
+                    <div class="rounded-[18px] bg-primary text-white font-bold text-xl p-[14px] mt-8 relative">
+                        <!-- arrow -->
+                         <img alt="arrow" src="../img/svg/Polygon 1.svg" class="absolute inset-x-0 -top-4 mx-auto">
+                        <!--  -->
+                        ۱۲۳۴ محصول
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide text-center">
+                  <a>
+                    <div class="rounded-[18px] bg-white flex-center shadow-2 p-8">
+                      <img alt="img" src="../img/image 21.png" class="h-44">
+                    </div>
+                    <p class="text-xl font-extrabold text-[#393939] mt-4 rtl:font-yekanBakhBold">سامانه تبلیغاتی</p>
+                    <div class="rounded-[18px] bg-primary text-white font-bold text-xl p-[14px] mt-8 relative">
+                        <!-- arrow -->
+                         <img alt="arrow" src="../img/svg/Polygon 1.svg" class="absolute inset-x-0 -top-4 mx-auto">
+                        <!--  -->
+                        ۱۲۳۴ محصول
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide text-center">
+                  <a>
+                    <div class="rounded-[18px] bg-white flex-center shadow-2 p-8">
+                      <img alt="img" src="../img/image 23.png" class="h-44">
+                    </div>
+                    <p class="text-xl font-extrabold text-[#393939] mt-4 rtl:font-yekanBakhBold">سامانه تبلیغاتی</p>
+                    <div class="rounded-[18px] bg-primary text-white font-bold text-xl p-[14px] mt-8 relative">
+                        <!-- arrow -->
+                         <img alt="arrow" src="../img/svg/Polygon 1.svg" class="absolute inset-x-0 -top-4 mx-auto">
+                        <!--  -->
+                        ۱۲۳۴ محصول
+                    </div>
+                  </a>
+                </div>
+               </div>
+              </div>
+            </div>
+            <!-- link to bottom -->
+             <a href="#suggestion" class="absolute inset-x-0 mx-auto z-10 bottom-[-170px]"><img class="mx-auto" alt="arrow" src="../img/svg/arrow-left (4).svg"></a>
+         </section>
+
+         <!-- suggestion -->
+          <section id="suggestion" class="mt-28 pt-20 pb-[138px] relative">
+            <!-- bg -->
+             <div class="absolute inset-x-0 top-0 bg-[#4F24FF] h-[466px]">
+              <img alt="shape" src="../img/svg/Vector 7.svg" class="absolute -top-[1px] inset-x-0 w-full">
+              <img alt="icon" src="../img/svg/Ellipse 9.svg" class="absolute right-40 top-6">
+              <img alt="icon" src="../img/svg/Rectangle 4.svg" class="absolute left-0">
+             </div>
+            <!--  -->
+            <div class="max-w-content mx-auto px-4">
+              <div class="flex items-center justify-between gap-3">
+                <div class="flex items-center gap-4 relative">
+                  <img alt="icon" src="../img/svg/Group 11.svg">
+                  <div class="text-white">
+                    <p class="font-semibold text-2xl">پیشنهادات</p>
+                    <p class="font-extrabold font-yekanBakhBold text-[26px]">ویژه</p>
+                  </div>
+                </div>
+                <a class="h-[52px] btnHover rounded-[20px] bg-secondary flex-between text-white">
+                 <p class="font-bold rtl:font-yekanBakhBold text-xl px-3">مشاهده همه</p>
+                 <div class="w-[52px] h-[52px] flex-center rounded-[20px] bg-[#FF8B4A]">
+                   <img alt="icon" src="../img/svg/arrow-left (3).svg">
+                 </div>
+                </a>
+              </div>
+              <!-- swiper -->
+               <div class="mt-12">
+                 <div class="suggestion relative">
+                   <div dir="ltr" class="swiper suggestionSwiper bg-white shadow-3 rounded-[30px] overflow-hidden">
+                     <div class="swiper-wrapper">
+                       <div class="swiper-slide border-x border-[#EFEFEF] group">
+                         <div class="border-b border-[#EFEFEF] pb-[22px] pt-9">
+                            <img alt="img" src="../img/image 1.png" class="w-48 h-56 mx-auto">
+                            <h5 class="font-bold text-xl text-[#393939] text-center mt-5 rtl:font-yekanBakhBold">دستگاه کش لس سیار</h5>
+                         </div>
+                         <div class="flex-between py-5 px-[10px] rtl:text-right">
+                            <a class="h-[58px] transition group-hover:bg-[#4F24FF] group-hover:text-white text-center px-7 rounded-[17px] text-[#4F24FF] font-semibold flex-center border border-[#4F24FF]">
+                                خرید <br>
+                                 محصول
+                            </a>
+                           <div>
+                             <div class="flex items-center justify-end gap-3">
+                                <p class="font-semibold text-[#A4A4A4] line-through">۳۷.۰۰۰.۰۰۰</p>
+                               <p class="w-[46px] h-[26px] text-white rounded-lg bg-[#FF1919] font-semibold flex-center">10%</p>
+                             </div>
+                             <div class="flex items-center gap-[6px] mt-[5px]">
+                                <p class="text-sm text-[#CFCFCF]">تومان</p>
+                                <p class="text-2xl font-black text-[#00D222]">۳۶.۰۰۰.۰۰۰</p>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                       <div class="swiper-slide border-x border-[#EFEFEF] group">
+                         <div class="border-b border-[#EFEFEF] pb-[22px] pt-9">
+                            <img alt="img" src="../img/image.png" class="w-48 h-56 mx-auto">
+                            <h5 class="font-bold text-xl text-[#393939] text-center mt-5 rtl:font-yekanBakhBold">دستگاه کش لس سیار</h5>
+                         </div>
+                         <div class="flex-between py-5 px-[10px] rtl:text-right">
+                            <a class="h-[58px] transition group-hover:bg-[#4F24FF] group-hover:text-white text-center px-7 rounded-[17px] text-[#4F24FF] font-semibold flex-center border border-[#4F24FF]">
+                                خرید <br>
+                                 محصول
+                            </a>
+                           <div>
+                             <div class="flex items-center justify-end gap-3">
+                                <p class="font-semibold text-[#A4A4A4] line-through">۳۷.۰۰۰.۰۰۰</p>
+                               <p class="w-[46px] h-[26px] text-white rounded-lg bg-[#FF1919] font-semibold flex-center">10%</p>
+                             </div>
+                             <div class="flex items-center gap-[6px] mt-[5px]">
+                                <p class="text-sm text-[#CFCFCF]">تومان</p>
+                                <p class="text-2xl font-black text-[#00D222]">۳۶.۰۰۰.۰۰۰</p>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                       <div class="swiper-slide border-x border-[#EFEFEF] group">
+                         <div class="border-b border-[#EFEFEF] pb-[22px] pt-9">
+                            <img alt="img" src="../img/image(1).png" class="w-48 h-56 mx-auto">
+                            <h5 class="font-bold text-xl text-[#393939] text-center mt-5 rtl:font-yekanBakhBold">دستگاه کش لس سیار</h5>
+                         </div>
+                         <div class="flex-between py-5 px-[10px] rtl:text-right">
+                            <a class="h-[58px] transition group-hover:bg-[#4F24FF] group-hover:text-white text-center px-7 rounded-[17px] text-[#4F24FF] font-semibold flex-center border border-[#4F24FF]">
+                                خرید <br>
+                                 محصول
+                            </a>
+                           <div>
+                             <div class="flex items-center justify-end gap-3">
+                                <p class="font-semibold text-[#A4A4A4] line-through">۳۷.۰۰۰.۰۰۰</p>
+                               <p class="w-[46px] h-[26px] text-white rounded-lg bg-[#FF1919] font-semibold flex-center">10%</p>
+                             </div>
+                             <div class="flex items-center gap-[6px] mt-[5px]">
+                                <p class="text-sm text-[#CFCFCF]">تومان</p>
+                                <p class="text-2xl font-black text-[#00D222]">۳۶.۰۰۰.۰۰۰</p>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                       <div class="swiper-slide border-x border-[#EFEFEF] group">
+                         <div class="border-b border-[#EFEFEF] pb-[22px] pt-9">
+                            <img alt="img" src="../img/image 1.png" class="w-48 h-56 mx-auto">
+                            <h5 class="font-bold text-xl text-[#393939] text-center mt-5 rtl:font-yekanBakhBold">دستگاه کش لس سیار</h5>
+                         </div>
+                         <div class="flex-between py-5 px-[10px] rtl:text-right">
+                            <a class="h-[58px] transition group-hover:bg-[#4F24FF] group-hover:text-white text-center px-7 rounded-[17px] text-[#4F24FF] font-semibold flex-center border border-[#4F24FF]">
+                                خرید <br>
+                                 محصول
+                            </a>
+                           <div>
+                             <div class="flex items-center justify-end gap-3">
+                                <p class="font-semibold text-[#A4A4A4] line-through">۳۷.۰۰۰.۰۰۰</p>
+                               <p class="w-[46px] h-[26px] text-white rounded-lg bg-[#FF1919] font-semibold flex-center">10%</p>
+                             </div>
+                             <div class="flex items-center gap-[6px] mt-[5px]">
+                                <p class="text-sm text-[#CFCFCF]">تومان</p>
+                                <p class="text-2xl font-black text-[#00D222]">۳۶.۰۰۰.۰۰۰</p>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                       <div class="swiper-slide border-x border-[#EFEFEF] group">
+                         <div class="border-b border-[#EFEFEF] pb-[22px] pt-9">
+                            <img alt="img" src="../img/image 1.png" class="w-48 h-56 mx-auto">
+                            <h5 class="font-bold text-xl text-[#393939] text-center mt-5 rtl:font-yekanBakhBold">دستگاه کش لس سیار</h5>
+                         </div>
+                         <div class="flex-between py-5 px-[10px] rtl:text-right">
+                            <a class="h-[58px] transition group-hover:bg-[#4F24FF] group-hover:text-white text-center px-7 rounded-[17px] text-[#4F24FF] font-semibold flex-center border border-[#4F24FF]">
+                                خرید <br>
+                                 محصول
+                            </a>
+                           <div>
+                             <div class="flex items-center justify-end gap-3">
+                                <p class="font-semibold text-[#A4A4A4] line-through">۳۷.۰۰۰.۰۰۰</p>
+                               <p class="w-[46px] h-[26px] text-white rounded-lg bg-[#FF1919] font-semibold flex-center">10%</p>
+                             </div>
+                             <div class="flex items-center gap-[6px] mt-[5px]">
+                                <p class="text-sm text-[#CFCFCF]">تومان</p>
+                                <p class="text-2xl font-black text-[#00D222]">۳۶.۰۰۰.۰۰۰</p>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="swiper-pagination2 !-bottom-16 text-center absolute"></div>
+                 </div>
+               </div>
+            </div>
+          </section>
+
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="../js/modal.js"></script> -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
+
+<!-- npx tailwindcss -i ./src/css/app.css -o ./dist/output.css --watch -->
