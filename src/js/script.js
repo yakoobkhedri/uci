@@ -111,3 +111,20 @@ var solutionSwiper = new Swiper(".solutionSwiper", {
     clickable: true,
   },
 });
+var workSwiper = new Swiper(".workSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  autoplay: true,
+  breakpoints: {
+    992: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    }
+  },
+  pagination: {
+    el: ".swiper-pagination4",
+    clickable: true,
+  },
+});

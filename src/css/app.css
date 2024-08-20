@@ -122,6 +122,19 @@ input[type="number"] {
   background-color: #4F24FF!important;
   border-radius: 10px!important;
 }
+.solution .swiper-pagination-bullet, .work .swiper-pagination-bullet{
+  width: 10px!important;
+  height: 10px!important;
+  background-color: #FFFFFF80!important;
+  border-radius: 100%!important;
+  transition: all .4s;
+  opacity: 100%;
+}
+.solution .swiper-pagination-bullet-active, .work .swiper-pagination-bullet-active{
+  width: 43px!important;
+  background-color: white!important;
+  border-radius: 10px!important;
+}
 /* hover */
 .btnHover{
   position: relative;
