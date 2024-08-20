@@ -94,3 +94,20 @@ var suggestionSwiper = new Swiper(".suggestionSwiper", {
     clickable: true,
   },
 });
+var solutionSwiper = new Swiper(".solutionSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  autoplay: true,
+  breakpoints: {
+    992: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    }
+  },
+  pagination: {
+    el: ".swiper-pagination3",
+    clickable: true,
+  },
+});
