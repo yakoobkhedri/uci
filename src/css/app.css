@@ -54,23 +54,21 @@ header ul li.active::after {
   backdrop-filter: blur(4px);
 }
 
-#hamIcon.active svg:last-child {
+#hamIcon.active svg:last-child{
   display: block;
 }
-
-#hamIcon.active svg:first-child {
+#hamIcon.active svg:first-child{
   display: none;
 }
-
-.mobileMenu {
-  box-shadow: 0px 0px 162px 0px #00000026;
-  display: none;
+.mobileMenu{
+  transition: all .4s;
+  opacity: 0;
+  visibility: hidden;
 }
-
-.mobileMenu.active {
-  display: block;
+.mobileMenu.active{
+  visibility: visible;
+  opacity: 100%;
 }
-
 .dropdownBtn .arrowSvg.active,
 .dropdownBtn2 .arrowSvg.active {
   transform: rotate(0);
@@ -114,8 +112,14 @@ input[type="number"] {
 }
 
 /* lang dropdown */
+.langDropdown {
+  transition: all .4s;
+  opacity: 0;
+  visibility: hidden;
+}
 .langDropdown.active {
-  display: block;
+  opacity: 100%;
+  visibility: visible;
 }
 
 /* swiper */

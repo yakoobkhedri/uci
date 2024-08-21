@@ -26,7 +26,7 @@
                     </a>
                     <!-- language dropdown -->
                     <div
-                        class="langDropdown rounded-[21px] hidden mt-6 top-9 bg-white absolute ltr:left-0 ltr:right-auto right-0 shadow w-36 sm:w-44">
+                        class="langDropdown rounded-[21px] mt-6 top-9 bg-white absolute ltr:left-0 ltr:right-auto right-0 shadow w-36 sm:w-44">
                         <div data-id="1"
                             class="flex items-center gap-3 cursor-pointer rounded-[21px] p-2 transition hover:bg-gray-100">
                             <img alt="lang" src="../img/circle-flags_uk (2).png" class="w-7 h-7 rounded-full block">
@@ -71,10 +71,10 @@
             </div>
         </div>
         <div class="max-w-content mx-auto px-4">
-            <div class="md:rounded-[80px] rounded-[15px] transition bg-white px-3 md:rtl:pr-9 md:ltr:pl-9 py-3 md:px-4 shadow-header flex-between gap-3">
+            <div class="lg:rounded-[80px] rounded-[15px] transition bg-white px-3 lg:rtl:pr-9 lg:ltr:pl-9 py-3 lg:px-4 shadow-header flex-between gap-3">
                 <div class="flex items-center gap-4 xl:gap-11">
                     <!-- logo -->
-                    <a><img alt="logo" src="../img/UCI Logo 1.png" class="block transition w-[53px] md:w-[87px] h-[42px] md:h-[70px]"></a>
+                    <a><img alt="logo" src="../img/UCI Logo 1.png" class="block transition w-[53px] lg:w-[87px] h-[42px] lg:h-[70px]"></a>
                     <!-- menu -->
                     <ul class="hidden lg:flex items-center xl:gap-4 text-base xl:text-lg font-semibold">
                         <li class="py-[5px] rounded-[20px] transition hover:text-white px-3 hover:bg-primary"><a>صفحه اصلی</a></li>
@@ -367,8 +367,111 @@
                     <p>پنل مشتریان</p>
                     <img alt="icon" src="../img/svg/arrow-down (2).svg">
                   </a>
+                  <!-- ham icon -->
+                  <div class="flex lg:hidden items-center gap-4">
+                    <div id="hamIcon">
+                        <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2 5.995C2 5.445 2.446 5 2.995 5L11.005 5C11.2689 5 11.522 5.10483 11.7086 5.29143C11.8952 5.47803 12 5.73111 12 5.995C12 6.25889 11.8952 6.51197 11.7086 6.69857C11.522 6.88517 11.2689 6.99 11.005 6.99L2.995 6.99C2.445 6.99 2 6.545 2 5.995ZM2 12C2 11.45 2.446 11.005 2.995 11.005L21.005 11.005C21.2689 11.005 21.522 11.1098 21.7086 11.2964C21.8952 11.483 22 11.7361 22 12C22 12.2639 21.8952 12.517 21.7086 12.7036C21.522 12.8902 21.2689 12.995 21.005 12.995L2.995 12.995C2.445 12.995 2 12.549 2 12ZM2.995 17.01C2.73111 17.01 2.47803 17.1148 2.29143 17.3014C2.10483 17.488 2 17.7411 2 18.005C2 18.2689 2.10483 18.522 2.29143 18.7086C2.47803 18.8952 2.73111 19 2.995 19L15.005 19C15.1357 19 15.2651 18.9743 15.3858 18.9243C15.5065 18.8743 15.6162 18.801 15.7086 18.7086C15.801 18.6162 15.8743 18.5065 15.9243 18.3858C15.9743 18.2651 16 18.1357 16 18.005C16 17.8743 15.9743 17.7449 15.9243 17.6242C15.8743 17.5035 15.801 17.3938 15.7086 17.3014C15.6162 17.209 15.5065 17.1357 15.3858 17.0857C15.2651 17.0357 15.1357 17.01 15.005 17.01L2.995 17.01Z"
+                                fill="#1E2D48" />
+                        </svg>
+                        <svg class="cursor-pointer hidden" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.80399 6.39693C7.61739 6.21034 7.36431 6.10551 7.10042 6.10551C6.83653 6.10551 6.58345 6.21034 6.39685 6.39693C6.21025 6.58353 6.10542 6.83662 6.10542 7.10051C6.10542 7.3644 6.21025 7.61748 6.39685 7.80408L14.8892 16.2964C14.9816 16.3888 15.0913 16.4621 15.212 16.5121C15.3327 16.5621 15.4621 16.5879 15.5928 16.5879C15.7234 16.5879 15.8528 16.5621 15.9735 16.5121C16.0943 16.4621 16.204 16.3888 16.2963 16.2964C16.3887 16.204 16.462 16.0943 16.512 15.9736C16.562 15.8529 16.5878 15.7235 16.5878 15.5929C16.5878 15.4622 16.562 15.3328 16.512 15.2121C16.462 15.0914 16.3887 14.9817 16.2963 14.8893L7.80399 6.39693Z"
+                                fill="#1E2D48" />
+                            <path
+                                d="M6.39693 14.8894C6.21034 15.076 6.10551 15.329 6.10551 15.5929C6.1055 15.8568 6.21033 16.1099 6.39693 16.2965C6.58353 16.4831 6.83661 16.5879 7.10051 16.5879C7.3644 16.5879 7.61748 16.4831 7.80408 16.2965L16.2964 7.80416C16.3888 7.71176 16.4621 7.60207 16.5121 7.48136C16.5621 7.36064 16.5879 7.23125 16.5879 7.10059C16.5879 6.96992 16.5621 6.84053 16.5121 6.71982C16.4621 6.5991 16.3888 6.48941 16.2964 6.39701C16.204 6.30462 16.0943 6.23133 15.9736 6.18133C15.8529 6.13132 15.7235 6.10559 15.5929 6.10559C15.4622 6.10559 15.3328 6.13132 15.2121 6.18133C15.0914 6.23133 14.9817 6.30462 14.8893 6.39701L6.39693 14.8894Z"
+                                fill="#1E2D48" />
+                        </svg>
+                    </div>
+                  </div>
                 </div>
             </div>
+        </div>
+        <!-- mobile menu -->
+        <div
+            class="rounded-3xl mobileMenu shadow-header top-[124px] absolute lg:hidden bg-white -mt-2 z-40 text-black text-sm font-bold left-5 right-5">
+            <!-- arrow -->
+            <svg class="-top-2 ltr:right-8 ltr:left-auto left-8 absolute" xmlns="http://www.w3.org/2000/svg" width="33"
+                height="9" viewBox="0 0 33 9" fill="white">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M32.8066 8.5H0.193359C4.85352 8.18393 9.22656 6.06978 12.375 2.57672C14.5801 0.129671 18.4199 0.129671 20.625 2.57672C23.7734 6.06978 28.1465 8.18393 32.8066 8.5Z"
+                    fill="white"></path>
+            </svg>
+            <!-- menu -->
+            <ul class="p-[22px]">
+                <li class="mb-6">
+                    <a class="w-full block">حساب کاربری</a>
+                </li>
+                <li class="mb-6">
+                    <a class="w-full block">صفحه اصلی</a>
+                </li>
+                <li class="mb-6">
+                    <a class="flex items-center justify-between dropdownBtn">
+                        <p>محصولات</p>
+                        <svg class="rotate-180 transition-all arrowSvg" xmlns="http://www.w3.org/2000/svg" width="12"
+                            height="7" viewBox="0 0 12 7" fill="none">
+                            <path d="M10.6001 5.68237L5.8001 0.882374L1.0001 5.68237" stroke="black"
+                                stroke-linecap="square" />
+                        </svg>
+                    </a>
+                    <ul class="font-light text-black dropdownContent text-sm">
+                        <li class="py-4 ltr:pl-2 ltr:pr-0 ltr:ml-[6px] ltr:mr-0 pr-2 mr-[6px]">
+                            <a class="flex items-center justify-between text-black">
+                                <div
+                                    class="flex items-center gap-3 relative ltr:-left-2 ltr:right-auto ltr:-ml-2 ltr:mr-0 right-0 -mr-2">
+                                    <svg class="flex-shrink-0" width="21" height="7" viewBox="0 0 21 7" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect opacity="0.5" x="0.199951" width="20.8" height="6.02105" rx="3.01053"
+                                            fill="#C8C8C8"></rect>
+                                    </svg>
+                                    <p>نمونه کار 1</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="py-4 ltr:pl-2 ltr:pr-0 ltr:ml-[6px] ltr:mr-0 pr-2 mr-[6px]">
+                            <a class="flex items-center justify-between text-black">
+                                <div
+                                    class="flex items-center gap-3 relative ltr:-left-2 ltr:right-auto ltr:-ml-2 ltr:mr-0 right-0 -mr-2">
+                                    <svg class="flex-shrink-0" width="21" height="7" viewBox="0 0 21 7" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect opacity="0.5" x="0.199951" width="20.8" height="6.02105" rx="3.01053"
+                                            fill="#C8C8C8"></rect>
+                                    </svg>
+                                    <p>نمونه کار 2</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="py-4 ltr:pl-2 ltr:pr-0 ltr:ml-[6px] ltr:mr-0 pr-2 mr-[6px]">
+                            <a class="flex items-center justify-between text-black">
+                                <div
+                                    class="flex items-center gap-3 relative ltr:-left-2 ltr:right-auto ltr:-ml-2 ltr:mr-0 right-0 -mr-2">
+                                    <svg class="flex-shrink-0" width="21" height="7" viewBox="0 0 21 7" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect opacity="0.5" x="0.199951" width="20.8" height="6.02105" rx="3.01053"
+                                            fill="#C8C8C8"></rect>
+                                    </svg>
+                                    <p>نمونه کار 3</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mb-6">
+                    <a class="w-full block">راهکارها</a>
+                </li>
+                <li class="mb-6">
+                    <a class="w-full block">کسب و کارها</a>
+                </li>
+                <li class="mb-6">
+                    <a class="w-full block">درباره ما</a>
+                </li>
+                <li>
+                    <a>تماس با ما</a>
+                </li>
+            </ul>
         </div>
     </header>
 

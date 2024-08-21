@@ -1,3 +1,23 @@
+// menu
+let hamIcon = document.getElementById('hamIcon');
+let mobileMenu = document.querySelector('.mobileMenu');
+let dropdownBtn =Array.from(document.getElementsByClassName('dropdownBtn'));
+
+
+dropdownBtn.forEach((item)=>{
+  item.addEventListener('click', function () {
+    item.querySelector('.arrowSvg').classList.toggle('active');
+    item.nextElementSibling.classList.toggle('active');
+  })
+})
+
+hamIcon.addEventListener('click', function () {
+  hamIcon.classList.toggle('active');
+  document.querySelector('.mobileMenu').classList.toggle('active');
+})
+
+
+
 // change language
 
 let langItems = Array.from(document.querySelectorAll('.langDropdown > div'));
