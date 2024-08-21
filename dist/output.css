@@ -665,6 +665,10 @@ video {
   top: -1rem;
 }
 
+.-top-\[0\.28rem\] {
+  top: -0.28rem;
+}
+
 .-top-\[1px\] {
   top: -1px;
 }
@@ -735,10 +739,6 @@ video {
 
 .top-auto {
   top: auto;
-}
-
-.-top-\[0\.28rem\] {
-  top: -0.28rem;
 }
 
 .-z-0 {
@@ -987,6 +987,10 @@ video {
   height: 26px;
 }
 
+.h-\[42px\] {
+  height: 42px;
+}
+
 .h-\[434px\] {
   height: 434px;
 }
@@ -1083,12 +1087,12 @@ video {
   width: 211px;
 }
 
-.w-\[282px\] {
-  width: 282px;
-}
-
 .w-\[292px\] {
   width: 292px;
+}
+
+.w-\[300px\] {
+  width: 300px;
 }
 
 .w-\[46px\] {
@@ -1111,20 +1115,12 @@ video {
   width: 77%;
 }
 
-.w-\[87px\] {
-  width: 87px;
-}
-
 .w-\[98\%\] {
   width: 98%;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-\[300px\] {
-  width: 300px;
 }
 
 .max-w-\[1536px\] {
@@ -1179,6 +1175,10 @@ video {
   justify-content: flex-end;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -1189,10 +1189,6 @@ video {
 
 .gap-10 {
   gap: 2.5rem;
-}
-
-.gap-11 {
-  gap: 2.75rem;
 }
 
 .gap-14 {
@@ -1289,10 +1285,6 @@ video {
 
 .rounded-\[34px\] {
   border-radius: 34px;
-}
-
-.rounded-\[80px\] {
-  border-radius: 80px;
 }
 
 .rounded-full {
@@ -1556,10 +1548,6 @@ video {
   padding-top: 3rem;
 }
 
-.pt-14 {
-  padding-top: 3.5rem;
-}
-
 .pt-16 {
   padding-top: 4rem;
 }
@@ -1570,6 +1558,10 @@ video {
 
 .pt-9 {
   padding-top: 2.25rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-center {
@@ -1633,6 +1625,11 @@ video {
 
 .text-\[52px\] {
   font-size: 52px;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-lg {
@@ -2104,8 +2101,8 @@ input[type="number"] {
   visibility: visible;
 }
 
-.group:hover .group-hover\:top-9 {
-  top: 2.25rem;
+.group:hover .group-hover\:top-8 {
+  top: 2rem;
 }
 
 .group:hover .group-hover\:bg-primary {
@@ -2195,10 +2192,6 @@ input[type="number"] {
 
 :is([dir="ltr"] .ltr\:pl-8) {
   padding-left: 2rem;
-}
-
-:is([dir="ltr"] .ltr\:pl-9) {
-  padding-left: 2.25rem;
 }
 
 :is([dir="ltr"] .ltr\:pr-14) {
@@ -2300,10 +2293,6 @@ input[type="number"] {
   padding-right: 2rem;
 }
 
-:is([dir="rtl"] .rtl\:pr-9) {
-  padding-right: 2.25rem;
-}
-
 :is([dir="rtl"] .rtl\:text-right) {
   text-align: right;
 }
@@ -2319,5 +2308,65 @@ input[type="number"] {
 @media (min-width: 640px) {
   .sm\:w-44 {
     width: 11rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:h-\[70px\] {
+    height: 70px;
+  }
+
+  .md\:w-\[87px\] {
+    width: 87px;
+  }
+
+  .md\:rounded-\[80px\] {
+    border-radius: 80px;
+  }
+
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  :is([dir="ltr"] .md\:ltr\:pl-9) {
+    padding-left: 2.25rem;
+  }
+
+  :is([dir="rtl"] .md\:rtl\:pr-9) {
+    padding-right: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:pt-0 {
+    padding-top: 0px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:gap-11 {
+    gap: 2.75rem;
+  }
+
+  .xl\:gap-4 {
+    gap: 1rem;
+  }
+
+  .xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .group:hover .xl\:group-hover\:top-9 {
+    top: 2.25rem;
   }
 }

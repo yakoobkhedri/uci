@@ -16,8 +16,8 @@
         class="absolute z-0 top-0 rtl:left-0 ltr:right-0 ltr:[transform:rotateY(180deg)]">
 
     <!-- header -->
-    <header class="relative">
-        <div class="max-w-content mx-auto px-4 flex-between gap-3 py-6">
+    <header class="relative pt-4 lg:pt-0">
+        <div class="max-w-content mx-auto px-4 hidden lg:flex items-center justify-between gap-3 py-6">
             <div class="flex-center gap-6">
                 <div class="relative language-link">
                     <a class="flex items-center gap-4 p-2 rtl:pr-4 relative rounded-[30px] border border-[#B9B9B9]">
@@ -71,17 +71,17 @@
             </div>
         </div>
         <div class="max-w-content mx-auto px-4">
-            <div class="rounded-[80px] bg-white rtl:pr-9 ltr:pl-9 py-3 px-4 shadow-header flex-between gap-3">
-                <div class="flex items-center gap-11">
+            <div class="md:rounded-[80px] rounded-[15px] transition bg-white px-3 md:rtl:pr-9 md:ltr:pl-9 py-3 md:px-4 shadow-header flex-between gap-3">
+                <div class="flex items-center gap-4 xl:gap-11">
                     <!-- logo -->
-                    <a><img alt="logo" src="../img/UCI Logo 1.png" class="block w-[87px] h-[70px]"></a>
+                    <a><img alt="logo" src="../img/UCI Logo 1.png" class="block transition w-[53px] md:w-[87px] h-[42px] md:h-[70px]"></a>
                     <!-- menu -->
-                    <ul class="flex items-center gap-4 text-lg font-semibold">
+                    <ul class="hidden lg:flex items-center xl:gap-4 text-base xl:text-lg font-semibold">
                         <li class="py-[5px] rounded-[20px] transition hover:text-white px-3 hover:bg-primary"><a>صفحه اصلی</a></li>
                         <li class="py-[5px] cursor-pointer group relative rounded-[20px] transition hover:text-white px-3 hover:bg-primary">
                           <p>محصولات</p>
                           <!-- dropdown -->
-                          <div class="absolute transition opacity-0 invisible group-hover:opacity-100 group-hover:visible rtl:right-0 ltr:left-0 top-14 group-hover:top-9 z-10">
+                          <div class="absolute transition opacity-0 invisible group-hover:opacity-100 group-hover:visible rtl:right-0 ltr:left-0 top-14 group-hover:top-8 xl:group-hover:top-9 z-10">
                              <div class="bg-white rounded-[20px] shadow-2 p-3 pt-12 mt-4 w-[300px] relative">
                                <!-- arrow -->
                                <svg class="absolute rtl:right-14 ltr:left-14 -top-[0.28rem]" width="55" height="25" viewBox="0 0 91 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -360,12 +360,14 @@
                         <li class="py-[5px] rounded-[20px] transition hover:text-white px-3 hover:bg-primary"><a>تماس با ما</a></li>
                     </ul>
                 </div>
-                <a
-                    class="rounded-[30px] btnHover bg-primary px-3 h-[52px] flex-shrink-0 flex-center gap-2 text-white text-lg font-semibold">
+                <div>
+                  <a
+                    class="rounded-[30px] btnHover bg-primary px-3 h-[52px] flex-shrink-0 hidden lg:flex items-center justify-center gap-2 text-white text-lg font-semibold">
                     <img alt="icon" src="../img/svg/profile.svg">
                     <p>پنل مشتریان</p>
                     <img alt="icon" src="../img/svg/arrow-down (2).svg">
-                </a>
+                  </a>
+                </div>
             </div>
         </div>
     </header>
