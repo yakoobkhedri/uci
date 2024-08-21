@@ -128,3 +128,17 @@ var workSwiper = new Swiper(".workSwiper", {
     clickable: true,
   },
 });
+
+var customers = new Swiper(".customers", {
+  slidesPerView: 2,
+  spaceBetween: 24,
+  autoplay: true,
+  breakpoints: {
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    }
+  },
+});
