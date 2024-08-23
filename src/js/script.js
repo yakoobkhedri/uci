@@ -53,6 +53,7 @@ langItems.forEach((item) => {
     let tabId = item.dataset.id;
     if (tabId == 1) {
       document.getElementById('langText').textContent = 'ENG';
+      document.getElementById('langText2').textContent = 'ENG';
       document.documentElement.dir = 'ltr';
       swiper.forEach((item)=>{
         item.dir='ltr';
@@ -60,6 +61,7 @@ langItems.forEach((item) => {
     }
     if (tabId == 2) {
       document.getElementById('langText').textContent = 'فارسی';
+      document.getElementById('langText2').textContent = 'فارسی';
       document.documentElement.dir = 'rtl';
     }
   })
