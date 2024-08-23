@@ -158,7 +158,10 @@ input[type="number"] {
   background-color: #4F24FF !important;
   border-radius: 10px !important;
 }
-
+.suggestion .swiper-button-prev::after {
+  color: white!important;
+  font-size: 9px!important;
+}
 .solution .swiper-pagination-bullet,
 .work .swiper-pagination-bullet {
   width: 10px !important;
@@ -264,6 +267,7 @@ input[type="number"] {
 .banner .swiper-pagination-bullet {
   width: 3px !important;
   height: 9px !important;
+  margin: 0 3px!important;
 }
 
 .banner .swiper-pagination-bullet-active {

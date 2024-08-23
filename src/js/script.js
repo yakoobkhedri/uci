@@ -100,13 +100,10 @@ var categorySwiper = new Swiper(".categorySwiper", {
   },
 });
 var suggestionSwiper = new Swiper(".suggestionSwiper", {
-  slidesPerView: 1,
+  slidesPerView: 2.2,
   spaceBetween: 0,
   autoplay: true,
   breakpoints: {
-    768: {
-      slidesPerView: 2,
-    },
     992: {
       slidesPerView: 3,
     },
@@ -117,6 +114,10 @@ var suggestionSwiper = new Swiper(".suggestionSwiper", {
   pagination: {
     el: ".swiper-pagination2",
     clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 var solutionSwiper = new Swiper(".solutionSwiper", {
