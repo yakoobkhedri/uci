@@ -259,4 +259,15 @@ input[type="number"] {
   background-size: cover;
   background-repeat: no-repeat;
 }
-@media only screen and (max-width: 400px) {}
+@media only screen and (max-width: 640px) {
+  
+.banner .swiper-pagination-bullet {
+  width: 3px !important;
+  height: 9px !important;
+}
+
+.banner .swiper-pagination-bullet-active {
+  height: 12px !important;
+}
+
+}

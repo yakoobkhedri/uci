@@ -84,10 +84,13 @@ var bannerSwiper = new Swiper(".bannerSwiper", {
 });
 
 var categorySwiper = new Swiper(".categorySwiper", {
-  slidesPerView: 1,
+  slidesPerView: 1.3,
   spaceBetween: 22,
   autoplay: true,
   breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
     992: {
       slidesPerView: 3,
     },
