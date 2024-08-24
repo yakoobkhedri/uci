@@ -121,12 +121,13 @@ var suggestionSwiper = new Swiper(".suggestionSwiper", {
   },
 });
 var solutionSwiper = new Swiper(".solutionSwiper", {
-  slidesPerView: 1,
-  spaceBetween: 30,
+  slidesPerView: 2,
+  spaceBetween: 8,
   autoplay: true,
   breakpoints: {
-    992: {
+    768: {
       slidesPerView: 2,
+      spaceBetween: 30,
     },
     1200: {
       slidesPerView: 3,
@@ -138,12 +139,13 @@ var solutionSwiper = new Swiper(".solutionSwiper", {
   },
 });
 var workSwiper = new Swiper(".workSwiper", {
-  slidesPerView: 1,
-  spaceBetween: 30,
+  slidesPerView: 2,
+  spaceBetween: 8,
   autoplay: true,
   breakpoints: {
-    992: {
+    768: {
       slidesPerView: 2,
+      spaceBetween: 30,
     },
     1200: {
       slidesPerView: 3,

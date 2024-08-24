@@ -275,3 +275,13 @@ input[type="number"] {
 }
 
 }
+@media only screen and (max-width: 628px) {
+  .solution .swiper-pagination-bullet,.work .swiper-pagination-bullet {
+    width: 4px !important;
+    height: 4px !important;
+  }
+  
+  .solution .swiper-pagination-bullet-active,.work .swiper-pagination-bullet-active {
+    width: 18px !important;
+  }
+}
