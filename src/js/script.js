@@ -159,9 +159,12 @@ var workSwiper = new Swiper(".workSwiper", {
 
 var customers = new Swiper(".customers", {
   slidesPerView: 2,
-  spaceBetween: 24,
+  spaceBetween: 16,
   autoplay: true,
   breakpoints: {
+    576: {
+      spaceBetween: 24,
+    },
     992: {
       slidesPerView: 3,
     },
