@@ -757,6 +757,18 @@ video {
   right: 26px;
 }
 
+.top-\[114px\] {
+  top: 114px;
+}
+
+.top-\[104px\] {
+  top: 104px;
+}
+
+.top-\[108px\] {
+  top: 108px;
+}
+
 .-z-0 {
   z-index: 0;
 }
@@ -898,6 +910,10 @@ video {
 
 .mt-\[5px\] {
   margin-top: 5px;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .line-clamp-2 {
@@ -1595,6 +1611,11 @@ video {
   padding-bottom: 5px;
 }
 
+.py-\[10px\] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .pb-11 {
   padding-bottom: 2.75rem;
 }
@@ -2285,6 +2306,10 @@ input[type="number"] {
   fill: #fff;
 }
 
+.group:hover .group-hover\:fill-primary {
+  fill: #4F24FF;
+}
+
 .group:hover .group-hover\:stroke-white {
   stroke: #fff;
 }
@@ -2292,6 +2317,11 @@ input[type="number"] {
 .group:hover .group-hover\:text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(79 36 255 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:opacity-100 {
@@ -2360,6 +2390,14 @@ input[type="number"] {
 
 :is([dir="ltr"] .ltr\:left-\[78px\]) {
   left: 78px;
+}
+
+:is([dir="ltr"] .ltr\:right-\[26px\]) {
+  right: 26px;
+}
+
+:is([dir="ltr"] .ltr\:right-\[63px\]) {
+  right: 63px;
 }
 
 :is([dir="ltr"] .ltr\:order-last) {
@@ -2498,6 +2536,14 @@ input[type="number"] {
   right: 76px;
 }
 
+:is([dir="rtl"] .rtl\:right-\[60px\]) {
+  right: 60px;
+}
+
+:is([dir="rtl"] .rtl\:right-\[63px\]) {
+  right: 63px;
+}
+
 :is([dir="rtl"] .rtl\:order-first) {
   order: -9999;
 }
@@ -2626,6 +2672,10 @@ input[type="number"] {
 
   .sm\:top-auto {
     top: auto;
+  }
+
+  .sm\:right-\[126px\] {
+    right: 126px;
   }
 
   .sm\:col-span-4 {
@@ -3037,6 +3087,10 @@ input[type="number"] {
     right: 93px;
   }
 
+  :is([dir="ltr"] .ltr\:sm\:right-\[126px\]) {
+    right: 126px;
+  }
+
   :is([dir="ltr"] .ltr\:sm\:rounded-l-\[30px\]) {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -3061,6 +3115,10 @@ input[type="number"] {
 
   :is([dir="rtl"] .rtl\:sm\:left-\[93px\]) {
     left: 93px;
+  }
+
+  :is([dir="rtl"] .rtl\:sm\:right-\[126px\]) {
+    right: 126px;
   }
 
   :is([dir="rtl"] .rtl\:sm\:rounded-l-\[30px\]) {
@@ -3135,6 +3193,10 @@ input[type="number"] {
 
   .md\:h-\[466px\] {
     height: 466px;
+  }
+
+  .md\:h-\[667px\] {
+    height: 667px;
   }
 
   .md\:w-10 {
@@ -3269,6 +3331,10 @@ input[type="number"] {
 
   .lg\:h-\[70px\] {
     height: 70px;
+  }
+
+  .lg\:h-\[667px\] {
+    height: 667px;
   }
 
   .lg\:w-\[70px\] {
