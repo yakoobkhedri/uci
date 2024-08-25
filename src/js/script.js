@@ -131,6 +131,7 @@ var solutionSwiper = new Swiper(".solutionSwiper", {
     },
     1200: {
       slidesPerView: 3,
+      spaceBetween: 30,
     }
   },
   pagination: {
@@ -149,6 +150,7 @@ var workSwiper = new Swiper(".workSwiper", {
     },
     1200: {
       slidesPerView: 3,
+      spaceBetween: 30,
     }
   },
   pagination: {
@@ -171,5 +173,9 @@ var customers = new Swiper(".customers", {
     1200: {
       slidesPerView: 4,
     }
+  },
+  pagination: {
+    el: ".swiper-pagination5",
+    clickable: true,
   },
 });

@@ -144,7 +144,7 @@ input[type="number"] {
   background-color: #4F24FF !important;
 }
 
-.suggestion .swiper-pagination-bullet {
+.suggestion .swiper-pagination-bullet,.customer .swiper-pagination-bullet {
   width: 10px !important;
   height: 10px !important;
   background-color: #DEDEDE !important;
@@ -153,12 +153,12 @@ input[type="number"] {
   opacity: 100%;
 }
 
-.suggestion .swiper-pagination-bullet-active {
+.suggestion .swiper-pagination-bullet-active,.customer .swiper-pagination-bullet-active {
   width: 43px !important;
   background-color: #4F24FF !important;
   border-radius: 10px !important;
 }
-.suggestion .swiper-button-prev::after {
+.suggestion .swiper-button-prev::after,.customer .swiper-button-prev::after {
   color: white!important;
   font-size: 9px!important;
 }
