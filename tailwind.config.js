@@ -17,6 +17,8 @@ module.exports = {
       fontFamily: {
         yekanBakhRegular: "yekanBakh-Regular",
         yekanBakhBold: "yekanBakh-bold",
+        AstoniaRegular: "Astonia-Regular",
+        AstoniaBold: "Astonia-Bold",
       },
       maxWidth:{
         'content':'1280px',

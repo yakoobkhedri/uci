@@ -13,7 +13,16 @@
 
   src: url('../src/fonts/YekanBakhFaNum-Bold.woff') format("woff");
 }
+@font-face {
+  font-family: Astonia-Regular;
 
+  src: url('../src/fonts/Astonia-Regular.ttf') format("trueType");
+}
+@font-face {
+  font-family: Astonia-Bold;
+
+  src: url('../src/fonts/Astonia-Bold.ttf') format("trueType");
+}
 html {
   scroll-behavior: smooth;
 }
@@ -248,6 +257,10 @@ input[type="number"] {
 
 .shadow-3 {
   box-shadow: 0px 35px 77px 0px #D4D4D41A;
+}
+.shadow-4{
+box-shadow: 0px 5px 5px 0px #4F24FF2B;
+
 }
 .bg-main-gradient-hover:hover > a{
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(79, 36, 255, 0.1) 100%);
