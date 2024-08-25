@@ -753,6 +753,10 @@ video {
   left: auto !important;
 }
 
+.right-\[26px\] {
+  right: 26px;
+}
+
 .-z-0 {
   z-index: 0;
 }
