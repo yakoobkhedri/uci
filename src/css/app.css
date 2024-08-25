@@ -27,7 +27,9 @@ body {
 a {
   cursor: pointer;
 }
-
+.text-nowrap{
+  text-wrap: nowrap;
+}
 .flex-center {
   @apply flex items-center justify-center;
 }
@@ -216,7 +218,7 @@ input[type="number"] {
  opacity: 0;
 }
 .dropdown2-hover:hover > div {
-  @apply -left-52 opacity-100 visible;
+  @apply rtl:right-[271px] ltr:left-[271px] opacity-100 visible;
 }
 @keyframes shine {
   0% {
