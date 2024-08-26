@@ -67,6 +67,17 @@ langItems.forEach((item) => {
   })
 });
 
+// acordion
+
+let acordionBtn = Array.from(document.getElementsByClassName('acordionBtn'));
+
+acordionBtn.forEach((item)=> {
+  item.addEventListener('click', function () {
+    item.nextElementSibling.classList.toggle('active');
+    item.querySelector('img').classList.toggle('active');
+  })
+})
+
 // swiper
 
 var bannerSwiper = new Swiper(".bannerSwiper", {

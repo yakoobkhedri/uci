@@ -142,7 +142,17 @@ input[type="number"] {
   opacity: 100%;
   visibility: visible;
 }
-
+/* acordion */
+.acordionBtn img.active{
+  transform: rotate(180deg);
+}
+.acordionContent{
+  max-height: 0;
+  overflow: hidden;
+}
+.acordionContent.active{
+  max-height: 2000px;
+}
 /* swiper */
 .banner .swiper-button-next::after,
 .banner .swiper-button-prev::after {
