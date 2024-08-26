@@ -669,17 +669,17 @@
        </section>
 
        <!-- category swiper -->
-        <section class="mt-24">
+        <section class="mt-20">
           <div class="max-w-content mx-auto px-4 relative">
             <!-- bg -->
              <div class="rounded-[20px] bg-primary h-[127px] absolute bottom-2 inset-x-0 mx-4">
               <div class="rounded-b-[20px] bg-[#4F24FF33] absolute -bottom-3 h-3 inset-x-0 mx-8 sm:mx-[60px]"></div>
              </div>
             <!--  -->
-            <div>
-              <div dir="ltr" class="swiper categorySwiper2 p-4 sm:mx-16 mx-6">
+            <div class="relative">
+              <div dir="ltr" class="swiper categorySwiper2 p-4 py-6 sm:mx-16 mx-6">
                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
+                  <div class="swiper-slide hover:-translate-y-3 transition">
                     <div class="relative">
                       <!-- shape -->
                        <img alt="shape" src="../img/svg/Vector 1.svg" class="absolute ltr:[transform:rotateY(180deg)] rtl:[transform:rotateY(0deg)] -top-3 rtl:left-auto rtl:-right-3 ltr:-left-3">
@@ -693,7 +693,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide hover:-translate-y-3 transition">
                     <div class="relative">
                       <!-- shape -->
                        <img alt="shape" src="../img/svg/Vector 1.svg" class="absolute ltr:[transform:rotateY(180deg)] rtl:[transform:rotateY(0deg)] -top-3 rtl:left-auto rtl:-right-3 ltr:-left-3">
@@ -707,7 +707,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide hover:-translate-y-3 transition">
                     <div class="relative">
                       <!-- shape -->
                        <img alt="shape" src="../img/svg/Vector 1.svg" class="absolute ltr:[transform:rotateY(180deg)] rtl:[transform:rotateY(0deg)] -top-3 rtl:left-auto rtl:-right-3 ltr:-left-3">
@@ -721,7 +721,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide hover:-translate-y-3 transition">
                     <div class="relative">
                       <!-- shape -->
                        <img alt="shape" src="../img/svg/Vector 1.svg" class="absolute ltr:[transform:rotateY(180deg)] rtl:[transform:rotateY(0deg)] -top-3 rtl:left-auto rtl:-right-3 ltr:-left-3">
@@ -735,7 +735,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide hover:-translate-y-3 transition">
                     <div class="relative">
                       <!-- shape -->
                        <img alt="shape" src="../img/svg/Vector 1.svg" class="absolute ltr:[transform:rotateY(180deg)] rtl:[transform:rotateY(0deg)] -top-3 rtl:left-auto rtl:-right-3 ltr:-left-3">
@@ -749,7 +749,7 @@
                       </a>
                     </div>
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide hover:-translate-y-3 transition">
                     <div class="relative">
                       <!-- shape -->
                        <img alt="shape" src="../img/svg/Vector 1.svg" class="absolute ltr:[transform:rotateY(180deg)] rtl:[transform:rotateY(0deg)] -top-3 rtl:left-auto rtl:-right-3 ltr:-left-3">
@@ -765,9 +765,41 @@
                   </div>
                </div>
               </div>
+              <div class="swiper-button-next rounded-[20px] absolute hidden md:flex top-auto !bottom-10 right-5 w-10 h-[68px] bg-[#FFFFFF4D] active:scale-95 items-center justify-center after:content-none">
+                <img alt="icon" src="../img/svg/arrow-right.svg">
+              </div>
+              <div class="swiper-button-prev rounded-[20px] absolute hidden md:flex top-auto !bottom-10 left-5 w-10 h-[68px] bg-[#FFFFFF4D] active:scale-95 items-center justify-center after:content-none">
+                <img alt="icon" src="../img/svg/arrow-right.svg" class="rtl:rotate-180 ltr:-rotate-180">
+              </div>
             </div>
           </div>
         </section>
+
+        <!-- sidebar && content -->
+         <section class="mt-14">
+          <div class="max-w-content mx-auto px-4">
+             <div class="grid grid-cols-12 gap-6">
+               <div class="col-span-3">
+                 <div class="rounded-[20px] bg-primary px-4 py-7">
+                   <p class="font-extrabold rtl:font-PeydaBold ltr:font-MontserratBold text-white text-center">جستجو در عناوین</p>
+                   <form class="rounded-[15px] mt-5 bg-white h-12 p-2 rtl:pr-4 ltr:pl-4 flex items-center gap-2">
+                    <input class="flex-grow outline-none text-sm font-extrabold rtl:font-PeydaBold ltr:font-MontserratBold" placeholder="جستجو ">
+                    <button class="w-9 h-9 flex-shrink-0 rounded-lg flex-center bg-secondary btnHover">
+                      <img alt="icon" src="../img/svg/search-normal.svg">
+                    </button>
+                  </form>
+                  </div>
+                  <div class="rounded-[14px] mt-6 pt-5 p-[14px] bg-[#F8F7FF]">
+                    <div class="flex-between gap-2 cursor-pointer pb-[14px] border-b border-[#A4A4A4]">
+                     <p class="font-extrabold rtl:font-PeydaBold ltr:font-MontserratBold">نوع دستگاه</p>
+                     <img alt="icon" src="../img/svg/arrow-left (6).svg">
+                    </div>
+                  </div>
+               </div>
+               <div class="col-span-9"></div>
+             </div>
+          </div>
+         </section>
 
     </main>
 
