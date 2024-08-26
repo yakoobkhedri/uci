@@ -179,3 +179,26 @@ var customers = new Swiper(".customers", {
     clickable: true,
   },
 });
+var categorySwiper2 = new Swiper(".categorySwiper2", {
+  slidesPerView: 1,
+  spaceBetween: 32,
+  autoplay: true,
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+    1300: {
+      slidesPerView: 5,
+    }
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
