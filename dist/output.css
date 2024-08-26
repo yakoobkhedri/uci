@@ -757,6 +757,18 @@ video {
   top: auto;
 }
 
+.top-4 {
+  top: 1rem;
+}
+
+.top-7 {
+  top: 1.75rem;
+}
+
+.top-8 {
+  top: 2rem;
+}
+
 .-z-0 {
   z-index: 0;
 }
@@ -894,6 +906,10 @@ video {
 
 .mt-\[5px\] {
   margin-top: 5px;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
 }
 
 .line-clamp-2 {
@@ -1036,6 +1052,18 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+.h-\[292px\] {
+  height: 292px;
+}
+
+.h-\[267px\] {
+  height: 267px;
 }
 
 .\!w-\[83px\] {
