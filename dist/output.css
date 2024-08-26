@@ -677,8 +677,8 @@ video {
   top: -0.28rem;
 }
 
-.-top-\[29px\] {
-  top: -29px;
+.-top-\[36px\] {
+  top: -36px;
 }
 
 .-top-\[3px\] {
@@ -755,10 +755,6 @@ video {
 
 .top-auto {
   top: auto;
-}
-
-.-top-\[36px\] {
-  top: -36px;
 }
 
 .-z-0 {
@@ -844,6 +840,10 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mb-\[108px\] {
+  margin-bottom: 108px;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -894,10 +894,6 @@ video {
 
 .mt-\[5px\] {
   margin-top: 5px;
-}
-
-.mb-\[108px\] {
-  margin-bottom: 108px;
 }
 
 .line-clamp-2 {
@@ -1152,6 +1148,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.\!w-\[47px\] {
+  width: 47px !important;
 }
 
 .min-w-\[240px\] {
@@ -1769,6 +1769,10 @@ video {
   font-weight: 600;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .leading-3 {
   line-height: .75rem;
 }
@@ -1922,15 +1926,27 @@ video {
 }
 
 @font-face {
-  font-family: Astonia-Regular;
+  font-family: Peyda-Regular;
 
-  src: url('../src/fonts/Astonia-Regular.ttf') format("trueType");
+  src: url('../src/fonts/Peyda-Regular.ttf') format("trueType");
 }
 
 @font-face {
-  font-family: Astonia-Bold;
+  font-family: Peyda-Bold;
 
-  src: url('../src/fonts/Astonia-Bold.ttf') format("trueType");
+  src: url('../src/fonts/Peyda-Bold.ttf') format("trueType");
+}
+
+@font-face {
+  font-family: Montserrat-Regular;
+
+  src: url('../src/fonts/Montserrat-Regular.ttf') format("trueType");
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+
+  src: url('../src/fonts/Montserrat-Bold.ttf') format("trueType");
 }
 
 html {
@@ -2401,6 +2417,10 @@ input[type="number"] {
   right: auto;
 }
 
+:is([dir="ltr"] .ltr\:right-\[61px\]) {
+  right: 61px;
+}
+
 :is([dir="ltr"] .ltr\:order-last) {
   order: 9999;
 }
@@ -2465,12 +2485,12 @@ input[type="number"] {
   text-align: left;
 }
 
-:is([dir="ltr"] .ltr\:font-AstoniaBold) {
-  font-family: Astonia-Bold;
+:is([dir="ltr"] .ltr\:font-MontserratBold) {
+  font-family: Montserrat-Bold;
 }
 
-:is([dir="ltr"] .ltr\:font-AstoniaRegular) {
-  font-family: Astonia-Regular;
+:is([dir="ltr"] .ltr\:font-MontserratRegular) {
+  font-family: Montserrat-Regular;
 }
 
 :is([dir="ltr"] .ltr\:\[transform\:rotateY\(180deg\)\]) {
@@ -2608,6 +2628,10 @@ input[type="number"] {
 
 :is([dir="rtl"] .rtl\:font-yekanBakhRegular) {
   font-family: yekanBakh-Regular;
+}
+
+:is([dir="rtl"] .rtl\:font-PeydaBold) {
+  font-family: Peyda-Bold;
 }
 
 @media (min-width: 400px) {
@@ -2859,6 +2883,10 @@ input[type="number"] {
 
   .sm\:w-full {
     width: 100%;
+  }
+
+  .sm\:\!w-\[83px\] {
+    width: 83px !important;
   }
 
   .sm\:max-w-\[290px\] {

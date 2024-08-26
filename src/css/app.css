@@ -14,14 +14,24 @@
   src: url('../src/fonts/YekanBakhFaNum-Bold.woff') format("woff");
 }
 @font-face {
-  font-family: Astonia-Regular;
+  font-family: Peyda-Regular;
 
-  src: url('../src/fonts/Astonia-Regular.ttf') format("trueType");
+  src: url('../src/fonts/Peyda-Regular.ttf') format("trueType");
 }
 @font-face {
-  font-family: Astonia-Bold;
+  font-family: Peyda-Bold;
 
-  src: url('../src/fonts/Astonia-Bold.ttf') format("trueType");
+  src: url('../src/fonts/Peyda-Bold.ttf') format("trueType");
+}
+@font-face {
+  font-family: Montserrat-Regular;
+
+  src: url('../src/fonts/Montserrat-Regular.ttf') format("trueType");
+}
+@font-face {
+  font-family: Montserrat-Bold;
+
+  src: url('../src/fonts/Montserrat-Bold.ttf') format("trueType");
 }
 html {
   scroll-behavior: smooth;
