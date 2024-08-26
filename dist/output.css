@@ -3673,6 +3673,10 @@ input[type="number"] {
     grid-column: span 8 / span 8;
   }
 
+  .lg\:col-span-9 {
+    grid-column: span 9 / span 9;
+  }
+
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
