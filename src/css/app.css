@@ -282,6 +282,9 @@ input[type="number"] {
 box-shadow: 0px 5px 5px 0px #4F24FF2B;
 
 }
+.shadow-next{
+  box-shadow: -2px 0px 24px 0px #0000001A;
+}
 .bg-main-gradient-hover:hover > a{
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(79, 36, 255, 0.1) 100%);
 }
