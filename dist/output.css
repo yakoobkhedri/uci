@@ -2938,6 +2938,10 @@ input[type="number"] {
   transform: rotateY(180deg);
 }
 
+:is([dir="ltr"] .ltr\:\[direction\:ltr\]) {
+  direction: ltr;
+}
+
 :is([dir="rtl"] .rtl\:-right-1) {
   right: -0.25rem;
 }
@@ -3093,6 +3097,10 @@ input[type="number"] {
 
 :is([dir="rtl"] .rtl\:\[transform\:rotateY\(0deg\)\]) {
   transform: rotateY(0deg);
+}
+
+:is([dir="rtl"] .rtl\:\[direction\:rtl\]) {
+  direction: rtl;
 }
 
 @media (min-width: 400px) {
