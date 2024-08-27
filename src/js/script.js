@@ -191,7 +191,7 @@ var customers = new Swiper(".customers", {
   },
 });
 var categorySwiper2 = new Swiper(".categorySwiper2", {
-  slidesPerView: 1,
+  slidesPerView: 1.3,
   spaceBetween: 32,
   autoplay: true,
   breakpoints: {
