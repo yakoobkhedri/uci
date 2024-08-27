@@ -789,6 +789,10 @@ video {
   top: auto;
 }
 
+.top-1 {
+  top: 0.25rem;
+}
+
 .-z-0 {
   z-index: 0;
 }
@@ -1158,6 +1162,14 @@ video {
   height: 59px;
 }
 
+.h-56 {
+  height: 14rem;
+}
+
+.h-\[26px\] {
+  height: 26px;
+}
+
 .\!w-\[47px\] {
   width: 47px !important;
 }
@@ -1290,6 +1302,14 @@ video {
   width: 100%;
 }
 
+.w-48 {
+  width: 12rem;
+}
+
+.w-\[46px\] {
+  width: 46px;
+}
+
 .min-w-\[240px\] {
   min-width: 240px;
 }
@@ -1373,6 +1393,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-start {
@@ -1555,6 +1579,10 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded-\[17px\] {
+  border-radius: 17px;
 }
 
 .rounded-b-\[20px\] {
@@ -2019,6 +2047,10 @@ video {
   font-weight: 600;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
 .leading-3 {
   line-height: .75rem;
 }
@@ -2104,6 +2136,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#9F9F9F\] {
+  --tw-text-opacity: 1;
+  color: rgb(159 159 159 / var(--tw-text-opacity));
 }
 
 .line-through {
@@ -2806,6 +2843,14 @@ input[type="number"] {
   right: auto;
 }
 
+:is([dir="ltr"] .ltr\:left-\[50px\]) {
+  left: 50px;
+}
+
+:is([dir="ltr"] .ltr\:left-\[87px\]) {
+  left: 87px;
+}
+
 :is([dir="ltr"] .ltr\:order-last) {
   order: 9999;
 }
@@ -2945,6 +2990,14 @@ input[type="number"] {
 
 :is([dir="rtl"] .rtl\:right-\[76px\]) {
   right: 76px;
+}
+
+:is([dir="rtl"] .rtl\:right-\[50px\]) {
+  right: 50px;
+}
+
+:is([dir="rtl"] .rtl\:right-\[87px\]) {
+  right: 87px;
 }
 
 :is([dir="rtl"] .rtl\:order-first) {
@@ -3321,6 +3374,10 @@ input[type="number"] {
     max-width: 290px;
   }
 
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -3351,6 +3408,10 @@ input[type="number"] {
 
   .sm\:gap-\[14px\] {
     gap: 14px;
+  }
+
+  .sm\:gap-\[26px\] {
+    gap: 26px;
   }
 
   .sm\:gap-x-10 {
@@ -3676,6 +3737,14 @@ input[type="number"] {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:gap-5 {
     gap: 1.25rem;
   }
@@ -3814,6 +3883,10 @@ input[type="number"] {
     width: auto;
   }
 
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -3905,6 +3978,10 @@ input[type="number"] {
 
   .xl\:w-auto {
     width: auto;
+  }
+
+  .xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .xl\:gap-11 {
