@@ -1082,30 +1082,33 @@
     </section>
 
     <!-- cart -->
-     <section class="mt-32">
+     <section class="mt-20">
       <div class="max-w-content mx-auto px-4">
-        <div class="flex items-center gap-2 rtl:mr-4 ltr:ml-4">
-          <div class="rounded-[14px] rtl:ml-1 ltr:mr-1 relative top-11 bg-[#4F24FF1A] flex-shrink-0 w-[61px] h-[61px] flex items-center justify-center">
+        <div class="flex items-center relative z-10 top-11 gap-2 rtl:mr-2 rtl:sm:mr-4 ltr:ml-2 ltr:sm:ml-4">
+          <div class="rounded-[14px] shadow-2 rtl:ml-1 ltr:mr-1 relative top-11 bg-[#4F24FF1A] flex-shrink-0 w-[61px] h-[61px] flex items-center justify-center">
             <div class="flex items-center justify-center w-[50px] h-[50px] rounded-[14px] bg-primary">
               <img alt="icon" src="../img/svg/shopping-cart.svg" class="block w-6 h-6">
             </div>
           </div>
-          <p class="font-extrabold text-2xl rtl:font-PeydaBold ltr:font-MontserratBold">سبد خرید</p>
-          <p class="w-7 h-7 flex-center bg-secondary text-white font-bold text-sm rounded-full rtl:font-yekanBakhBold ltr:font-MontserratBold">10</p>
+          <p class="font-extrabold relative -top-[5px] sm:static text-lg sm:text-2xl rtl:font-PeydaBold ltr:font-MontserratBold rtl:-mr-7 rtl:sm:mr-0 ltr:-ml-7 ltr:sm:ml-0">سبد خرید</p>
+          <p class="w-7 h-7 relative -top-[5px] sm:static flex-center bg-secondary text-white font-bold text-sm rounded-full rtl:font-yekanBakhBold ltr:font-MontserratBold">10</p>
         </div>
-        <div class="grid grid-cols-12 gap-8 px-4 pt-20 bg-white shadow-2 rounded-[20px]">
-          <div class="col-span-8">
+        <div class="grid grid-cols-12 relative gap-y-16 xl:gap-y-0 xl:gap-x-8 rtl:pl-4 rtl:xl:pl-0 ltr:pr-4 ltr:xl:pr-0 ltr:pl-4 rtl:pr-4 pt-20 bg-white shadow-2 rounded-[20px]">
+          <!-- shape -->
+           <img alt="shape" src="../img/svg/Vector 786.svg" class="absolute ltr:[transform:rotateY(180deg)] w-[288px] sm:w-auto -top-[21px] sm:-top-7 rtl:right-5 rtl:sm:right-[34px] ltr:left-5 ltr:sm:left-[34px]">
+          <!--  -->
+          <div class="xl:col-span-8 col-span-12">
             <div>
-              <div class="grid grid-cols-12 gap-8 py-10 border-t">
-               <div class="col-span-3">
+              <div class="grid grid-cols-12 gap-y-8 md:gap-y-0 md:gap-x-5 lg:gap-x-8 py-10 border-t">
+               <div class="md:col-span-3 col-span-12">
                 <div class="w-full h-[188px] rounded-[15px] bg-[#F8F7FF] flex-center">
                   <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png" class="w-[94px] h-[128px]">
                 </div>
                </div>
-               <div class="col-span-5">
+               <div class="md:col-span-5 sm:col-span-6 col-span-12">
                 <div class="flex items-center gap-8">
                   <a class="font-bold hover:text-primary transition rtl:font-PeydaBold ltr:font-MontserratBold text-lg">کش لس AMP 8200 مدل سیار</a>
-                  <p class="flex-center rounded-lg w-[46px] h-[26px] bg-[#FF1919] text-white font-semibold">28%</p>
+                  <p class="flex-center rounded-lg w-[46px] h-[26px] bg-[#FF1919] flex-shrink-0 text-white font-semibold">28%</p>
                 </div>
                 <div class="mt-[26px]">
                   <div class="flex items-center gap-2 font-semibold mb-[22px]">
@@ -1123,7 +1126,7 @@
                   </div>
                 </div>
                </div>
-               <div class="col-span-4">
+               <div class="md:col-span-4 sm:col-span-6 col-span-12">
                  <div class="flex flex-col justify-between h-full">
                   <div>
                     <div class="flex items-center justify-end gap-[6px]">
@@ -1132,8 +1135,8 @@
                    </div>
                    <p class="font-semibold line-through mt-2 rtl:text-left ltr:text-right">۳۷.۰۰۰.۰۰۰</p>
                   </div>
-                 <form class="flex items-center justify-center md:justify-end gap-7">
-                  <div class="flex items-center gap-2 h-[51px] px-2 rounded-[5px] border">
+                 <form class="flex items-center justify-end gap-7 mt-14 sm:mt-0">
+                  <div class="flex items-center gap-2 h-[51px] px-2 rounded-[5px] border border-primary overflow-hidden">
                       <button class="flex-shrink-0 hover:scale-110 w-6 h-full flex-center cursor-pointer">
                           <img alt="icon" src="../img/svg/fi-rr-minus-small.svg">
                       </button>
@@ -1142,23 +1145,23 @@
                         <img alt="icon" src="../img/svg/fi-rr-plus-small.svg">
                       </button>
                   </div>
-                  <button>
+                  <button class="hover:scale-110">
                       <img alt="icon" src="../img/svg/trash.svg">
                   </button>
                  </form>
                  </div>
                </div>
               </div>
-              <div class="grid grid-cols-12 gap-8 py-10 border-t">
-                <div class="col-span-3">
+              <div class="grid grid-cols-12 gap-y-8 md:gap-y-0 md:gap-x-5 lg:gap-x-8 py-10 border-t">
+                <div class="md:col-span-3 col-span-12">
                  <div class="w-full h-[188px] rounded-[15px] bg-[#F8F7FF] flex-center">
                    <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png" class="w-[94px] h-[128px]">
                  </div>
                 </div>
-                <div class="col-span-5">
+                <div class="md:col-span-5 sm:col-span-6 col-span-12">
                  <div class="flex items-center gap-8">
                    <a class="font-bold hover:text-primary transition rtl:font-PeydaBold ltr:font-MontserratBold text-lg">کش لس AMP 8200 مدل سیار</a>
-                   <p class="flex-center rounded-lg w-[46px] h-[26px] bg-[#FF1919] text-white font-semibold">28%</p>
+                   <p class="flex-center rounded-lg w-[46px] h-[26px] bg-[#FF1919] flex-shrink-0 text-white font-semibold">28%</p>
                  </div>
                  <div class="mt-[26px]">
                    <div class="flex items-center gap-2 font-semibold mb-[22px]">
@@ -1176,7 +1179,7 @@
                    </div>
                  </div>
                 </div>
-                <div class="col-span-4">
+                <div class="md:col-span-4 sm:col-span-6 col-span-12">
                   <div class="flex flex-col justify-between h-full">
                    <div>
                      <div class="flex items-center justify-end gap-[6px]">
@@ -1185,8 +1188,8 @@
                     </div>
                     <p class="font-semibold line-through mt-2 rtl:text-left ltr:text-right">۳۷.۰۰۰.۰۰۰</p>
                    </div>
-                  <form class="flex items-center justify-center md:justify-end gap-7">
-                   <div class="flex items-center gap-2 h-[51px] px-2 rounded-[5px] border">
+                  <form class="flex items-center justify-end gap-7 mt-14 sm:mt-0">
+                   <div class="flex items-center gap-2 h-[51px] px-2 rounded-[5px] border border-primary overflow-hidden">
                        <button class="flex-shrink-0 hover:scale-110 w-6 h-full flex-center cursor-pointer">
                            <img alt="icon" src="../img/svg/fi-rr-minus-small.svg">
                        </button>
@@ -1195,7 +1198,7 @@
                          <img alt="icon" src="../img/svg/fi-rr-plus-small.svg">
                        </button>
                    </div>
-                   <button>
+                   <button class="hover:scale-110">
                        <img alt="icon" src="../img/svg/trash.svg">
                    </button>
                   </form>
@@ -1204,10 +1207,40 @@
                </div>
             </div>
           </div>
-          <div class="col-span-4">
-            <div class="rounded-[20px] relative bg-[#F8F7FF] px-[14px] pt-[26px] pb-[22px]">
+          <div class="xl:col-span-4 col-span-12 pb-9">
+            <div class="rounded-[20px] sticky top-9 -mt-[45px] bg-[#F8F7FF] px-[14px] pt-[26px] pb-3">
               <div class="rounded-t-[15px] bg-primary h-3 inset-x-0 -top-3 mx-8 absolute"></div>
               <div class="rounded-t-[15px] bg-[#EAE8F9] h-3 inset-x-0 -top-6 mx-16 absolute"></div>
+              <div class="rounded-b-[15px] bg-primary h-3 inset-x-0 -bottom-3 mx-8 absolute"></div>
+              <div class="rounded-b-[15px] bg-[#EAE8F9] h-3 inset-x-0 -bottom-6 mx-16 absolute"></div>
+              <div class="flex-between gap-1 mb-[26px]">
+               <div class="flex items-center gap-2">
+                 <img alt="icon" src="../img/svg/moneys.svg">
+                 <p class="font-semibold">جمع مبلغ کالاها:</p>
+               </div>
+               <div class="flex items-center gap-[6px]">
+                 <p class="font-bold rtl:font-yekanBakhBold ltr:font-MontserratBold text-[19px]">36,000,000</p>
+                 <p class="text-xs">تومان</p>
+               </div>
+              </div>
+              <div class="flex-between gap-1 mb-6">
+                <div class="flex items-center gap-2">
+                  <img alt="icon" src="../img/svg/ticket-discount.svg">
+                  <p class="font-semibold">تخفیف:</p>
+                </div>
+                <div class="flex items-center gap-[6px]">
+                  <p class="font-bold rtl:font-yekanBakhBold ltr:font-MontserratBold text-[19px]">1,000,000</p>
+                  <p class="text-xs">تومان</p>
+                </div>
+              </div>
+              <div class="bg-white rounded-[30px] h-[62px] flex-between gap-1 px-5">
+                <p class="font-extrabold text-sm rtl:font-yekanBakhBold ltr:font-MontserratBold">مبلغ قابل پرداخت:</p>
+                <div class="flex items-center justify-end gap-[6px]">
+                  <p class="text-2xl font-black text-[#00D222] rtl:font-yekanBakhBold ltr:font-MontserratBold">36,000,000</p>
+                  <p class="text-sm text-[#424242]">تومان</p>
+               </div>
+              </div>
+              <a class="h-11 flex-center btnHover mx-9 -top-3 rounded-[20px] bg-secondary text-white font-bold rtl:font-yekanBakhBold ltr:font-MontserratBold">ادامه و پرداخت</a>
             </div>
           </div>
         </div>
@@ -1486,7 +1519,7 @@
       </div>
       <div class="absolute -top-[3px]  min-[400px]:-top-1 min-[450px]:-top-1 inset-x-0">
         <a class="flex justify-center items-center flex-col w-[90px] mx-auto gap-5" href="#">
-          <span class="w-12 h-12 rounded-full bg-primary shadow-4 flex justify-center items-center">
+          <span class="w-12 h-12 rounded-full bg-primary shadow-3 flex justify-center items-center">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M11.2929 3.293C11.4804 3.10553 11.7348 3.00021 11.9999 3.00021C12.2651 3.00021 12.5194 3.10553 12.7069 3.293L18.7069 9.293L20.7069 11.293C20.8891 11.4816 20.9899 11.7342 20.9876 11.9964C20.9853 12.2586 20.8801 12.5094 20.6947 12.6948C20.5093 12.8802 20.2585 12.9854 19.9963 12.9877C19.7341 12.99 19.4815 12.8892 19.2929 12.707L18.9999 12.414V19C18.9999 19.5304 18.7892 20.0391 18.4141 20.4142C18.0391 20.7893 17.5304 21 16.9999 21H13.9999C13.7347 21 13.4803 20.8946 13.2928 20.7071C13.1053 20.5196 12.9999 20.2652 12.9999 20V17H10.9999V20C10.9999 20.2652 10.8946 20.5196 10.707 20.7071C10.5195 20.8946 10.2651 21 9.99992 21H6.99992C6.46949 21 5.96078 20.7893 5.58571 20.4142C5.21063 20.0391 4.99992 19.5304 4.99992 19V12.414L4.70692 12.707C4.51832 12.8892 4.26571 12.99 4.00352 12.9877C3.74132 12.9854 3.49051 12.8802 3.3051 12.6948C3.11969 12.5094 3.01452 12.2586 3.01224 11.9964C3.00997 11.7342 3.11076 11.4816 3.29292 11.293L5.29292 9.293L11.2929 3.293Z"
