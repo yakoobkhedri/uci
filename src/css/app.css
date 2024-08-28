@@ -283,13 +283,13 @@ box-shadow: 0px 5px 5px 0px #4F24FF2B;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(79, 36, 255, 0.1) 100%);
 }
 .bg-moshavere {
-  background-image: url('../../UCI/src/img/bg.png');
+  background-image: url('../../src/img/bg.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .bg-customer {
-  background-image: url('../../UCI/src/img/Group 4998.png');
+  background-image: url('../../src/img/Group 4998.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
