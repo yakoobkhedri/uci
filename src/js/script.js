@@ -213,3 +213,12 @@ var categorySwiper2 = new Swiper(".categorySwiper2", {
     prevEl: ".swiper-button-prev",
   },
 });
+var business = new Swiper(".business", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  autoplay: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
