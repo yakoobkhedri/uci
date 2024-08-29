@@ -2817,7 +2817,7 @@ input[type="number"] {
 }
 
 .bg-customer {
-  background-image: url('../../src/img/Group 4998.png');
+  background-image: url('../src/img/Group 4998.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
