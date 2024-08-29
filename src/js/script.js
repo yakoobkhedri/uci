@@ -174,6 +174,7 @@ var customers = new Swiper(".customers", {
   slidesPerView: 2,
   spaceBetween: 16,
   autoplay: true,
+  loop:true,
   breakpoints: {
     576: {
       spaceBetween: 24,
@@ -188,6 +189,10 @@ var customers = new Swiper(".customers", {
   pagination: {
     el: ".swiper-pagination5",
     clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next2",
+    prevEl: ".swiper-button-prev2",
   },
 });
 var categorySwiper2 = new Swiper(".categorySwiper2", {
