@@ -209,7 +209,18 @@ input[type="number"] {
   background-color: white !important;
   border-radius: 10px !important;
 }
-
+.mySwiper .swiper-slide {
+  opacity: 0.4;
+}
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+.mySwiper .swiper-slide-thumb-active > div {
+  border: 1px solid #E6E6E6;
+}
+.tabs .swiper-slide:hover{
+  color: #FF6F1D;
+}
 /* hover */
 .btnHover {
   position: relative;

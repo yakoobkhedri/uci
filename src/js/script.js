@@ -245,3 +245,40 @@ var business = new Swiper(".business", {
     prevEl: ".swiper-button-prev",
   },
 });
+var mySwiper = new Swiper(".mySwiper", {
+  loop: true,
+  spaceBetween: 10,
+  slidesPerView: 3,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var mySwiper2 = new Swiper(".mySwiper2", {
+  loop: true,
+  spaceBetween: 10,
+  thumbs: {
+    swiper: mySwiper,
+  },
+});
+var tabs = new Swiper(".tabs", {
+  slidesPerView: 2,
+  spaceBetween: 5,
+  autoplay: true,
+  breakpoints: {
+    576: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 4,
+    },
+    1024: {
+      slidesPerView: 5,
+    },
+    1200: {
+      slidesPerView: 6,
+    }
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
