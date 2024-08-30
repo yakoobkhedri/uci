@@ -261,7 +261,7 @@ var mySwiper2 = new Swiper(".mySwiper2", {
 });
 var tabs = new Swiper(".tabs", {
   slidesPerView: 2,
-  spaceBetween: 5,
+  spaceBetween: 0,
   autoplay: true,
   breakpoints: {
     576: {
@@ -273,7 +273,7 @@ var tabs = new Swiper(".tabs", {
     1024: {
       slidesPerView: 5,
     },
-    1200: {
+    1300: {
       slidesPerView: 6,
     }
   },

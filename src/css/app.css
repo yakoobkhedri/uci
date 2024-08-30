@@ -74,7 +74,10 @@ header ul li.active::after {
   background-color: rgba(255, 255, 255, 0.91);
   backdrop-filter: blur(4px);
 }
-
+.bg-blur2 {
+  background-color: #FFFFFF0F;
+  backdrop-filter: blur(4px);
+}
 #hamIcon.active svg:last-child{
   display: block;
 }
@@ -218,8 +221,13 @@ input[type="number"] {
 .mySwiper .swiper-slide-thumb-active > div {
   border: 1px solid #E6E6E6;
 }
-.tabs .swiper-slide:hover{
+.tabs .swiper-slide:hover,
+.tabs .swiper-slide.active{
   color: #FF6F1D;
+}
+.tabs .swiper-slide.active img,
+.tabs .swiper-slide.active div{
+  opacity: 100%;
 }
 /* hover */
 .btnHover {
