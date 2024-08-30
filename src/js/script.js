@@ -190,6 +190,24 @@ var customers = new Swiper(".customers", {
     el: ".swiper-pagination5",
     clickable: true,
   },
+});
+var customers2 = new Swiper(".customers2", {
+  slidesPerView: 1,
+  spaceBetween: 16,
+  autoplay: true,
+  loop:true,
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    }
+  },
   navigation: {
     nextEl: ".swiper-button-next2",
     prevEl: ".swiper-button-prev2",
