@@ -262,7 +262,6 @@ var mySwiper2 = new Swiper(".mySwiper2", {
 var tabs = new Swiper(".tabs", {
   slidesPerView: 2,
   spaceBetween: 0,
-  autoplay: true,
   breakpoints: {
     576: {
       slidesPerView: 3,
@@ -280,5 +279,22 @@ var tabs = new Swiper(".tabs", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+});
+var karbord = new Swiper(".karbord", {
+  slidesPerView: 1.3,
+  spaceBetween: 24,
+  autoplay: true,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    }
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
   },
 });

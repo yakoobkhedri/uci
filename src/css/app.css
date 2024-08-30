@@ -134,7 +134,19 @@ header ul li.active::after {
 input[type="number"] {
   -moz-appearance: textfield;
 }
-
+/* editor section */
+.editorSection ul {
+  margin-right: 1rem;
+  padding-right: 23px;
+}
+.editorSection ul li::before {
+  content: url('../src/img/svg/Vector6.svg');
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  right: -34px;
+}
 /* lang dropdown */
 .langDropdown {
   transition: all .4s;
@@ -197,7 +209,8 @@ input[type="number"] {
   font-size: 9px!important;
 }
 .solution .swiper-pagination-bullet,
-.work .swiper-pagination-bullet {
+.work .swiper-pagination-bullet,
+.karbordBox .swiper-pagination-bullet {
   width: 10px !important;
   height: 10px !important;
   background-color: #FFFFFF80 !important;
@@ -207,7 +220,8 @@ input[type="number"] {
 }
 
 .solution .swiper-pagination-bullet-active,
-.work .swiper-pagination-bullet-active {
+.work .swiper-pagination-bullet-active,
+.karbordBox .swiper-pagination-bullet-active {
   width: 43px !important;
   background-color: white !important;
   border-radius: 10px !important;
