@@ -14,1044 +14,724 @@
   <!-- header -->
   <header class="relative pt-4 lg:pt-0">
     <div class="max-w-content mx-auto px-4 hidden lg:flex items-center justify-between gap-3 py-6">
-      <div class="flex-center gap-6">
-        <div class="relative language-link">
-          <a class="flex items-center gap-4 p-2 rtl:pr-4 relative rounded-[30px] border border-[#B9B9B9]">
-            <p class="font-semibold text-lg" id="langText">فارسی</p>
-            <img alt="lang" src="../img/Mask group.png" class="w-9 langIcon h-9 rounded-full block">
-          </a>
-          <!-- language dropdown -->
-          <div
-            class="langDropdown z-20 rounded-[21px] mt-6 top-9 bg-white absolute ltr:left-0 ltr:right-auto right-0 shadow w-36 sm:w-44">
-            <div data-id="1"
-              class="flex items-center gap-3 cursor-pointer rounded-[21px] p-2 transition hover:bg-gray-100">
-              <img alt="lang" src="../img/circle-flags_uk (2).png" class="w-7 h-7 rounded-full block">
-              <div class="text-dark">
-                <p>English</p>
-                <p class="text-sm opacity-50">انگلیسی</p>
-              </div>
+        <div class="flex-center gap-6">
+            <div class="relative language-link">
+                <a class="flex items-center gap-4 p-2 rtl:pr-4 relative rounded-[30px] border border-[#B9B9B9]">
+                    <p class="font-semibold text-lg" id="langText">فارسی</p>
+                    <img alt="lang" src="../img/Mask group.png" class="w-9 langIcon h-9 rounded-full block">
+                </a>
+                <!-- language dropdown -->
+                <div
+                    class="langDropdown z-20 rounded-[21px] mt-6 top-9 bg-white absolute ltr:left-0 ltr:right-auto right-0 shadow w-36 sm:w-44">
+                    <div data-id="1"
+                        class="flex items-center gap-3 cursor-pointer rounded-[21px] p-2 transition hover:bg-gray-100">
+                        <img alt="lang" src="../img/circle-flags_uk (2).png" class="w-7 h-7 rounded-full block">
+                        <div class="text-dark">
+                            <p>English</p>
+                            <p class="text-sm opacity-50">انگلیسی</p>
+                        </div>
+                    </div>
+                    <div data-id="2"
+                        class="flex items-center gap-3 cursor-pointer rounded-[21px] p-2 transition-all hover:bg-gray-100">
+                        <img alt="lang" src="../img/Mask group.png" class="w-7 h-7 rounded-full block">
+                        <div class="text-dark">
+                            <p>فارسی</p>
+                            <p class="text-sm opacity-50">Persian</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div data-id="2"
-              class="flex items-center gap-3 cursor-pointer rounded-[21px] p-2 transition-all hover:bg-gray-100">
-              <img alt="lang" src="../img/Mask group.png" class="w-7 h-7 rounded-full block">
-              <div class="text-dark">
-                <p>فارسی</p>
-                <p class="text-sm opacity-50">Persian</p>
-              </div>
-            </div>
-          </div>
+            <a class="flex-center gap-3 ltr:font-MontserratBold rtl:font-yekanBakhBold">
+                <div>
+                    <p class="text-secondary text-2xl font-extrabold">
+                        <span class="font-semibold text-lg text-black">021-</span>1234567
+                    </p>
+                    <p class="text-sm font-semibold text-[#393939] rtl:font-yekanBakhRegular">پاسخگویی سریع</p>
+                </div>
+                <img alt="icon" src="../img/svg/call.svg" class="block w-7 h-7">
+            </a>
         </div>
-        <a class="flex-center gap-3 ltr:font-MontserratBold rtl:font-yekanBakhBold">
-          <div>
-            <p class="text-secondary text-2xl font-extrabold">
-              <span class="font-semibold text-lg text-black">021-</span>1234567
-            </p>
-            <p class="text-sm font-semibold text-[#393939] rtl:font-yekanBakhRegular">پاسخگویی سریع</p>
-          </div>
-          <img alt="icon" src="../img/svg/call.svg" class="block w-7 h-7">
-        </a>
-      </div>
-      <div class="flex-center gap-3">
-        <a class="w-[52px] h-[52px] flex-shrink-0 rounded-full relative bg-[#00D222] flex-center">
-          <!-- cart num -->
-          <p
-            class="absolute animate-bounce font-bold ltr:font-MontserratBold rtl:font-yekanBakhBold text-sm w-5 h-5 bg-black rounded-full flex-center top-0 rtl:-right-1 ltr:-left-1 text-white">
-            10</p>
-          <!--  -->
-          <img alt="icon" src="../img/svg/shopping-cart.svg" class="block w-6 h-6">
-        </a>
-        <a class="h-[52px] rounded-[30px] border border-[#B9B9B9] flex-center gap-[10px] px-6 py-3 bg-white">
-          <p class="font-semibold text-lg">حساب کاربری</p>
-          <img alt="icon" src="../img/svg/arrow-down.svg" class="block w-6 h-6">
-        </a>
-      </div>
+        <div class="flex-center gap-3">
+            <a class="w-[52px] h-[52px] flex-shrink-0 rounded-full relative bg-[#00D222] flex-center">
+                <!-- cart num -->
+                <p
+                    class="absolute animate-bounce font-bold ltr:font-MontserratBold rtl:font-yekanBakhBold text-sm w-5 h-5 bg-white rounded-full flex-center top-0 rtl:-right-1 ltr:-left-1 text-[#393939]">
+                    10</p>
+                <!--  -->
+                <img alt="icon" src="../img/svg/shopping-cart.svg" class="block w-6 h-6">
+            </a>
+            <a class="h-[52px] rounded-[30px] flex-center gap-[10px] px-6 py-3 bg-white">
+                <p class="font-semibold text-lg">حساب کاربری</p>
+                <img alt="icon" src="../img/svg/arrow-down.svg" class="block w-6 h-6">
+            </a>
+        </div>
     </div>
     <div class="max-w-content mx-auto px-4">
-      <div
-        class="lg:rounded-[80px] rounded-[15px] transition bg-white px-3 lg:rtl:pr-9 lg:ltr:pl-9 py-3 lg:px-4 shadow-header flex-between gap-3">
-        <div class="flex items-center gap-4 xl:gap-11">
-          <!-- logo -->
-          <a><img alt="logo" src="../img/UCI Logo 1.png"
-              class="block transition w-[53px] lg:w-[87px] h-[42px] lg:h-[70px]"></a>
-          <!-- menu -->
-          <ul class="hidden lg:flex items-center xl:gap-4 text-base xl:text-lg font-semibold">
-            <li class="py-[5px] rounded-[20px] transition hover:text-white px-3 hover:bg-primary"><a>صفحه اصلی</a></li>
-            <li
-              class="py-[5px] cursor-pointer group relative rounded-[20px] transition hover:text-white px-3 hover:bg-primary">
-              <p>محصولات</p>
-              <!-- dropdown -->
-              <div
-                class="absolute transition opacity-0 invisible group-hover:opacity-100 group-hover:visible rtl:right-0 ltr:left-0 top-14 group-hover:top-8 xl:group-hover:top-9 z-20">
-                <div class="bg-white rounded-[20px] shadow-2 p-3 pt-12 mt-4 w-[300px] relative">
-                  <!-- arrow -->
-                  <svg class="absolute rtl:right-14 ltr:left-14 -top-[0.28rem]" width="55" height="25"
-                    viewBox="0 0 91 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M2.84075 0.241669L0 0H91L90.3981 0.0625546C84.5157 0.673857 78.9453 3.01014 74.3867 6.77782L57.4241 20.7977C51.6296 25.5869 43.2824 25.6963 37.3644 21.0606L18.7974 6.5167C14.2023 2.91722 8.65685 0.736457 2.84075 0.241669Z"
-                      fill="#eeeeee" />
-                  </svg>
-                  <div class="w-3 h-3 bg-primary rounded-full absolute -top-1 rtl:right-[76px] ltr:left-[78px]"></div>
-                  <!--  -->
-                  <ul>
-                    <li
-                      class="bg-main-gradient-hover dropdown2-hover transition relative svg-main-hover group cursor-pointer">
-                      <a
-                        class="flex-between group transition hover:text-primary text-[#A4A4A4] p-2 rtl:pl-4 ltr:pr-4 rounded-[20px]">
-                        <div class="flex items-center gap-2">
-                          <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                              fill="#A4A4A4" />
-                            <path
-                              d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                              fill="#A4A4A4" />
-                          </svg>
-                          <p
-                            class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">
-                            کش لس</p>
-                        </div>
-                        <img alt="icon" src="../img/svg/arrow-left (5).svg" class="opacity-0 transition">
-                      </a>
-                      <div
-                        class="absolute top-0 rtl:right-[265px] ltr:left-[265px] rtl:left-auto ltr:right-auto transition z-20 invisible">
-                        <div
-                          class="px-3 py-5 bg-white w-auto rounded-[20px] shadow-2 relative rtl:right-[26px] ltr:left-[26px] min-w-[240px]">
-                          <div class="flex items-center gap-1 pb-2 border-b mb-1">
-                            <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24"
-                              fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                                fill="#4F24FF" />
-                              <path
-                                d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                                fill="#4F24FF" />
-                            </svg>
-                            <p
-                              class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition text-primary">
-                              کش لس</p>
-                          </div>
-                          <ul>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>کش لس 1 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>کش لس 2 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>کش لس 3 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>کش لس 4 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>کش لس 5 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>کش لس 6 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>کش لس 7 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>کش لس 8 </a></li>
-                          </ul>
-                        </div>
-                    </li>
-                    <li
-                      class="bg-main-gradient-hover dropdown2-hover transition relative svg-main-hover group cursor-pointer">
-                      <a
-                        class="flex-between group transition hover:text-primary text-[#A4A4A4] p-2 rtl:pl-4 ltr:pr-4 rounded-[20px]">
-                        <div class="flex items-center gap-2">
-                          <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                              fill="#A4A4A4" />
-                            <path
-                              d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                              fill="#A4A4A4" />
-                          </svg>
-                          <p
-                            class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">
-                            کیوسک بانکی</p>
-                        </div>
-                        <img alt="icon" src="../img/svg/arrow-left (5).svg" class="opacity-0 transition">
-                      </a>
-                      <div
-                        class="absolute top-0 rtl:right-[265px] ltr:left-[265px] rtl:left-auto ltr:right-auto transition z-20 invisible">
-                        <div
-                          class="px-3 py-5 bg-white w-auto rounded-[20px] shadow-2 relative rtl:right-[26px] ltr:left-[26px] min-w-[240px]">
-                          <div class="flex items-center gap-1 pb-2 border-b mb-1">
-                            <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24"
-                              fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                                fill="#4F24FF" />
-                              <path
-                                d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                                fill="#4F24FF" />
-                            </svg>
-                            <p
-                              class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition text-primary">
-                              کیوسک بانکی</p>
-                          </div>
-                          <ul>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>کیوسک بانکی 1 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>کیوسک بانکی 2 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>کیوسک بانکی 3 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>کیوسک بانکی 4 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>کیوسک بانکی 5 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>کیوسک بانکی 6 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>کیوسک بانکی 7 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>کیوسک بانکی 8 </a></li>
-                          </ul>
-                        </div>
+        <div class="lg:rounded-[80px] rounded-[15px] transition bg-white px-3 lg:rtl:pr-9 lg:ltr:pl-9 py-3 lg:px-4 shadow-header flex-between gap-3">
+            <div class="flex items-center gap-4 xl:gap-11">
+                <!-- logo -->
+                <a><img alt="logo" src="../img/UCI Logo 1.png" class="block transition w-[53px] lg:w-[87px] h-[42px] lg:h-[70px]"></a>
+                <!-- menu -->
+                <ul class="hidden lg:flex items-center xl:gap-4 text-base xl:text-lg font-semibold">
+                    <li class="py-[5px] rounded-[20px] transition hover:text-white px-3 hover:bg-primary"><a>صفحه اصلی</a></li>
+                    <li class="py-[5px] cursor-pointer group relative rounded-[20px] transition hover:text-white px-3 hover:bg-primary">
+                      <p>محصولات</p>
+                      <!-- dropdown -->
+                      <div class="absolute transition opacity-0 invisible group-hover:opacity-100 group-hover:visible rtl:right-0 ltr:left-0 top-14 group-hover:top-8 xl:group-hover:top-9 z-20">
+                         <div class="bg-white rounded-[20px] shadow-2 p-3 pt-12 mt-4 w-[300px] relative">
+                           <!-- arrow -->
+                           <svg class="absolute rtl:right-14 ltr:left-14 -top-[0.28rem]" width="55" height="25" viewBox="0 0 91 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.84075 0.241669L0 0H91L90.3981 0.0625546C84.5157 0.673857 78.9453 3.01014 74.3867 6.77782L57.4241 20.7977C51.6296 25.5869 43.2824 25.6963 37.3644 21.0606L18.7974 6.5167C14.2023 2.91722 8.65685 0.736457 2.84075 0.241669Z" fill="#eeeeee"/>
+                           </svg>
+                           <div class="w-3 h-3 bg-primary rounded-full absolute -top-1 rtl:right-[76px] ltr:left-[78px]"></div>
+                            <!--  -->
+                           <ul>
+                            <li class="bg-main-gradient-hover dropdown2-hover transition relative svg-main-hover group cursor-pointer">
+                              <a class="flex-between group transition hover:text-primary text-[#A4A4A4] p-2 rtl:pl-4 ltr:pr-4 rounded-[20px]">
+                               <div class="flex items-center gap-2">
+                                <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#A4A4A4"/>
+                                  <path d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#A4A4A4"/>
+                                </svg>
+                                <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">کش لس</p>
+                               </div>
+                               <img alt="icon" src="../img/svg/arrow-left (5).svg" class="opacity-0 transition">
+                              </a>
+                              <div class="absolute top-0 rtl:right-[265px] ltr:left-[265px] rtl:left-auto ltr:right-auto transition z-20 invisible">
+                                <div class="px-3 py-5 bg-white w-auto rounded-[20px] shadow-2 relative rtl:right-[26px] ltr:left-[26px] min-w-[240px]">
+                                  <div class="flex items-center gap-1 pb-2 border-b mb-1">
+                                    <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#4F24FF"/>
+                                      <path d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#4F24FF"/>
+                                    </svg>
+                                    <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition text-primary">کش لس</p>
+                                   </div>
+                                  <ul>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کش لس  1 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کش لس  2 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کش لس  3 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کش لس  4 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کش لس  5 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کش لس  6 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کش لس  7 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کش لس  8 </a></li>
+                                  </ul>
+                                </div>
+                                                         </li>
+                            <li class="bg-main-gradient-hover dropdown2-hover transition relative svg-main-hover group cursor-pointer">
+                              <a class="flex-between group transition hover:text-primary text-[#A4A4A4] p-2 rtl:pl-4 ltr:pr-4 rounded-[20px]">
+                               <div class="flex items-center gap-2">
+                                <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#A4A4A4"/>
+                                  <path d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#A4A4A4"/>
+                                </svg>
+                                <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">کیوسک بانکی</p>
+                               </div>
+                               <img alt="icon" src="../img/svg/arrow-left (5).svg" class="opacity-0 transition">
+                              </a>
+                              <div class="absolute top-0 rtl:right-[265px] ltr:left-[265px] rtl:left-auto ltr:right-auto transition z-20 invisible">
+                                <div class="px-3 py-5 bg-white w-auto rounded-[20px] shadow-2 relative rtl:right-[26px] ltr:left-[26px] min-w-[240px]">
+                                  <div class="flex items-center gap-1 pb-2 border-b mb-1">
+                                    <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#4F24FF"/>
+                                      <path d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#4F24FF"/>
+                                    </svg>
+                                    <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition text-primary">کیوسک بانکی</p>
+                                   </div>
+                                  <ul>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کیوسک بانکی  1 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کیوسک بانکی  2 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کیوسک بانکی  3 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کیوسک بانکی  4 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کیوسک بانکی  5 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کیوسک بانکی  6 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کیوسک بانکی  7 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کیوسک بانکی  8 </a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="bg-main-gradient-hover dropdown2-hover transition relative svg-main-hover group cursor-pointer">
+                              <a class="flex-between group transition hover:text-primary text-[#A4A4A4] p-2 rtl:pl-4 ltr:pr-4 rounded-[20px]">
+                               <div class="flex items-center gap-2">
+                                <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#A4A4A4"/>
+                                  <path d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#A4A4A4"/>
+                                </svg>
+                                <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">دستگاه پرداخت خودکار(APS)</p>
+                               </div>
+                               <img alt="icon" src="../img/svg/arrow-left (5).svg" class="opacity-0 transition">
+                              </a>
+                              <div class="absolute top-0 rtl:right-[265px] ltr:left-[265px] rtl:left-auto ltr:right-auto transition z-20 invisible">
+                                <div class="px-3 py-5 bg-white w-auto rounded-[20px] shadow-2 relative rtl:right-[26px] ltr:left-[26px] min-w-[240px]">
+                                  <div class="flex items-center gap-1 pb-2 border-b mb-1">
+                                    <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#4F24FF"/>
+                                      <path d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#4F24FF"/>
+                                    </svg>
+                                    <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition text-primary">دستگاه پرداخت خودکار(APS)</p>
+                                   </div>
+                                  <ul>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">دستگاه پرداخت خودکار(APS)  1 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">دستگاه پرداخت خودکار(APS)  2 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">دستگاه پرداخت خودکار(APS)  3 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">دستگاه پرداخت خودکار(APS)  4 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">دستگاه پرداخت خودکار(APS)  5 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">دستگاه پرداخت خودکار(APS)  6 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">دستگاه پرداخت خودکار(APS)  7 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">دستگاه پرداخت خودکار(APS)  8 </a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="bg-main-gradient-hover dropdown2-hover transition relative svg-main-hover group cursor-pointer">
+                              <a class="flex-between group transition hover:text-primary text-[#A4A4A4] p-2 rtl:pl-4 ltr:pr-4 rounded-[20px]">
+                               <div class="flex items-center gap-2">
+                                <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#A4A4A4"/>
+                                  <path d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#A4A4A4"/>
+                                </svg>
+                                <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">پوز کیوسک</p>
+                               </div>
+                               <img alt="icon" src="../img/svg/arrow-left (5).svg" class="opacity-0 transition">
+                              </a>
+                              <div class="absolute top-0 rtl:right-[265px] ltr:left-[265px] rtl:left-auto ltr:right-auto transition z-20 invisible">
+                                <div class="px-3 py-5 bg-white w-auto rounded-[20px] shadow-2 relative rtl:right-[26px] ltr:left-[26px] min-w-[240px]">
+                                  <div class="flex items-center gap-1 pb-2 border-b mb-1">
+                                    <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#4F24FF"/>
+                                      <path d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#4F24FF"/>
+                                    </svg>
+                                    <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition text-primary">پوز کیوسک</p>
+                                   </div>
+                                  <ul>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">پوز کیوسک  1 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">پوز کیوسک  2 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">پوز کیوسک  3 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">پوز کیوسک  4 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">پوز کیوسک  5 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">پوز کیوسک  6 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">پوز کیوسک  7 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">پوز کیوسک  8 </a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="bg-main-gradient-hover dropdown2-hover transition relative svg-main-hover group cursor-pointer">
+                              <a class="flex-between group transition hover:text-primary text-[#A4A4A4] p-2 rtl:pl-4 ltr:pr-4 rounded-[20px]">
+                               <div class="flex items-center gap-2">
+                                <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#A4A4A4"/>
+                                  <path d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#A4A4A4"/>
+                                </svg>
+                                <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">صندوق فروشگاهی</p>
+                               </div>
+                               <img alt="icon" src="../img/svg/arrow-left (5).svg" class="opacity-0 transition">
+                              </a>
+                              <div class="absolute top-0 rtl:right-[265px] ltr:left-[265px] rtl:left-auto ltr:right-auto transition z-20 invisible">
+                                <div class="px-3 py-5 bg-white w-auto rounded-[20px] shadow-2 relative rtl:right-[26px] ltr:left-[26px] min-w-[240px]">
+                                  <div class="flex items-center gap-1 pb-2 border-b mb-1">
+                                    <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#4F24FF"/>
+                                      <path d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#4F24FF"/>
+                                    </svg>
+                                    <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition text-primary">صندوق فروشگاهی</p>
+                                   </div>
+                                  <ul>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">صندوق فروشگاهی  1 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">صندوق فروشگاهی  2 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">صندوق فروشگاهی  3 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">صندوق فروشگاهی  4 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">صندوق فروشگاهی  5 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">صندوق فروشگاهی  6 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">صندوق فروشگاهی  7 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">صندوق فروشگاهی  8 </a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="bg-main-gradient-hover dropdown2-hover transition relative svg-main-hover group cursor-pointer">
+                              <a class="flex-between group transition hover:text-primary text-[#A4A4A4] p-2 rtl:pl-4 ltr:pr-4 rounded-[20px]">
+                               <div class="flex items-center gap-2">
+                                <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#A4A4A4"/>
+                                  <path d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#A4A4A4"/>
+                                </svg>
+                                <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">سامانه خودکار خاص منظوره</p>
+                               </div>
+                               <img alt="icon" src="../img/svg/arrow-left (5).svg" class="opacity-0 transition">
+                              </a>
+                              <div class="absolute top-0 rtl:right-[265px] ltr:left-[265px] rtl:left-auto ltr:right-auto transition z-20 invisible">
+                                <div class="px-3 py-5 bg-white w-auto rounded-[20px] shadow-2 relative rtl:right-[26px] ltr:left-[26px] min-w-[240px]">
+                                  <div class="flex items-center gap-1 pb-2 border-b mb-1">
+                                    <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#4F24FF"/>
+                                      <path d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#4F24FF"/>
+                                    </svg>
+                                    <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition text-primary">سامانه خودکار خاص منظوره</p>
+                                   </div>
+                                  <ul>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">سامانه خودکار خاص منظوره  1 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">سامانه خودکار خاص منظوره  2 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">سامانه خودکار خاص منظوره  3 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">سامانه خودکار خاص منظوره  4 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">سامانه خودکار خاص منظوره  5 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">سامانه خودکار خاص منظوره  6 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">سامانه خودکار خاص منظوره  7 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">سامانه خودکار خاص منظوره  8 </a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="bg-main-gradient-hover dropdown2-hover transition relative svg-main-hover group cursor-pointer">
+                              <a class="flex-between group transition hover:text-primary text-[#A4A4A4] p-2 rtl:pl-4 ltr:pr-4 rounded-[20px]">
+                               <div class="flex items-center gap-2">
+                                <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#A4A4A4"/>
+                                  <path d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#A4A4A4"/>
+                                </svg>
+                                <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">میز خدمات الکترونیک بانکی</p>
+                               </div>
+                               <img alt="icon" src="../img/svg/arrow-left (5).svg" class="opacity-0 transition">
+                              </a>
+                              <div class="absolute top-0 rtl:right-[265px] ltr:left-[265px] rtl:left-auto ltr:right-auto transition z-20 invisible">
+                                <div class="px-3 py-5 bg-white w-auto rounded-[20px] shadow-2 relative rtl:right-[26px] ltr:left-[26px] min-w-[240px]">
+                                  <div class="flex items-center gap-1 pb-2 border-b mb-1">
+                                    <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#4F24FF"/>
+                                      <path d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#4F24FF"/>
+                                    </svg>
+                                    <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition text-primary">میز خدمات الکترونیک بانکی</p>
+                                   </div>
+                                  <ul>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">میز خدمات الکترونیک بانکی  1 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">میز خدمات الکترونیک بانکی  2 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">میز خدمات الکترونیک بانکی  3 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">میز خدمات الکترونیک بانکی  4 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">میز خدمات الکترونیک بانکی  5 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">میز خدمات الکترونیک بانکی  6 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">میز خدمات الکترونیک بانکی  7 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">میز خدمات الکترونیک بانکی  8 </a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="bg-main-gradient-hover dropdown2-hover transition relative svg-main-hover group cursor-pointer">
+                              <a class="flex-between group transition hover:text-primary text-[#A4A4A4] p-2 rtl:pl-4 ltr:pr-4 rounded-[20px]">
+                               <div class="flex items-center gap-2">
+                                <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#A4A4A4"/>
+                                  <path d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#A4A4A4"/>
+                                </svg>
+                                <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">موبایل٬لوازم جانبی٬ساعت هوشمند</p>
+                               </div>
+                               <img alt="icon" src="../img/svg/arrow-left (5).svg" class="opacity-0 transition">
+                              </a>
+                              <div class="absolute top-0 rtl:right-[265px] ltr:left-[265px] rtl:left-auto ltr:right-auto transition z-20 invisible">
+                                <div class="px-3 py-5 bg-white w-auto rounded-[20px] shadow-2 relative rtl:right-[26px] ltr:left-[26px] min-w-[240px]">
+                                  <div class="flex items-center gap-1 pb-2 border-b mb-1">
+                                    <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#4F24FF"/>
+                                      <path d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#4F24FF"/>
+                                    </svg>
+                                    <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition text-primary">موبایل٬لوازم جانبی٬ساعت هوشمند</p>
+                                   </div>
+                                  <ul>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">موبایل٬لوازم جانبی٬ساعت هوشمند  1 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">موبایل٬لوازم جانبی٬ساعت هوشمند  2 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">موبایل٬لوازم جانبی٬ساعت هوشمند  3 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">موبایل٬لوازم جانبی٬ساعت هوشمند  4 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">موبایل٬لوازم جانبی٬ساعت هوشمند  5 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">موبایل٬لوازم جانبی٬ساعت هوشمند  6 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">موبایل٬لوازم جانبی٬ساعت هوشمند  7 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">موبایل٬لوازم جانبی٬ساعت هوشمند  8 </a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="bg-main-gradient-hover dropdown2-hover transition relative svg-main-hover group cursor-pointer">
+                              <a class="flex-between group transition hover:text-primary text-[#A4A4A4] p-2 rtl:pl-4 ltr:pr-4 rounded-[20px]">
+                               <div class="flex items-center gap-2">
+                                <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#A4A4A4"/>
+                                  <path d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#A4A4A4"/>
+                                </svg>
+                                <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">لوازم الکترونیکی</p>
+                               </div>
+                               <img alt="icon" src="../img/svg/arrow-left (5).svg" class="opacity-0 transition">
+                              </a>
+                              <div class="absolute top-0 rtl:right-[265px] ltr:left-[265px] rtl:left-auto ltr:right-auto transition z-20 invisible">
+                                <div class="px-3 py-5 bg-white w-auto rounded-[20px] shadow-2 relative rtl:right-[26px] ltr:left-[26px] min-w-[240px]">
+                                  <div class="flex items-center gap-1 pb-2 border-b mb-1">
+                                    <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#4F24FF"/>
+                                      <path d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#4F24FF"/>
+                                    </svg>
+                                    <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition text-primary">لوازم الکترونیکی</p>
+                                   </div>
+                                  <ul>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">لوازم الکترونیکی  1 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">لوازم الکترونیکی  2 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">لوازم الکترونیکی  3 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">لوازم الکترونیکی  4 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">لوازم الکترونیکی  5 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">لوازم الکترونیکی  6 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">لوازم الکترونیکی  7 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">لوازم الکترونیکی  8 </a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="bg-main-gradient-hover dropdown2-hover transition relative svg-main-hover group cursor-pointer">
+                              <a class="flex-between group transition hover:text-primary text-[#A4A4A4] p-2 rtl:pl-4 ltr:pr-4 rounded-[20px]">
+                               <div class="flex items-center gap-2">
+                                <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#A4A4A4"/>
+                                  <path d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#A4A4A4"/>
+                                </svg>
+                                <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">کامپیوتر و الکترونیک</p>
+                               </div>
+                               <img alt="icon" src="../img/svg/arrow-left (5).svg" class="opacity-0 transition">
+                              </a>
+                              <div class="absolute top-0 rtl:right-[265px] ltr:left-[265px] rtl:left-auto ltr:right-auto transition z-20 invisible">
+                                <div class="px-3 py-5 bg-white w-auto rounded-[20px] shadow-2 relative rtl:right-[26px] ltr:left-[26px] min-w-[240px]">
+                                  <div class="flex items-center gap-1 pb-2 border-b mb-1">
+                                    <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#4F24FF"/>
+                                      <path d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#4F24FF"/>
+                                    </svg>
+                                    <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition text-primary">کامپیوتر و الکترونیک</p>
+                                   </div>
+                                  <ul>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کامپیوتر و الکترونیک  1 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کامپیوتر و الکترونیک  2 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کامپیوتر و الکترونیک  3 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کامپیوتر و الکترونیک  4 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کامپیوتر و الکترونیک  5 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کامپیوتر و الکترونیک  6 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کامپیوتر و الکترونیک  7 </a></li>
+                                    <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کامپیوتر و الکترونیک  8 </a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                           </ul>
+                         </div>
                       </div>
                     </li>
-                    <li
-                      class="bg-main-gradient-hover dropdown2-hover transition relative svg-main-hover group cursor-pointer">
-                      <a
-                        class="flex-between group transition hover:text-primary text-[#A4A4A4] p-2 rtl:pl-4 ltr:pr-4 rounded-[20px]">
-                        <div class="flex items-center gap-2">
-                          <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                              fill="#A4A4A4" />
-                            <path
-                              d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                              fill="#A4A4A4" />
-                          </svg>
-                          <p
-                            class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">
-                            دستگاه پرداخت خودکار(APS)</p>
+                    <li class="py-[5px] rounded-[20px] transition hover:text-white px-3 hover:bg-primary"><a>راهکارها</a></li>
+                    <li class="py-[5px] rounded-[20px] transition hover:text-white px-3 hover:bg-primary"><a>کسب و کارها</a></li>
+                    <li class="py-[5px] rounded-[20px] transition hover:text-white px-3 hover:bg-primary"><a>درباره ما</a></li>
+                    <li class="py-[5px] rounded-[20px] transition hover:text-white px-3 hover:bg-primary"><a>تماس با ما</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-2">
+              <a
+                class="rounded-[30px] btnHover bg-primary px-3 h-[52px] flex-shrink-0 hidden lg:flex items-center justify-center gap-2 text-white text-lg font-semibold">
+                <img alt="icon" src="../img/svg/profile.svg">
+                <p>پنل مشتریان</p>
+                <img alt="icon" src="../img/svg/arrow-down (2).svg">
+              </a>
+              <!-- language -->
+              <div class="relative language-link block lg:hidden rtl:ml-1 ltr:mr-1">
+                <a class="flex items-center gap-1 p-2 rtl:pr-4 relative">
+                    <p class="font-semibold text-xs sm:text-base" id="langText2">فارسی</p>
+                    <img alt="icon" src="../img/svg/arrow-down (3).svg">
+                </a>
+                <!-- language dropdown -->
+                <div class="langDropdown z-20 rounded-[21px] mt-6 top-9 bg-white absolute ltr:right-0 ltr:left-auto left-0 shadow w-36 sm:w-44">
+                    <div data-id="1" class="flex items-center gap-3 cursor-pointer rounded-[21px] p-2 transition hover:bg-gray-100">
+                        <img alt="lang" src="../img/circle-flags_uk (2).png" class="w-7 h-7 rounded-full block">
+                        <div class="text-dark">
+                            <p>English</p>
+                            <p class="text-sm opacity-50">انگلیسی</p>
                         </div>
-                        <img alt="icon" src="../img/svg/arrow-left (5).svg" class="opacity-0 transition">
-                      </a>
-                      <div
-                        class="absolute top-0 rtl:right-[265px] ltr:left-[265px] rtl:left-auto ltr:right-auto transition z-20 invisible">
-                        <div
-                          class="px-3 py-5 bg-white w-auto rounded-[20px] shadow-2 relative rtl:right-[26px] ltr:left-[26px] min-w-[240px]">
-                          <div class="flex items-center gap-1 pb-2 border-b mb-1">
-                            <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24"
-                              fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                                fill="#4F24FF" />
-                              <path
-                                d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                                fill="#4F24FF" />
-                            </svg>
-                            <p
-                              class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition text-primary">
-                              دستگاه پرداخت خودکار(APS)</p>
-                          </div>
-                          <ul>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>دستگاه پرداخت خودکار(APS) 1 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>دستگاه پرداخت خودکار(APS) 2 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>دستگاه پرداخت خودکار(APS) 3 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>دستگاه پرداخت خودکار(APS) 4 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>دستگاه پرداخت خودکار(APS) 5 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>دستگاه پرداخت خودکار(APS) 6 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>دستگاه پرداخت خودکار(APS) 7 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>دستگاه پرداخت خودکار(APS) 8 </a></li>
-                          </ul>
+                    </div>
+                    <div data-id="2" class="flex items-center gap-3 cursor-pointer rounded-[21px] p-2 transition-all hover:bg-gray-100">
+                        <img alt="lang" src="../img/Mask group.png" class="w-7 h-7 rounded-full block">
+                        <div class="text-dark">
+                            <p>فارسی</p>
+                            <p class="text-sm opacity-50">Persian</p>
                         </div>
-                      </div>
-                    </li>
-                    <li
-                      class="bg-main-gradient-hover dropdown2-hover transition relative svg-main-hover group cursor-pointer">
-                      <a
-                        class="flex-between group transition hover:text-primary text-[#A4A4A4] p-2 rtl:pl-4 ltr:pr-4 rounded-[20px]">
-                        <div class="flex items-center gap-2">
-                          <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                              fill="#A4A4A4" />
-                            <path
-                              d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                              fill="#A4A4A4" />
-                          </svg>
-                          <p
-                            class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">
-                            پوز کیوسک</p>
-                        </div>
-                        <img alt="icon" src="../img/svg/arrow-left (5).svg" class="opacity-0 transition">
-                      </a>
-                      <div
-                        class="absolute top-0 rtl:right-[265px] ltr:left-[265px] rtl:left-auto ltr:right-auto transition z-20 invisible">
-                        <div
-                          class="px-3 py-5 bg-white w-auto rounded-[20px] shadow-2 relative rtl:right-[26px] ltr:left-[26px] min-w-[240px]">
-                          <div class="flex items-center gap-1 pb-2 border-b mb-1">
-                            <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24"
-                              fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                                fill="#4F24FF" />
-                              <path
-                                d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                                fill="#4F24FF" />
-                            </svg>
-                            <p
-                              class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition text-primary">
-                              پوز کیوسک</p>
-                          </div>
-                          <ul>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>پوز کیوسک 1 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>پوز کیوسک 2 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>پوز کیوسک 3 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>پوز کیوسک 4 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>پوز کیوسک 5 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>پوز کیوسک 6 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>پوز کیوسک 7 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>پوز کیوسک 8 </a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li
-                      class="bg-main-gradient-hover dropdown2-hover transition relative svg-main-hover group cursor-pointer">
-                      <a
-                        class="flex-between group transition hover:text-primary text-[#A4A4A4] p-2 rtl:pl-4 ltr:pr-4 rounded-[20px]">
-                        <div class="flex items-center gap-2">
-                          <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                              fill="#A4A4A4" />
-                            <path
-                              d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                              fill="#A4A4A4" />
-                          </svg>
-                          <p
-                            class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">
-                            صندوق فروشگاهی</p>
-                        </div>
-                        <img alt="icon" src="../img/svg/arrow-left (5).svg" class="opacity-0 transition">
-                      </a>
-                      <div
-                        class="absolute top-0 rtl:right-[265px] ltr:left-[265px] rtl:left-auto ltr:right-auto transition z-20 invisible">
-                        <div
-                          class="px-3 py-5 bg-white w-auto rounded-[20px] shadow-2 relative rtl:right-[26px] ltr:left-[26px] min-w-[240px]">
-                          <div class="flex items-center gap-1 pb-2 border-b mb-1">
-                            <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24"
-                              fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                                fill="#4F24FF" />
-                              <path
-                                d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                                fill="#4F24FF" />
-                            </svg>
-                            <p
-                              class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition text-primary">
-                              صندوق فروشگاهی</p>
-                          </div>
-                          <ul>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>صندوق فروشگاهی 1 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>صندوق فروشگاهی 2 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>صندوق فروشگاهی 3 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>صندوق فروشگاهی 4 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>صندوق فروشگاهی 5 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>صندوق فروشگاهی 6 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>صندوق فروشگاهی 7 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>صندوق فروشگاهی 8 </a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li
-                      class="bg-main-gradient-hover dropdown2-hover transition relative svg-main-hover group cursor-pointer">
-                      <a
-                        class="flex-between group transition hover:text-primary text-[#A4A4A4] p-2 rtl:pl-4 ltr:pr-4 rounded-[20px]">
-                        <div class="flex items-center gap-2">
-                          <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                              fill="#A4A4A4" />
-                            <path
-                              d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                              fill="#A4A4A4" />
-                          </svg>
-                          <p
-                            class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">
-                            سامانه خودکار خاص منظوره</p>
-                        </div>
-                        <img alt="icon" src="../img/svg/arrow-left (5).svg" class="opacity-0 transition">
-                      </a>
-                      <div
-                        class="absolute top-0 rtl:right-[265px] ltr:left-[265px] rtl:left-auto ltr:right-auto transition z-20 invisible">
-                        <div
-                          class="px-3 py-5 bg-white w-auto rounded-[20px] shadow-2 relative rtl:right-[26px] ltr:left-[26px] min-w-[240px]">
-                          <div class="flex items-center gap-1 pb-2 border-b mb-1">
-                            <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24"
-                              fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                                fill="#4F24FF" />
-                              <path
-                                d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                                fill="#4F24FF" />
-                            </svg>
-                            <p
-                              class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition text-primary">
-                              سامانه خودکار خاص منظوره</p>
-                          </div>
-                          <ul>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>سامانه خودکار خاص منظوره 1 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>سامانه خودکار خاص منظوره 2 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>سامانه خودکار خاص منظوره 3 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>سامانه خودکار خاص منظوره 4 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>سامانه خودکار خاص منظوره 5 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>سامانه خودکار خاص منظوره 6 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>سامانه خودکار خاص منظوره 7 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>سامانه خودکار خاص منظوره 8 </a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li
-                      class="bg-main-gradient-hover dropdown2-hover transition relative svg-main-hover group cursor-pointer">
-                      <a
-                        class="flex-between group transition hover:text-primary text-[#A4A4A4] p-2 rtl:pl-4 ltr:pr-4 rounded-[20px]">
-                        <div class="flex items-center gap-2">
-                          <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                              fill="#A4A4A4" />
-                            <path
-                              d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                              fill="#A4A4A4" />
-                          </svg>
-                          <p
-                            class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">
-                            میز خدمات الکترونیک بانکی</p>
-                        </div>
-                        <img alt="icon" src="../img/svg/arrow-left (5).svg" class="opacity-0 transition">
-                      </a>
-                      <div
-                        class="absolute top-0 rtl:right-[265px] ltr:left-[265px] rtl:left-auto ltr:right-auto transition z-20 invisible">
-                        <div
-                          class="px-3 py-5 bg-white w-auto rounded-[20px] shadow-2 relative rtl:right-[26px] ltr:left-[26px] min-w-[240px]">
-                          <div class="flex items-center gap-1 pb-2 border-b mb-1">
-                            <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24"
-                              fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                                fill="#4F24FF" />
-                              <path
-                                d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                                fill="#4F24FF" />
-                            </svg>
-                            <p
-                              class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition text-primary">
-                              میز خدمات الکترونیک بانکی</p>
-                          </div>
-                          <ul>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>میز خدمات الکترونیک بانکی 1 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>میز خدمات الکترونیک بانکی 2 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>میز خدمات الکترونیک بانکی 3 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>میز خدمات الکترونیک بانکی 4 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>میز خدمات الکترونیک بانکی 5 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>میز خدمات الکترونیک بانکی 6 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>میز خدمات الکترونیک بانکی 7 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>میز خدمات الکترونیک بانکی 8 </a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li
-                      class="bg-main-gradient-hover dropdown2-hover transition relative svg-main-hover group cursor-pointer">
-                      <a
-                        class="flex-between group transition hover:text-primary text-[#A4A4A4] p-2 rtl:pl-4 ltr:pr-4 rounded-[20px]">
-                        <div class="flex items-center gap-2">
-                          <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                              fill="#A4A4A4" />
-                            <path
-                              d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                              fill="#A4A4A4" />
-                          </svg>
-                          <p
-                            class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">
-                            موبایل٬لوازم جانبی٬ساعت هوشمند</p>
-                        </div>
-                        <img alt="icon" src="../img/svg/arrow-left (5).svg" class="opacity-0 transition">
-                      </a>
-                      <div
-                        class="absolute top-0 rtl:right-[265px] ltr:left-[265px] rtl:left-auto ltr:right-auto transition z-20 invisible">
-                        <div
-                          class="px-3 py-5 bg-white w-auto rounded-[20px] shadow-2 relative rtl:right-[26px] ltr:left-[26px] min-w-[240px]">
-                          <div class="flex items-center gap-1 pb-2 border-b mb-1">
-                            <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24"
-                              fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                                fill="#4F24FF" />
-                              <path
-                                d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                                fill="#4F24FF" />
-                            </svg>
-                            <p
-                              class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition text-primary">
-                              موبایل٬لوازم جانبی٬ساعت هوشمند</p>
-                          </div>
-                          <ul>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>موبایل٬لوازم جانبی٬ساعت هوشمند 1 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>موبایل٬لوازم جانبی٬ساعت هوشمند 2 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>موبایل٬لوازم جانبی٬ساعت هوشمند 3 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>موبایل٬لوازم جانبی٬ساعت هوشمند 4 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>موبایل٬لوازم جانبی٬ساعت هوشمند 5 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>موبایل٬لوازم جانبی٬ساعت هوشمند 6 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>موبایل٬لوازم جانبی٬ساعت هوشمند 7 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>موبایل٬لوازم جانبی٬ساعت هوشمند 8 </a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li
-                      class="bg-main-gradient-hover dropdown2-hover transition relative svg-main-hover group cursor-pointer">
-                      <a
-                        class="flex-between group transition hover:text-primary text-[#A4A4A4] p-2 rtl:pl-4 ltr:pr-4 rounded-[20px]">
-                        <div class="flex items-center gap-2">
-                          <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                              fill="#A4A4A4" />
-                            <path
-                              d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                              fill="#A4A4A4" />
-                          </svg>
-                          <p
-                            class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">
-                            لوازم الکترونیکی</p>
-                        </div>
-                        <img alt="icon" src="../img/svg/arrow-left (5).svg" class="opacity-0 transition">
-                      </a>
-                      <div
-                        class="absolute top-0 rtl:right-[265px] ltr:left-[265px] rtl:left-auto ltr:right-auto transition z-20 invisible">
-                        <div
-                          class="px-3 py-5 bg-white w-auto rounded-[20px] shadow-2 relative rtl:right-[26px] ltr:left-[26px] min-w-[240px]">
-                          <div class="flex items-center gap-1 pb-2 border-b mb-1">
-                            <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24"
-                              fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                                fill="#4F24FF" />
-                              <path
-                                d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                                fill="#4F24FF" />
-                            </svg>
-                            <p
-                              class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition text-primary">
-                              لوازم الکترونیکی</p>
-                          </div>
-                          <ul>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>لوازم الکترونیکی 1 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>لوازم الکترونیکی 2 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>لوازم الکترونیکی 3 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>لوازم الکترونیکی 4 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>لوازم الکترونیکی 5 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>لوازم الکترونیکی 6 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>لوازم الکترونیکی 7 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>لوازم الکترونیکی 8 </a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li
-                      class="bg-main-gradient-hover dropdown2-hover transition relative svg-main-hover group cursor-pointer">
-                      <a
-                        class="flex-between group transition hover:text-primary text-[#A4A4A4] p-2 rtl:pl-4 ltr:pr-4 rounded-[20px]">
-                        <div class="flex items-center gap-2">
-                          <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                              fill="#A4A4A4" />
-                            <path
-                              d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                              fill="#A4A4A4" />
-                          </svg>
-                          <p
-                            class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">
-                            کامپیوتر و الکترونیک</p>
-                        </div>
-                        <img alt="icon" src="../img/svg/arrow-left (5).svg" class="opacity-0 transition">
-                      </a>
-                      <div
-                        class="absolute top-0 rtl:right-[265px] ltr:left-[265px] rtl:left-auto ltr:right-auto transition z-20 invisible">
-                        <div
-                          class="px-3 py-5 bg-white w-auto rounded-[20px] shadow-2 relative rtl:right-[26px] ltr:left-[26px] min-w-[240px]">
-                          <div class="flex items-center gap-1 pb-2 border-b mb-1">
-                            <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24"
-                              fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path
-                                d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                                fill="#4F24FF" />
-                              <path
-                                d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                                fill="#4F24FF" />
-                            </svg>
-                            <p
-                              class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition text-primary">
-                              کامپیوتر و الکترونیک</p>
-                          </div>
-                          <ul>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>کامپیوتر و الکترونیک 1 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>کامپیوتر و الکترونیک 2 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>کامپیوتر و الکترونیک 3 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>کامپیوتر و الکترونیک 4 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>کامپیوتر و الکترونیک 5 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>کامپیوتر و الکترونیک 6 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>کامپیوتر و الکترونیک 7 </a></li>
-                            <li
-                              class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold">
-                              <a>کامپیوتر و الکترونیک 8 </a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
+                    </div>
                 </div>
-              </div>
-            </li>
-            <li class="py-[5px] rounded-[20px] transition hover:text-white px-3 hover:bg-primary"><a>راهکارها</a></li>
-            <li class="py-[5px] rounded-[20px] transition hover:text-white px-3 hover:bg-primary"><a>کسب و کارها</a>
-            </li>
-            <li class="py-[5px] rounded-[20px] transition hover:text-white px-3 hover:bg-primary"><a>درباره ما</a></li>
-            <li class="py-[5px] rounded-[20px] transition hover:text-white px-3 hover:bg-primary"><a>تماس با ما</a></li>
-          </ul>
-        </div>
-        <div class="flex items-center gap-2">
-          <a
-            class="rounded-[30px] btnHover bg-primary px-3 h-[52px] flex-shrink-0 hidden lg:flex items-center justify-center gap-2 text-white text-lg font-semibold">
-            <img alt="icon" src="../img/svg/profile.svg">
-            <p>پنل مشتریان</p>
-            <img alt="icon" src="../img/svg/arrow-down (2).svg">
-          </a>
-          <!-- language -->
-          <div class="relative language-link block lg:hidden rtl:ml-1 ltr:mr-1">
-            <a class="flex items-center gap-1 p-2 rtl:pr-4 relative">
-              <p class="font-semibold text-xs sm:text-base" id="langText2">فارسی</p>
-              <img alt="icon" src="../img/svg/arrow-down (3).svg">
-            </a>
-            <!-- language dropdown -->
-            <div
-              class="langDropdown z-20 rounded-[21px] mt-6 top-9 bg-white absolute ltr:right-0 ltr:left-auto left-0 shadow w-36 sm:w-44">
-              <div data-id="1"
-                class="flex items-center gap-3 cursor-pointer rounded-[21px] p-2 transition hover:bg-gray-100">
-                <img alt="lang" src="../img/circle-flags_uk (2).png" class="w-7 h-7 rounded-full block">
-                <div class="text-dark">
-                  <p>English</p>
-                  <p class="text-sm opacity-50">انگلیسی</p>
-                </div>
-              </div>
-              <div data-id="2"
-                class="flex items-center gap-3 cursor-pointer rounded-[21px] p-2 transition-all hover:bg-gray-100">
-                <img alt="lang" src="../img/Mask group.png" class="w-7 h-7 rounded-full block">
-                <div class="text-dark">
-                  <p>فارسی</p>
-                  <p class="text-sm opacity-50">Persian</p>
+            </div>
+              <!-- contact icon -->
+               <a class="block lg:hidden">
+                <img alt="icon" src="../img/svg/call-calling (2).svg">
+               </a>
+              <!-- ham icon -->
+              <div class="flex lg:hidden items-center gap-4">
+                <div id="hamIcon">
+                    <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2 5.995C2 5.445 2.446 5 2.995 5L11.005 5C11.2689 5 11.522 5.10483 11.7086 5.29143C11.8952 5.47803 12 5.73111 12 5.995C12 6.25889 11.8952 6.51197 11.7086 6.69857C11.522 6.88517 11.2689 6.99 11.005 6.99L2.995 6.99C2.445 6.99 2 6.545 2 5.995ZM2 12C2 11.45 2.446 11.005 2.995 11.005L21.005 11.005C21.2689 11.005 21.522 11.1098 21.7086 11.2964C21.8952 11.483 22 11.7361 22 12C22 12.2639 21.8952 12.517 21.7086 12.7036C21.522 12.8902 21.2689 12.995 21.005 12.995L2.995 12.995C2.445 12.995 2 12.549 2 12ZM2.995 17.01C2.73111 17.01 2.47803 17.1148 2.29143 17.3014C2.10483 17.488 2 17.7411 2 18.005C2 18.2689 2.10483 18.522 2.29143 18.7086C2.47803 18.8952 2.73111 19 2.995 19L15.005 19C15.1357 19 15.2651 18.9743 15.3858 18.9243C15.5065 18.8743 15.6162 18.801 15.7086 18.7086C15.801 18.6162 15.8743 18.5065 15.9243 18.3858C15.9743 18.2651 16 18.1357 16 18.005C16 17.8743 15.9743 17.7449 15.9243 17.6242C15.8743 17.5035 15.801 17.3938 15.7086 17.3014C15.6162 17.209 15.5065 17.1357 15.3858 17.0857C15.2651 17.0357 15.1357 17.01 15.005 17.01L2.995 17.01Z"
+                            fill="#1E2D48" />
+                    </svg>
+                    <svg class="cursor-pointer hidden" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.80399 6.39693C7.61739 6.21034 7.36431 6.10551 7.10042 6.10551C6.83653 6.10551 6.58345 6.21034 6.39685 6.39693C6.21025 6.58353 6.10542 6.83662 6.10542 7.10051C6.10542 7.3644 6.21025 7.61748 6.39685 7.80408L14.8892 16.2964C14.9816 16.3888 15.0913 16.4621 15.212 16.5121C15.3327 16.5621 15.4621 16.5879 15.5928 16.5879C15.7234 16.5879 15.8528 16.5621 15.9735 16.5121C16.0943 16.4621 16.204 16.3888 16.2963 16.2964C16.3887 16.204 16.462 16.0943 16.512 15.9736C16.562 15.8529 16.5878 15.7235 16.5878 15.5929C16.5878 15.4622 16.562 15.3328 16.512 15.2121C16.462 15.0914 16.3887 14.9817 16.2963 14.8893L7.80399 6.39693Z"
+                            fill="#1E2D48" />
+                        <path
+                            d="M6.39693 14.8894C6.21034 15.076 6.10551 15.329 6.10551 15.5929C6.1055 15.8568 6.21033 16.1099 6.39693 16.2965C6.58353 16.4831 6.83661 16.5879 7.10051 16.5879C7.3644 16.5879 7.61748 16.4831 7.80408 16.2965L16.2964 7.80416C16.3888 7.71176 16.4621 7.60207 16.5121 7.48136C16.5621 7.36064 16.5879 7.23125 16.5879 7.10059C16.5879 6.96992 16.5621 6.84053 16.5121 6.71982C16.4621 6.5991 16.3888 6.48941 16.2964 6.39701C16.204 6.30462 16.0943 6.23133 15.9736 6.18133C15.8529 6.13132 15.7235 6.10559 15.5929 6.10559C15.4622 6.10559 15.3328 6.13132 15.2121 6.18133C15.0914 6.23133 14.9817 6.30462 14.8893 6.39701L6.39693 14.8894Z"
+                            fill="#1E2D48" />
+                    </svg>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- contact icon -->
-          <a class="block lg:hidden">
-            <img alt="icon" src="../img/svg/call-calling (2).svg">
-          </a>
-          <!-- ham icon -->
-          <div class="flex lg:hidden items-center gap-4">
-            <div id="hamIcon">
-              <svg class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M2 5.995C2 5.445 2.446 5 2.995 5L11.005 5C11.2689 5 11.522 5.10483 11.7086 5.29143C11.8952 5.47803 12 5.73111 12 5.995C12 6.25889 11.8952 6.51197 11.7086 6.69857C11.522 6.88517 11.2689 6.99 11.005 6.99L2.995 6.99C2.445 6.99 2 6.545 2 5.995ZM2 12C2 11.45 2.446 11.005 2.995 11.005L21.005 11.005C21.2689 11.005 21.522 11.1098 21.7086 11.2964C21.8952 11.483 22 11.7361 22 12C22 12.2639 21.8952 12.517 21.7086 12.7036C21.522 12.8902 21.2689 12.995 21.005 12.995L2.995 12.995C2.445 12.995 2 12.549 2 12ZM2.995 17.01C2.73111 17.01 2.47803 17.1148 2.29143 17.3014C2.10483 17.488 2 17.7411 2 18.005C2 18.2689 2.10483 18.522 2.29143 18.7086C2.47803 18.8952 2.73111 19 2.995 19L15.005 19C15.1357 19 15.2651 18.9743 15.3858 18.9243C15.5065 18.8743 15.6162 18.801 15.7086 18.7086C15.801 18.6162 15.8743 18.5065 15.9243 18.3858C15.9743 18.2651 16 18.1357 16 18.005C16 17.8743 15.9743 17.7449 15.9243 17.6242C15.8743 17.5035 15.801 17.3938 15.7086 17.3014C15.6162 17.209 15.5065 17.1357 15.3858 17.0857C15.2651 17.0357 15.1357 17.01 15.005 17.01L2.995 17.01Z"
-                  fill="#1E2D48" />
-              </svg>
-              <svg class="cursor-pointer hidden" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M7.80399 6.39693C7.61739 6.21034 7.36431 6.10551 7.10042 6.10551C6.83653 6.10551 6.58345 6.21034 6.39685 6.39693C6.21025 6.58353 6.10542 6.83662 6.10542 7.10051C6.10542 7.3644 6.21025 7.61748 6.39685 7.80408L14.8892 16.2964C14.9816 16.3888 15.0913 16.4621 15.212 16.5121C15.3327 16.5621 15.4621 16.5879 15.5928 16.5879C15.7234 16.5879 15.8528 16.5621 15.9735 16.5121C16.0943 16.4621 16.204 16.3888 16.2963 16.2964C16.3887 16.204 16.462 16.0943 16.512 15.9736C16.562 15.8529 16.5878 15.7235 16.5878 15.5929C16.5878 15.4622 16.562 15.3328 16.512 15.2121C16.462 15.0914 16.3887 14.9817 16.2963 14.8893L7.80399 6.39693Z"
-                  fill="#1E2D48" />
-                <path
-                  d="M6.39693 14.8894C6.21034 15.076 6.10551 15.329 6.10551 15.5929C6.1055 15.8568 6.21033 16.1099 6.39693 16.2965C6.58353 16.4831 6.83661 16.5879 7.10051 16.5879C7.3644 16.5879 7.61748 16.4831 7.80408 16.2965L16.2964 7.80416C16.3888 7.71176 16.4621 7.60207 16.5121 7.48136C16.5621 7.36064 16.5879 7.23125 16.5879 7.10059C16.5879 6.96992 16.5621 6.84053 16.5121 6.71982C16.4621 6.5991 16.3888 6.48941 16.2964 6.39701C16.204 6.30462 16.0943 6.23133 15.9736 6.18133C15.8529 6.13132 15.7235 6.10559 15.5929 6.10559C15.4622 6.10559 15.3328 6.13132 15.2121 6.18133C15.0914 6.23133 14.9817 6.30462 14.8893 6.39701L6.39693 14.8894Z"
-                  fill="#1E2D48" />
-              </svg>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
     <!-- mobile menu -->
     <div
-      class="rounded-3xl mobileMenu shadow-header top-[108px] absolute lg:hidden bg-white -mt-2 z-40 text-black text-sm font-bold left-5 right-5">
-      <!-- arrow -->
-      <svg class="-top-2 ltr:right-8 ltr:left-auto left-8 absolute" xmlns="http://www.w3.org/2000/svg" width="33"
-        height="9" viewBox="0 0 33 9" fill="white">
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M32.8066 8.5H0.193359C4.85352 8.18393 9.22656 6.06978 12.375 2.57672C14.5801 0.129671 18.4199 0.129671 20.625 2.57672C23.7734 6.06978 28.1465 8.18393 32.8066 8.5Z"
-          fill="white"></path>
-      </svg>
-      <!-- menu -->
-      <ul class="p-[22px]">
-        <li class="mb-5">
-          <a class="w-full flex items-center gap-[6px]">
-            <img alt="icon" src="../img/svg/profile (2).svg">
-            <p>پنل مشتریان</p>
-          </a>
-        </li>
-        <li class="mb-5">
-          <a class="w-full block">حساب کاربری</a>
-        </li>
-        <li class="mb-5">
-          <a class="w-full block">صفحه اصلی</a>
-        </li>
-        <li class="mb-5">
-          <a class="flex items-center justify-between dropdownBtn">
-            <p>محصولات</p>
-            <svg class="rotate-180 transition-all arrowSvg" xmlns="http://www.w3.org/2000/svg" width="12" height="7"
-              viewBox="0 0 12 7" fill="none">
-              <path d="M10.6001 5.68237L5.8001 0.882374L1.0001 5.68237" stroke="black" stroke-linecap="square" />
-            </svg>
-          </a>
-          <ul class="font-light text-black dropdownContent text-sm">
-            <li class="py-2 group">
-              <a class="flex items-center gap-2 transition group-hover:text-primary text-[#A4A4A4]">
-                <div class="flex items-center gap-2">
-                  <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path class="group-hover:fill-primary transition"
-                      d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                      fill="#A4A4A4"></path>
-                    <path class="group-hover:fill-primary transition"
-                      d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                      fill="#A4A4A4"></path>
-                  </svg>
-                  <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">کش لس
-                  </p>
-                </div>
-              </a>
+        class="rounded-3xl mobileMenu shadow-header top-[108px] absolute lg:hidden bg-white -mt-2 z-40 text-black text-sm font-bold left-5 right-5">
+        <!-- arrow -->
+        <svg class="-top-2 ltr:right-8 ltr:left-auto left-8 absolute" xmlns="http://www.w3.org/2000/svg" width="33"
+            height="9" viewBox="0 0 33 9" fill="white">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M32.8066 8.5H0.193359C4.85352 8.18393 9.22656 6.06978 12.375 2.57672C14.5801 0.129671 18.4199 0.129671 20.625 2.57672C23.7734 6.06978 28.1465 8.18393 32.8066 8.5Z"
+                fill="white"></path>
+        </svg>
+        <!-- menu -->
+        <ul class="p-[22px]">
+            <li class="mb-5">
+                <a class="w-full flex items-center gap-[6px]">
+                  <img alt="icon" src="../img/svg/profile (2).svg">
+                  <p>پنل مشتریان</p>
+                </a>
             </li>
-            <li class="py-2 group">
-              <a class="flex items-center gap-2 transition group-hover:text-primary text-[#A4A4A4]">
-                <div class="flex items-center gap-2">
-                  <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path class="group-hover:fill-primary transition"
-                      d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                      fill="#A4A4A4"></path>
-                    <path class="group-hover:fill-primary transition"
-                      d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                      fill="#A4A4A4"></path>
-                  </svg>
-                  <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">کیوسک
-                    بانکی</p>
-                </div>
-              </a>
+            <li class="mb-5">
+                <a class="w-full block">حساب کاربری</a>
             </li>
-            <li class="py-2 group">
-              <a class="flex items-center gap-2 transition group-hover:text-primary text-[#A4A4A4]">
-                <div class="flex items-center gap-2">
-                  <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path class="group-hover:fill-primary transition"
-                      d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                      fill="#A4A4A4"></path>
-                    <path class="group-hover:fill-primary transition"
-                      d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                      fill="#A4A4A4"></path>
-                  </svg>
-                  <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">دستگاه
-                    پرداخت خودکار(APS)</p>
-                </div>
-              </a>
+            <li class="mb-5">
+                <a class="w-full block">صفحه اصلی</a>
             </li>
-            <li class="py-2 group">
-              <a class="flex items-center gap-2 transition group-hover:text-primary text-[#A4A4A4]">
-                <div class="flex items-center gap-2">
-                  <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path class="group-hover:fill-primary transition"
-                      d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                      fill="#A4A4A4"></path>
-                    <path class="group-hover:fill-primary transition"
-                      d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                      fill="#A4A4A4"></path>
-                  </svg>
-                  <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">پوز
-                    کیوسک</p>
-                </div>
-              </a>
+            <li class="mb-5">
+                <a class="flex items-center justify-between dropdownBtn">
+                    <p>محصولات</p>
+                    <svg class="rotate-180 transition-all arrowSvg" xmlns="http://www.w3.org/2000/svg" width="12"
+                        height="7" viewBox="0 0 12 7" fill="none">
+                        <path d="M10.6001 5.68237L5.8001 0.882374L1.0001 5.68237" stroke="black"
+                            stroke-linecap="square" />
+                    </svg>
+                </a>
+                <ul class="font-light text-black dropdownContent text-sm">
+                    <li class="py-2 group">
+                      <a class="flex items-center justify-between dropdownBtn2 gap-2 transition group-hover:text-primary text-[#A4A4A4]">
+                        <div class="flex items-center gap-2">
+                         <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path class="group-hover:fill-primary transition" d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#A4A4A4"></path>
+                           <path class="group-hover:fill-primary transition" d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#A4A4A4"></path>
+                         </svg>
+                         <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">کش لس</p>
+                        </div>
+                        <svg class="rotate-180 transition-all arrowSvg" xmlns="http://www.w3.org/2000/svg" width="12"
+                        height="7" viewBox="0 0 12 7" fill="none">
+                        <path class="transition group-hover:stroke-primary" d="M10.6001 5.68237L5.8001 0.882374L1.0001 5.68237" stroke="black"
+                            stroke-linecap="square" />
+                        </svg>
+                       </a>
+                       <ul class="dropdownContent2">
+                        <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کش لس  1 </a></li>
+                        <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کش لس  1 </a></li>
+                       </ul>
+                    </li>
+                    <li class="py-2 group">
+                      <a class="flex items-center justify-between dropdownBtn2 gap-2 transition group-hover:text-primary text-[#A4A4A4]">
+                        <div class="flex items-center gap-2">
+                         <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path class="group-hover:fill-primary transition" d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#A4A4A4"></path>
+                           <path class="group-hover:fill-primary transition" d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#A4A4A4"></path>
+                         </svg>
+                         <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">کیوسک بانکی</p>
+                        </div>
+                          <svg class="rotate-180 transition-all arrowSvg" xmlns="http://www.w3.org/2000/svg" width="12"
+                        height="7" viewBox="0 0 12 7" fill="none">
+                        <path class="transition group-hover:stroke-primary" d="M10.6001 5.68237L5.8001 0.882374L1.0001 5.68237" stroke="black"
+                            stroke-linecap="square" />
+                        </svg>
+                       </a>
+                        <ul class="dropdownContent2">
+                        <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کیوسک بانکی  1 </a></li>
+                        <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کیوسک بانکی  2 </a></li>
+                       </ul>
+                    </li>
+                    <li class="py-2 group">
+                      <a class="flex items-center justify-between dropdownBtn2 gap-2 transition group-hover:text-primary text-[#A4A4A4]">
+                        <div class="flex items-center gap-2">
+                         <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path class="group-hover:fill-primary transition" d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#A4A4A4"></path>
+                           <path class="group-hover:fill-primary transition" d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#A4A4A4"></path>
+                         </svg>
+                         <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">دستگاه پرداخت خودکار(APS)</p>
+                        </div>
+                          <svg class="rotate-180 transition-all arrowSvg" xmlns="http://www.w3.org/2000/svg" width="12"
+                        height="7" viewBox="0 0 12 7" fill="none">
+                        <path class="transition group-hover:stroke-primary" d="M10.6001 5.68237L5.8001 0.882374L1.0001 5.68237" stroke="black"
+                            stroke-linecap="square" />
+                        </svg>
+                       </a>
+                        <ul class="dropdownContent2">
+                        <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">دستگاه پرداخت خودکار(APS)  1 </a></li>
+                        <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">دستگاه پرداخت خودکار(APS)  2 </a></li>
+                       </ul>
+                    </li>
+                    <li class="py-2 group">
+                      <a class="flex items-center justify-between dropdownBtn2 gap-2 transition group-hover:text-primary text-[#A4A4A4]">
+                        <div class="flex items-center gap-2">
+                         <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path class="group-hover:fill-primary transition" d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#A4A4A4"></path>
+                           <path class="group-hover:fill-primary transition" d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#A4A4A4"></path>
+                         </svg>
+                         <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">پوز کیوسک</p>
+                        </div>
+                          <svg class="rotate-180 transition-all arrowSvg" xmlns="http://www.w3.org/2000/svg" width="12"
+                        height="7" viewBox="0 0 12 7" fill="none">
+                        <path class="transition group-hover:stroke-primary" d="M10.6001 5.68237L5.8001 0.882374L1.0001 5.68237" stroke="black"
+                            stroke-linecap="square" />
+                        </svg>
+                       </a>
+                        <ul class="dropdownContent2">
+                        <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">پوز کیوسک  1 </a></li>
+                        <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">پوز کیوسک  2 </a></li>
+                       </ul>
+                    </li>
+                    <li class="py-2 group">
+                      <a class="flex items-center justify-between dropdownBtn2 gap-2 transition group-hover:text-primary text-[#A4A4A4]">
+                        <div class="flex items-center gap-2">
+                         <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path class="group-hover:fill-primary transition" d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#A4A4A4"></path>
+                           <path class="group-hover:fill-primary transition" d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#A4A4A4"></path>
+                         </svg>
+                         <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">صندوق فروشگاهی</p>
+                        </div>
+                          <svg class="rotate-180 transition-all arrowSvg" xmlns="http://www.w3.org/2000/svg" width="12"
+                        height="7" viewBox="0 0 12 7" fill="none">
+                        <path class="transition group-hover:stroke-primary" d="M10.6001 5.68237L5.8001 0.882374L1.0001 5.68237" stroke="black"
+                            stroke-linecap="square" />
+                        </svg>
+                       </a>
+                        <ul class="dropdownContent2">
+                        <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">صندوق فروشگاهی  1 </a></li>
+                        <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">صندوق فروشگاهی  2 </a></li>
+                       </ul>
+                    </li>
+                    <li class="py-2 group">
+                      <a class="flex items-center justify-between dropdownBtn2 gap-2 transition group-hover:text-primary text-[#A4A4A4]">
+                        <div class="flex items-center gap-2">
+                         <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path class="group-hover:fill-primary transition" d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#A4A4A4"></path>
+                           <path class="group-hover:fill-primary transition" d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#A4A4A4"></path>
+                         </svg>
+                         <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">سامانه خودکار خاص منظوره</p>
+                        </div>
+                          <svg class="rotate-180 transition-all arrowSvg" xmlns="http://www.w3.org/2000/svg" width="12"
+                        height="7" viewBox="0 0 12 7" fill="none">
+                        <path class="transition group-hover:stroke-primary" d="M10.6001 5.68237L5.8001 0.882374L1.0001 5.68237" stroke="black"
+                            stroke-linecap="square" />
+                        </svg>
+                       </a>
+                        <ul class="dropdownContent2">
+                        <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">سامانه خودکار خاص منظوره  1 </a></li>
+                        <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">سامانه خودکار خاص منظوره  2 </a></li>
+                       </ul>
+                    </li>
+                    <li class="py-2 group">
+                      <a class="flex items-center justify-between dropdownBtn2 gap-2 transition group-hover:text-primary text-[#A4A4A4]">
+                        <div class="flex items-center gap-2">
+                         <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path class="group-hover:fill-primary transition" d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#A4A4A4"></path>
+                           <path class="group-hover:fill-primary transition" d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#A4A4A4"></path>
+                         </svg>
+                         <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">میز خدمات الکترونیک بانکی</p>
+                        </div>
+                          <svg class="rotate-180 transition-all arrowSvg" xmlns="http://www.w3.org/2000/svg" width="12"
+                        height="7" viewBox="0 0 12 7" fill="none">
+                        <path class="transition group-hover:stroke-primary" d="M10.6001 5.68237L5.8001 0.882374L1.0001 5.68237" stroke="black"
+                            stroke-linecap="square" />
+                        </svg>
+                       </a>
+                        <ul class="dropdownContent2">
+                        <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">میز خدمات الکترونیک بانکی  1 </a></li>
+                        <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">میز خدمات الکترونیک بانکی  2 </a></li>
+                       </ul>
+                    </li>
+                    <li class="py-2 group">
+                      <a class="flex items-center justify-between dropdownBtn2 gap-2 transition group-hover:text-primary text-[#A4A4A4]">
+                        <div class="flex items-center gap-2">
+                         <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path class="group-hover:fill-primary transition" d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#A4A4A4"></path>
+                           <path class="group-hover:fill-primary transition" d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#A4A4A4"></path>
+                         </svg>
+                         <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">موبایل٬لوازم جانبی٬ساعت هوشمند</p>
+                        </div>
+                          <svg class="rotate-180 transition-all arrowSvg" xmlns="http://www.w3.org/2000/svg" width="12"
+                        height="7" viewBox="0 0 12 7" fill="none">
+                        <path class="transition group-hover:stroke-primary" d="M10.6001 5.68237L5.8001 0.882374L1.0001 5.68237" stroke="black"
+                            stroke-linecap="square" />
+                        </svg>
+                       </a>
+                        <ul class="dropdownContent2">
+                        <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">موبایل٬لوازم جانبی٬ساعت هوشمند  1 </a></li>
+                        <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">موبایل٬لوازم جانبی٬ساعت هوشمند  2 </a></li>
+                       </ul>
+                    </li>
+                    <li class="py-2 group">
+                      <a class="flex items-center justify-between dropdownBtn2 gap-2 transition group-hover:text-primary text-[#A4A4A4]">
+                        <div class="flex items-center gap-2">
+                         <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path class="group-hover:fill-primary transition" d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#A4A4A4"></path>
+                           <path class="group-hover:fill-primary transition" d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#A4A4A4"></path>
+                         </svg>
+                         <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">لوازم الکترونیکی</p>
+                        </div>
+                          <svg class="rotate-180 transition-all arrowSvg" xmlns="http://www.w3.org/2000/svg" width="12"
+                        height="7" viewBox="0 0 12 7" fill="none">
+                        <path class="transition group-hover:stroke-primary" d="M10.6001 5.68237L5.8001 0.882374L1.0001 5.68237" stroke="black"
+                            stroke-linecap="square" />
+                        </svg>
+                       </a>
+                        <ul class="dropdownContent2">
+                        <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">لوازم الکترونیکی  1 </a></li>
+                        <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">لوازم الکترونیکی  2 </a></li>
+                       </ul>
+                    </li>
+                    <li class="py-2 group">
+                      <a class="flex items-center justify-between dropdownBtn2 gap-2 transition group-hover:text-primary text-[#A4A4A4]">
+                        <div class="flex items-center gap-2">
+                         <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path class="group-hover:fill-primary transition" d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z" fill="#A4A4A4"></path>
+                           <path class="group-hover:fill-primary transition" d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z" fill="#A4A4A4"></path>
+                         </svg>
+                         <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">کامپیوتر و الکترونیک</p>
+                        </div>
+                          <svg class="rotate-180 transition-all arrowSvg" xmlns="http://www.w3.org/2000/svg" width="12"
+                        height="7" viewBox="0 0 12 7" fill="none">
+                        <path class="transition group-hover:stroke-primary" d="M10.6001 5.68237L5.8001 0.882374L1.0001 5.68237" stroke="black"
+                            stroke-linecap="square" />
+                        </svg>
+                       </a>
+                        <ul class="dropdownContent2">
+                        <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کامپیوتر و الکترونیک  1 </a></li>
+                        <li class="transition text-nowrap p-[10px] rounded-[15px] hover:bg-primary text-[#393939] hover:text-white text-[13px] font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold"><a class="block">کامپیوتر و الکترونیک  2 </a></li>
+                       </ul>
+                    </li>
+                </ul>
             </li>
-            <li class="py-2 group">
-              <a class="flex items-center gap-2 transition group-hover:text-primary text-[#A4A4A4]">
-                <div class="flex items-center gap-2">
-                  <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path class="group-hover:fill-primary transition"
-                      d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                      fill="#A4A4A4"></path>
-                    <path class="group-hover:fill-primary transition"
-                      d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                      fill="#A4A4A4"></path>
-                  </svg>
-                  <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">صندوق
-                    فروشگاهی</p>
-                </div>
-              </a>
+            <li class="mb-5">
+                <a class="w-full block">راهکارها</a>
             </li>
-            <li class="py-2 group">
-              <a class="flex items-center gap-2 transition group-hover:text-primary text-[#A4A4A4]">
-                <div class="flex items-center gap-2">
-                  <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path class="group-hover:fill-primary transition"
-                      d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                      fill="#A4A4A4"></path>
-                    <path class="group-hover:fill-primary transition"
-                      d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                      fill="#A4A4A4"></path>
-                  </svg>
-                  <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">سامانه
-                    خودکار خاص منظوره</p>
-                </div>
-              </a>
+            <li class="mb-5">
+                <a class="w-full block">کسب و کارها</a>
             </li>
-            <li class="py-2 group">
-              <a class="flex items-center gap-2 transition group-hover:text-primary text-[#A4A4A4]">
-                <div class="flex items-center gap-2">
-                  <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path class="group-hover:fill-primary transition"
-                      d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                      fill="#A4A4A4"></path>
-                    <path class="group-hover:fill-primary transition"
-                      d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                      fill="#A4A4A4"></path>
-                  </svg>
-                  <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">میز
-                    خدمات الکترونیک بانکی</p>
-                </div>
-              </a>
+            <li class="mb-5">
+                <a class="w-full block">درباره ما</a>
             </li>
-            <li class="py-2 group">
-              <a class="flex items-center gap-2 transition group-hover:text-primary text-[#A4A4A4]">
-                <div class="flex items-center gap-2">
-                  <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path class="group-hover:fill-primary transition"
-                      d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                      fill="#A4A4A4"></path>
-                    <path class="group-hover:fill-primary transition"
-                      d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                      fill="#A4A4A4"></path>
-                  </svg>
-                  <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">
-                    موبایل٬لوازم جانبی٬ساعت هوشمند</p>
-                </div>
-              </a>
+            <li>
+                <a>تماس با ما</a>
             </li>
-            <li class="py-2 group">
-              <a class="flex items-center gap-2 transition group-hover:text-primary text-[#A4A4A4]">
-                <div class="flex items-center gap-2">
-                  <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path class="group-hover:fill-primary transition"
-                      d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                      fill="#A4A4A4"></path>
-                    <path class="group-hover:fill-primary transition"
-                      d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                      fill="#A4A4A4"></path>
-                  </svg>
-                  <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">لوازم
-                    الکترونیکی</p>
-                </div>
-              </a>
-            </li>
-            <li class="py-2 group">
-              <a class="flex items-center gap-2 transition group-hover:text-primary text-[#A4A4A4]">
-                <div class="flex items-center gap-2">
-                  <svg class="flex-shrink-0 ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path class="group-hover:fill-primary transition"
-                      d="M18 9.33V14.67C18 17.99 15.65 19.34 12.78 17.69L11.5 16.95C11.19 16.77 11 16.44 11 16.08V7.92C11 7.56 11.19 7.23 11.5 7.05L12.78 6.31C15.65 4.66 18 6.01 18 9.33Z"
-                      fill="#A4A4A4"></path>
-                    <path class="group-hover:fill-primary transition"
-                      d="M10.0001 8.79V15.22C10.0001 15.61 9.58006 15.85 9.25006 15.65L8.15006 15.01C5.28006 13.36 5.28006 10.64 8.15006 8.99L9.25006 8.35C9.58006 8.16 10.0001 8.4 10.0001 8.79Z"
-                      fill="#A4A4A4"></path>
-                  </svg>
-                  <p class="font-extrabold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[13px] transition">
-                    کامپیوتر و الکترونیک</p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="mb-5">
-          <a class="w-full block">راهکارها</a>
-        </li>
-        <li class="mb-5">
-          <a class="w-full block">کسب و کارها</a>
-        </li>
-        <li class="mb-5">
-          <a class="w-full block">درباره ما</a>
-        </li>
-        <li>
-          <a>تماس با ما</a>
-        </li>
-      </ul>
+        </ul>
     </div>
   </header>
 
@@ -1406,127 +1086,80 @@
     <!-- mobile menu footer -->
     <div class="fixed bottom-0 left-0 right-0 z-10 text-xs block min-[450px]:hidden">
       <!-- wave -->
-      <svg class="absolute -top-[36px] mx-auto inset-x-0" xmlns="http://www.w3.org/2000/svg" width="151" height="22"
-        viewBox="0 0 151 33" fill="none">
-        <filter id="shadow" filterUnits="userSpaceOnUse">
-          <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#D1AF8988"></feDropShadow>
-        </filter>
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M150.563 32.9999C144.332 32.9999 138.247 31.1227 133.099 27.613L108.622 10.924C88.3811 -2.87661 61.7177 -2.73337 41.6263 11.2839L18.4924 27.4239C13.2896 31.0537 7.09854 32.9999 0.75473 32.9999H150.563Z"
-          fill="white" opacity="0.9"></path>
-      </svg>
+      <svg class="absolute -top-[36px] mx-auto inset-x-0" xmlns="http://www.w3.org/2000/svg" width="151" height="22" viewBox="0 0 151 33" fill="none">
+          <filter id="shadow" filterUnits="userSpaceOnUse">
+              <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#D1AF8988"></feDropShadow>
+          </filter>
+          <path  fill-rule="evenodd" clip-rule="evenodd" d="M150.563 32.9999C144.332 32.9999 138.247 31.1227 133.099 27.613L108.622 10.924C88.3811 -2.87661 61.7177 -2.73337 41.6263 11.2839L18.4924 27.4239C13.2896 31.0537 7.09854 32.9999 0.75473 32.9999H150.563Z" fill="#4f24ff"></path>
+          </svg>
       <!--  -->
-      <div class="w-full h-20 overflow-visible absolute inset-x-0 bottom-0 mx-auto block bg-blur rounded-t-[20px]">
+      <div
+          class="w-full h-20 overflow-visible absolute inset-x-0 bottom-0 mx-auto block bg-primary rounded-t-[20px]">
       </div>
       <div class="top-6 flex justify-between items-center px-1">
-        <div class="flex justify-between items-center text-[11px] w-full relative text-[#556076]">
-          <a href="#"
-            class="flex justify-center items-center font-bold gap-2.5 flex-col p-2 text-center cursor-pointer relative z-10">
-            <svg class="block mx-auto" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M7.24 2H5.34C3.15 2 2 3.15 2 5.33V7.23C2 9.41 3.15 10.56 5.33 10.56H7.23C9.41 10.56 10.56 9.41 10.56 7.23V5.33C10.57 3.15 9.42 2 7.24 2Z"
-                fill="#A4A4A4" />
-              <path opacity="0.4"
-                d="M18.6699 2H16.7699C14.5899 2 13.4399 3.15 13.4399 5.33V7.23C13.4399 9.41 14.5899 10.56 16.7699 10.56H18.6699C20.8499 10.56 21.9999 9.41 21.9999 7.23V5.33C21.9999 3.15 20.8499 2 18.6699 2Z"
-                fill="#A4A4A4" />
-              <path
-                d="M18.6699 13.43H16.7699C14.5899 13.43 13.4399 14.58 13.4399 16.76V18.66C13.4399 20.84 14.5899 21.99 16.7699 21.99H18.6699C20.8499 21.99 21.9999 20.84 21.9999 18.66V16.76C21.9999 14.58 20.8499 13.43 18.6699 13.43Z"
-                fill="#A4A4A4" />
-              <path opacity="0.4"
-                d="M7.24 13.43H5.34C3.15 13.43 2 14.58 2 16.76V18.66C2 20.85 3.15 22 5.33 22H7.23C9.41 22 10.56 20.85 10.56 18.67V16.77C10.57 14.58 9.42 13.43 7.24 13.43Z"
-                fill="#A4A4A4" />
-            </svg>
-            <span>محصولات</span>
-          </a>
-          <a href="#"
-            class="flex justify-center items-center font-bold gap-2.5 flex-col p-2 text-center cursor-pointer relative z-10">
-            <div class="flex-shrink-0 relative flex-center">
-              <!-- cart num -->
-              <p
-                class="absolute animate-bounce font-bold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[8px] w-3 h-3 bg-[#00D222] rounded-full flex-center top-0 rtl:-right-1 ltr:-left-1 text-white">
-                10</p>
-              <!--  -->
-              <svg class="block mx-auto" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M16.25 22.5C17.2165 22.5 18 21.7165 18 20.75C18 19.7835 17.2165 19 16.25 19C15.2835 19 14.5 19.7835 14.5 20.75C14.5 21.7165 15.2835 22.5 16.25 22.5Z"
-                  fill="#A4A4A4" />
-                <path
-                  d="M8.25 22.5C9.2165 22.5 10 21.7165 10 20.75C10 19.7835 9.2165 19 8.25 19C7.2835 19 6.5 19.7835 6.5 20.75C6.5 21.7165 7.2835 22.5 8.25 22.5Z"
-                  fill="#A4A4A4" />
-                <path opacity="0.4"
-                  d="M4.84 3.94L4.64 6.39C4.6 6.86 4.97 7.25 5.44 7.25H20.75C21.17 7.25 21.52 6.92999 21.55 6.50999C21.68 4.73999 20.33 3.3 18.56 3.3H6.28999C6.18999 2.86 5.98999 2.44 5.67999 2.09C5.18999 1.56 4.49 1.25 3.77 1.25H2C1.59 1.25 1.25 1.59 1.25 2C1.25 2.41 1.59 2.75 2 2.75H3.74001C4.05001 2.75 4.34 2.88001 4.55 3.10001C4.76 3.33001 4.86 3.63 4.84 3.94Z"
-                  fill="#A4A4A4" />
-                <path
-                  d="M20.5101 8.75H5.17006C4.75006 8.75 4.41005 9.07 4.37005 9.48L4.01005 13.83C3.87005 15.53 5.21006 17 6.92006 17H18.0401C19.5401 17 20.8601 15.77 20.9701 14.27L21.3001 9.60001C21.3401 9.14001 20.9801 8.75 20.5101 8.75Z"
-                  fill="#A4A4A4" />
-              </svg>
-            </div>
-            <span>سبد خرید</span>
-          </a>
-        </div>
-        <div class="w-1/2 min-[450px]:w-full"></div>
-        <div class="flex justify-between items-center w-full relative text-[#556076]">
-          <a href="#"
-            class="flex justify-center items-center font-bold gap-2.5 flex-col p-2 text-center cursor-pointer relative z-10">
-            <svg class="block mx-auto" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path opacity="0.4"
-                d="M7.65006 20.91C7.62006 20.91 7.58006 20.93 7.55006 20.93C5.61006 19.97 4.03006 18.38 3.06006 16.44C3.06006 16.41 3.08006 16.37 3.08006 16.34C4.30006 16.7 5.56006 16.97 6.81006 17.18C7.03006 18.44 7.29006 19.69 7.65006 20.91Z"
-                fill="#A4A4A4" />
-              <path opacity="0.4"
-                d="M20.94 16.45C19.95 18.44 18.3 20.05 16.29 21.02C16.67 19.75 16.99 18.47 17.2 17.18C18.46 16.97 19.7 16.7 20.92 16.34C20.91 16.38 20.94 16.42 20.94 16.45Z"
-                fill="#A4A4A4" />
-              <path opacity="0.4"
-                d="M21.02 7.71001C19.76 7.33001 18.49 7.02001 17.2 6.80001C16.99 5.51001 16.68 4.23001 16.29 2.98001C18.36 3.97001 20.03 5.64001 21.02 7.71001Z"
-                fill="#A4A4A4" />
-              <path opacity="0.4"
-                d="M7.64998 3.09C7.28998 4.31 7.02998 5.55 6.81998 6.81C5.52998 7.01 4.24998 7.33 2.97998 7.71C3.94998 5.7 5.55998 4.05 7.54998 3.06C7.57998 3.06 7.61998 3.09 7.64998 3.09Z"
-                fill="#A4A4A4" />
-              <path
-                d="M15.4898 6.59C13.1698 6.33 10.8298 6.33 8.50977 6.59C8.75977 5.22 9.07977 3.85 9.52977 2.53C9.54977 2.45 9.53977 2.39 9.54977 2.31C10.3398 2.12 11.1498 2 11.9998 2C12.8398 2 13.6598 2.12 14.4398 2.31C14.4498 2.39 14.4498 2.45 14.4698 2.53C14.9198 3.86 15.2398 5.22 15.4898 6.59Z"
-                fill="#A4A4A4" />
-              <path
-                d="M6.59 15.49C5.21 15.24 3.85 14.92 2.53 14.47C2.45 14.45 2.39 14.46 2.31 14.45C2.12 13.66 2 12.85 2 12C2 11.16 2.12 10.34 2.31 9.56001C2.39 9.55001 2.45 9.55001 2.53 9.53001C3.86 9.09001 5.21 8.76001 6.59 8.51001C6.34 10.83 6.34 13.17 6.59 15.49Z"
-                fill="#A4A4A4" />
-              <path
-                d="M22.0002 12C22.0002 12.85 21.8802 13.66 21.6902 14.45C21.6102 14.46 21.5502 14.45 21.4702 14.47C20.1402 14.91 18.7802 15.24 17.4102 15.49C17.6702 13.17 17.6702 10.83 17.4102 8.51001C18.7802 8.76001 20.1502 9.08001 21.4702 9.53001C21.5502 9.55001 21.6102 9.56001 21.6902 9.56001C21.8802 10.35 22.0002 11.16 22.0002 12Z"
-                fill="#A4A4A4" />
-              <path
-                d="M15.4898 17.41C15.2398 18.79 14.9198 20.15 14.4698 21.47C14.4498 21.55 14.4498 21.61 14.4398 21.69C13.6598 21.88 12.8398 22 11.9998 22C11.1498 22 10.3398 21.88 9.54977 21.69C9.53977 21.61 9.54977 21.55 9.52977 21.47C9.08977 20.14 8.75977 18.79 8.50977 17.41C9.66977 17.54 10.8298 17.63 11.9998 17.63C13.1698 17.63 14.3398 17.54 15.4898 17.41Z"
-                fill="#A4A4A4" />
-              <path
-                d="M15.7633 15.7633C13.2622 16.0789 10.7378 16.0789 8.23667 15.7633C7.92111 13.2622 7.92111 10.7378 8.23667 8.23667C10.7378 7.92111 13.2622 7.92111 15.7633 8.23667C16.0789 10.7378 16.0789 13.2622 15.7633 15.7633Z"
-                fill="#A4A4A4" />
-            </svg>
-            <span>درباره ما</span>
-          </a>
-          <a href="#"
-            class="flex justify-center items-center font-bold gap-2.5 flex-col p-2 text-center cursor-pointer relative z-10">
-            <svg class="block mx-auto" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path opacity="0.4"
-                d="M11.79 14.21L8.52 17.48C8.16 17.16 7.81 16.83 7.47 16.49C6.44 15.45 5.51 14.36 4.68 13.22C3.86 12.08 3.2 10.94 2.72 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C11.09 13.57 11.44 13.91 11.79 14.21Z"
-                fill="#A4A4A4" />
-              <path
-                d="M21.9701 18.33C21.9701 18.61 21.9201 18.9 21.8201 19.18C21.7901 19.26 21.7601 19.34 21.7201 19.42C21.5501 19.78 21.3301 20.12 21.0401 20.44C20.5501 20.98 20.0101 21.37 19.4001 21.62C19.3901 21.62 19.3801 21.63 19.3701 21.63C18.7801 21.87 18.1401 22 17.4501 22C16.4301 22 15.3401 21.76 14.1901 21.27C13.0401 20.78 11.8901 20.12 10.7501 19.29C10.3601 19 9.9701 18.71 9.6001 18.4L12.8701 15.13C13.1501 15.34 13.4001 15.5 13.6101 15.61C13.6601 15.63 13.7201 15.66 13.7901 15.69C13.8701 15.72 13.9501 15.73 14.0401 15.73C14.2101 15.73 14.3401 15.67 14.4501 15.56L15.2101 14.81C15.4601 14.56 15.7001 14.37 15.9301 14.25C16.1601 14.11 16.3901 14.04 16.6401 14.04C16.8301 14.04 17.0301 14.08 17.2501 14.17C17.4701 14.26 17.7001 14.39 17.9501 14.56L21.2601 16.91C21.5201 17.09 21.7001 17.3 21.8101 17.55C21.9101 17.8 21.9701 18.05 21.9701 18.33Z"
-                fill="#A4A4A4" />
-            </svg>
-            <span>تماس با ما</span>
-          </a>
-        </div>
+          <div class="flex justify-between items-center text-[11px] w-full relative text-white">
+              <a href="#"
+                  class="flex justify-center items-center font-bold gap-2.5 flex-col p-2 text-center cursor-pointer relative z-10">
+                  <svg class="block mx-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.24 2H5.34C3.15 2 2 3.15 2 5.33V7.23C2 9.41 3.15 10.56 5.33 10.56H7.23C9.41 10.56 10.56 9.41 10.56 7.23V5.33C10.57 3.15 9.42 2 7.24 2Z" fill="white"/>
+                    <path opacity="0.4" d="M18.6699 2H16.7699C14.5899 2 13.4399 3.15 13.4399 5.33V7.23C13.4399 9.41 14.5899 10.56 16.7699 10.56H18.6699C20.8499 10.56 21.9999 9.41 21.9999 7.23V5.33C21.9999 3.15 20.8499 2 18.6699 2Z" fill="white"/>
+                    <path d="M18.6699 13.43H16.7699C14.5899 13.43 13.4399 14.58 13.4399 16.76V18.66C13.4399 20.84 14.5899 21.99 16.7699 21.99H18.6699C20.8499 21.99 21.9999 20.84 21.9999 18.66V16.76C21.9999 14.58 20.8499 13.43 18.6699 13.43Z" fill="white"/>
+                    <path opacity="0.4" d="M7.24 13.43H5.34C3.15 13.43 2 14.58 2 16.76V18.66C2 20.85 3.15 22 5.33 22H7.23C9.41 22 10.56 20.85 10.56 18.67V16.77C10.57 14.58 9.42 13.43 7.24 13.43Z" fill="white"/>
+                    </svg>
+                  <span>محصولات</span>
+              </a>
+              <a href="#"
+                  class="flex justify-center items-center font-bold gap-2.5 flex-col p-2 text-center cursor-pointer relative z-10">
+                  <div class="flex-shrink-0 relative flex-center">
+                    <!-- cart num -->
+                    <p class="absolute animate-bounce font-bold ltr:font-MontserratBold rtl:font-yekanBakhBold text-[8px] w-3 h-3 bg-[#00D222] rounded-full flex-center top-0 rtl:-right-1 ltr:-left-1 text-white">
+                        10</p>
+                    <!--  -->
+                    <svg class="block mx-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.25 22.5C17.2165 22.5 18 21.7165 18 20.75C18 19.7835 17.2165 19 16.25 19C15.2835 19 14.5 19.7835 14.5 20.75C14.5 21.7165 15.2835 22.5 16.25 22.5Z" fill="white"/>
+                      <path d="M8.25 22.5C9.2165 22.5 10 21.7165 10 20.75C10 19.7835 9.2165 19 8.25 19C7.2835 19 6.5 19.7835 6.5 20.75C6.5 21.7165 7.2835 22.5 8.25 22.5Z" fill="white"/>
+                      <path opacity="0.4" d="M4.84 3.94L4.64 6.39C4.6 6.86 4.97 7.25 5.44 7.25H20.75C21.17 7.25 21.52 6.92999 21.55 6.50999C21.68 4.73999 20.33 3.3 18.56 3.3H6.28999C6.18999 2.86 5.98999 2.44 5.67999 2.09C5.18999 1.56 4.49 1.25 3.77 1.25H2C1.59 1.25 1.25 1.59 1.25 2C1.25 2.41 1.59 2.75 2 2.75H3.74001C4.05001 2.75 4.34 2.88001 4.55 3.10001C4.76 3.33001 4.86 3.63 4.84 3.94Z" fill="white"/>
+                      <path d="M20.5101 8.75H5.17006C4.75006 8.75 4.41005 9.07 4.37005 9.48L4.01005 13.83C3.87005 15.53 5.21006 17 6.92006 17H18.0401C19.5401 17 20.8601 15.77 20.9701 14.27L21.3001 9.60001C21.3401 9.14001 20.9801 8.75 20.5101 8.75Z" fill="white"/>
+                    </svg>
+                  </div>
+                  <span>سبد خرید</span>
+              </a>
+          </div>
+          <div class="w-1/2 min-[450px]:w-full"></div>
+          <div class="flex justify-between items-center w-full relative text-white">
+              <a href="#"
+                  class="flex justify-center items-center font-bold gap-2.5 flex-col p-2 text-center cursor-pointer relative z-10">
+                  <svg class="block mx-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.4" d="M7.65006 20.91C7.62006 20.91 7.58006 20.93 7.55006 20.93C5.61006 19.97 4.03006 18.38 3.06006 16.44C3.06006 16.41 3.08006 16.37 3.08006 16.34C4.30006 16.7 5.56006 16.97 6.81006 17.18C7.03006 18.44 7.29006 19.69 7.65006 20.91Z" fill="white"/>
+                    <path opacity="0.4" d="M20.94 16.45C19.95 18.44 18.3 20.05 16.29 21.02C16.67 19.75 16.99 18.47 17.2 17.18C18.46 16.97 19.7 16.7 20.92 16.34C20.91 16.38 20.94 16.42 20.94 16.45Z" fill="white"/>
+                    <path opacity="0.4" d="M21.02 7.71001C19.76 7.33001 18.49 7.02001 17.2 6.80001C16.99 5.51001 16.68 4.23001 16.29 2.98001C18.36 3.97001 20.03 5.64001 21.02 7.71001Z" fill="white"/>
+                    <path opacity="0.4" d="M7.64998 3.09C7.28998 4.31 7.02998 5.55 6.81998 6.81C5.52998 7.01 4.24998 7.33 2.97998 7.71C3.94998 5.7 5.55998 4.05 7.54998 3.06C7.57998 3.06 7.61998 3.09 7.64998 3.09Z" fill="white"/>
+                    <path d="M15.4898 6.59C13.1698 6.33 10.8298 6.33 8.50977 6.59C8.75977 5.22 9.07977 3.85 9.52977 2.53C9.54977 2.45 9.53977 2.39 9.54977 2.31C10.3398 2.12 11.1498 2 11.9998 2C12.8398 2 13.6598 2.12 14.4398 2.31C14.4498 2.39 14.4498 2.45 14.4698 2.53C14.9198 3.86 15.2398 5.22 15.4898 6.59Z" fill="white"/>
+                    <path d="M6.59 15.49C5.21 15.24 3.85 14.92 2.53 14.47C2.45 14.45 2.39 14.46 2.31 14.45C2.12 13.66 2 12.85 2 12C2 11.16 2.12 10.34 2.31 9.56001C2.39 9.55001 2.45 9.55001 2.53 9.53001C3.86 9.09001 5.21 8.76001 6.59 8.51001C6.34 10.83 6.34 13.17 6.59 15.49Z" fill="white"/>
+                    <path d="M22.0002 12C22.0002 12.85 21.8802 13.66 21.6902 14.45C21.6102 14.46 21.5502 14.45 21.4702 14.47C20.1402 14.91 18.7802 15.24 17.4102 15.49C17.6702 13.17 17.6702 10.83 17.4102 8.51001C18.7802 8.76001 20.1502 9.08001 21.4702 9.53001C21.5502 9.55001 21.6102 9.56001 21.6902 9.56001C21.8802 10.35 22.0002 11.16 22.0002 12Z" fill="white"/>
+                    <path d="M15.4898 17.41C15.2398 18.79 14.9198 20.15 14.4698 21.47C14.4498 21.55 14.4498 21.61 14.4398 21.69C13.6598 21.88 12.8398 22 11.9998 22C11.1498 22 10.3398 21.88 9.54977 21.69C9.53977 21.61 9.54977 21.55 9.52977 21.47C9.08977 20.14 8.75977 18.79 8.50977 17.41C9.66977 17.54 10.8298 17.63 11.9998 17.63C13.1698 17.63 14.3398 17.54 15.4898 17.41Z" fill="white"/>
+                    <path d="M15.7633 15.7633C13.2622 16.0789 10.7378 16.0789 8.23667 15.7633C7.92111 13.2622 7.92111 10.7378 8.23667 8.23667C10.7378 7.92111 13.2622 7.92111 15.7633 8.23667C16.0789 10.7378 16.0789 13.2622 15.7633 15.7633Z" fill="white"/>
+                    </svg>
+                  <span>درباره ما</span>
+              </a>
+              <a href="#"
+                  class="flex justify-center items-center font-bold gap-2.5 flex-col p-2 text-center cursor-pointer relative z-10">
+                  <svg class="block mx-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.4" d="M11.79 14.21L8.52 17.48C8.16 17.16 7.81 16.83 7.47 16.49C6.44 15.45 5.51 14.36 4.68 13.22C3.86 12.08 3.2 10.94 2.72 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C11.09 13.57 11.44 13.91 11.79 14.21Z" fill="white"/>
+                    <path d="M21.9701 18.33C21.9701 18.61 21.9201 18.9 21.8201 19.18C21.7901 19.26 21.7601 19.34 21.7201 19.42C21.5501 19.78 21.3301 20.12 21.0401 20.44C20.5501 20.98 20.0101 21.37 19.4001 21.62C19.3901 21.62 19.3801 21.63 19.3701 21.63C18.7801 21.87 18.1401 22 17.4501 22C16.4301 22 15.3401 21.76 14.1901 21.27C13.0401 20.78 11.8901 20.12 10.7501 19.29C10.3601 19 9.9701 18.71 9.6001 18.4L12.8701 15.13C13.1501 15.34 13.4001 15.5 13.6101 15.61C13.6601 15.63 13.7201 15.66 13.7901 15.69C13.8701 15.72 13.9501 15.73 14.0401 15.73C14.2101 15.73 14.3401 15.67 14.4501 15.56L15.2101 14.81C15.4601 14.56 15.7001 14.37 15.9301 14.25C16.1601 14.11 16.3901 14.04 16.6401 14.04C16.8301 14.04 17.0301 14.08 17.2501 14.17C17.4701 14.26 17.7001 14.39 17.9501 14.56L21.2601 16.91C21.5201 17.09 21.7001 17.3 21.8101 17.55C21.9101 17.8 21.9701 18.05 21.9701 18.33Z" fill="white"/>
+                    </svg>
+                  <span>تماس با ما</span>
+              </a>
+          </div>
       </div>
       <div class="absolute -top-[3px]  min-[400px]:-top-1 min-[450px]:-top-1 inset-x-0">
-        <a class="flex justify-center items-center flex-col w-[90px] mx-auto gap-5" href="#">
-          <span class="w-12 h-12 rounded-full bg-primary shadow-3 flex justify-center items-center">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M11.2929 3.293C11.4804 3.10553 11.7348 3.00021 11.9999 3.00021C12.2651 3.00021 12.5194 3.10553 12.7069 3.293L18.7069 9.293L20.7069 11.293C20.8891 11.4816 20.9899 11.7342 20.9876 11.9964C20.9853 12.2586 20.8801 12.5094 20.6947 12.6948C20.5093 12.8802 20.2585 12.9854 19.9963 12.9877C19.7341 12.99 19.4815 12.8892 19.2929 12.707L18.9999 12.414V19C18.9999 19.5304 18.7892 20.0391 18.4141 20.4142C18.0391 20.7893 17.5304 21 16.9999 21H13.9999C13.7347 21 13.4803 20.8946 13.2928 20.7071C13.1053 20.5196 12.9999 20.2652 12.9999 20V17H10.9999V20C10.9999 20.2652 10.8946 20.5196 10.707 20.7071C10.5195 20.8946 10.2651 21 9.99992 21H6.99992C6.46949 21 5.96078 20.7893 5.58571 20.4142C5.21063 20.0391 4.99992 19.5304 4.99992 19V12.414L4.70692 12.707C4.51832 12.8892 4.26571 12.99 4.00352 12.9877C3.74132 12.9854 3.49051 12.8802 3.3051 12.6948C3.11969 12.5094 3.01452 12.2586 3.01224 11.9964C3.00997 11.7342 3.11076 11.4816 3.29292 11.293L5.29292 9.293L11.2929 3.293Z"
-                fill="white" />
-            </svg>
-          </span>
-        </a>
+          <a class="flex justify-center items-center flex-col w-[90px] mx-auto gap-5" href="#">
+              <span class="w-12 h-12 rounded-full bg-secondary shadow-1 flex justify-center items-center">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2929 3.293C11.4804 3.10553 11.7348 3.00021 11.9999 3.00021C12.2651 3.00021 12.5194 3.10553 12.7069 3.293L18.7069 9.293L20.7069 11.293C20.8891 11.4816 20.9899 11.7342 20.9876 11.9964C20.9853 12.2586 20.8801 12.5094 20.6947 12.6948C20.5093 12.8802 20.2585 12.9854 19.9963 12.9877C19.7341 12.99 19.4815 12.8892 19.2929 12.707L18.9999 12.414V19C18.9999 19.5304 18.7892 20.0391 18.4141 20.4142C18.0391 20.7893 17.5304 21 16.9999 21H13.9999C13.7347 21 13.4803 20.8946 13.2928 20.7071C13.1053 20.5196 12.9999 20.2652 12.9999 20V17H10.9999V20C10.9999 20.2652 10.8946 20.5196 10.707 20.7071C10.5195 20.8946 10.2651 21 9.99992 21H6.99992C6.46949 21 5.96078 20.7893 5.58571 20.4142C5.21063 20.0391 4.99992 19.5304 4.99992 19V12.414L4.70692 12.707C4.51832 12.8892 4.26571 12.99 4.00352 12.9877C3.74132 12.9854 3.49051 12.8802 3.3051 12.6948C3.11969 12.5094 3.01452 12.2586 3.01224 11.9964C3.00997 11.7342 3.11076 11.4816 3.29292 11.293L5.29292 9.293L11.2929 3.293Z" fill="white"/>
+                  </svg>
+              </span>
+          </a>
       </div>
     </div>
   </footer>
