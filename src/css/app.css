@@ -184,6 +184,9 @@ input[type="number"] {
 .acordionContent.active,.allContent.active{
   max-height: 2000px;
 }
+/* tab */
+/* animation: in 1s;
+  transform-origin: top left; */
 /* swiper */
 .banner .swiper-button-next::after,
 .banner .swiper-button-prev::after {
