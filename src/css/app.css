@@ -78,6 +78,10 @@ header ul li.active::after {
   background-color: #FFFFFF0F;
   backdrop-filter: blur(4px);
 }
+.bg-blur3{
+  background-color: #FFFFFF36;
+  backdrop-filter: blur(4px);
+}
 #hamIcon.active svg:last-child{
   display: block;
 }
@@ -100,7 +104,6 @@ header ul li.active::after {
 
 .dropdownContent,
 .dropdownContent2,
-.accordionContent,
 .dropdown {
   padding: 0;
   max-height: 0;
@@ -158,8 +161,14 @@ input[type="number"] {
   visibility: visible;
 }
 /* acordion */
+.acordionBtn img{
+  transition: all .4s;
+}
 .acordionBtn img.active{
   transform: rotate(180deg);
+}
+.acordionBtn .arrow.active{
+  background-color: #E8E8E8;
 }
 .acordionContent{
   max-height: 0;

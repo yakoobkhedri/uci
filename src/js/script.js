@@ -81,6 +81,7 @@ acordionBtn.forEach((item)=> {
   item.addEventListener('click', function () {
     item.nextElementSibling.classList.toggle('active');
     item.querySelector('img').classList.toggle('active');
+    item.querySelector('.arrow').classList.toggle('active');
   })
 })
 
