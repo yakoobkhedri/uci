@@ -3028,8 +3028,11 @@ input[type="number"] {
 
 /* tab */
 
-/* animation: in 1s;
-  transform-origin: top left; */
+.tabContent > div{
+  display: none;
+  animation: in 1s;
+  transform-origin: top left;
+}
 
 /* swiper */
 

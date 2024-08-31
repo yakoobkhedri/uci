@@ -185,8 +185,11 @@ input[type="number"] {
   max-height: 2000px;
 }
 /* tab */
-/* animation: in 1s;
-  transform-origin: top left; */
+.tabContent > div{
+  display: none;
+  animation: in 1s;
+  transform-origin: top left;
+}
 /* swiper */
 .banner .swiper-button-next::after,
 .banner .swiper-button-prev::after {
