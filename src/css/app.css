@@ -160,6 +160,13 @@ input[type="number"] {
   opacity: 100%;
   visibility: visible;
 }
+/* select color */
+.colors > div.active{
+  border: 1px solid #C7C6C6;
+}
+.colors > div.active img{
+  opacity: 100%;
+}
 /* acordion */
 .acordionBtn img{
   transition: all .4s;

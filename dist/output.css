@@ -1031,6 +1031,10 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -1143,6 +1147,10 @@ video {
   margin-top: 26px;
 }
 
+.mt-\[30px\] {
+  margin-top: 30px;
+}
+
 .mt-\[38px\] {
   margin-top: 38px;
 }
@@ -1157,10 +1165,6 @@ video {
 
 .mt-\[90px\] {
   margin-top: 90px;
-}
-
-.mb-7 {
-  margin-bottom: 1.75rem;
 }
 
 .line-clamp-1 {
@@ -1834,6 +1838,10 @@ video {
   gap: 10px;
 }
 
+.gap-\[14px\] {
+  gap: 14px;
+}
+
 .gap-\[18px\] {
   gap: 18px;
 }
@@ -2025,11 +2033,6 @@ video {
 .border-\[\#B9B9B9\] {
   --tw-border-opacity: 1;
   border-color: rgb(185 185 185 / var(--tw-border-opacity));
-}
-
-.border-\[\#C7C6C6\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(199 198 198 / var(--tw-border-opacity));
 }
 
 .border-\[\#D9D9D9\] {
@@ -2296,6 +2299,11 @@ video {
   padding-right: 18px;
 }
 
+.px-\[22px\] {
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -2309,6 +2317,11 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .py-5 {
@@ -2349,11 +2362,6 @@ video {
 .py-\[71px\] {
   padding-top: 71px;
   padding-bottom: 71px;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .pb-0 {
@@ -2983,6 +2991,16 @@ input[type="number"] {
 .langDropdown.active {
   opacity: 100%;
   visibility: visible;
+}
+
+/* select color */
+
+.colors > div.active{
+  border: 1px solid #C7C6C6;
+}
+
+.colors > div.active img{
+  opacity: 100%;
 }
 
 /* acordion */

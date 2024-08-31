@@ -73,6 +73,17 @@ langItems.forEach((item) => {
   })
 });
 
+// select color
+
+let color = Array.from(document.querySelectorAll('.colors > div'));
+
+color.forEach((item)=>{
+  item.addEventListener('click', function () {
+    color.forEach((items)=>{items.classList.remove('active')});
+    item.classList.toggle('active');
+  })
+})
+
 // acordion
 
 let acordionBtn = Array.from(document.getElementsByClassName('acordionBtn'));

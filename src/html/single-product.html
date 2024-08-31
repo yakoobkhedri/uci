@@ -1325,19 +1325,19 @@
                 <div class="mt-5">
                   <p class="font-bold rtl:font-yekanBakhBold ltr:font-MontserratBold text-lg">انتخاب رنگ</p>
                   <div class="mt-2 flex items-center gap-5 colors">
-                    <div class="cursor-pointer w-11 h-11 rounded-full border border-[#C7C6C6] bg-white flex-center">
+                    <div class="cursor-pointer w-11 h-11 active rounded-full bg-white flex-center transition">
                       <div class="w-9 h-9 rounded-full bg-[#0054FF] flex-center">
-                        <img alt="icon" src="../img/svg/Vector 784.svg">
+                        <img alt="icon" src="../img/svg/Vector 784.svg" class="opacity-0 transition">
                       </div>
                     </div>
-                    <div class="cursor-pointer w-11 h-11 rounded-full border border-[#C7C6C6] bg-white flex-center">
+                    <div class="cursor-pointer w-11 h-11 rounded-full bg-white flex-center transition">
                       <div class="w-9 h-9 rounded-full bg-[#1D1D1D] flex-center">
-                        <img alt="icon" src="../img/svg/Vector 784.svg">
+                        <img alt="icon" src="../img/svg/Vector 784.svg" class="opacity-0 transition">
                       </div>
                     </div>
-                    <div class="cursor-pointer w-11 h-11 rounded-full border border-[#C7C6C6] bg-white flex-center">
+                    <div class="cursor-pointer w-11 h-11 rounded-full bg-white flex-center transition">
                       <div class="w-9 h-9 rounded-full bg-[#8BD30C] flex-center">
-                        <img alt="icon" src="../img/svg/Vector 784.svg">
+                        <img alt="icon" src="../img/svg/Vector 784.svg" class="opacity-0 transition">
                       </div>
                     </div>
                   </div>
@@ -1777,7 +1777,106 @@
               </div>
             </div>
           </div>
-          <div class="col-span-4"></div>
+          <div class="col-span-4">
+            <form class="bg-[#F8F7FF] rounded-[20px] p-4 sticky top-14">
+             <div class="bg-white mb-4 rounded-[10px] py-4 px-[22px] text-sm font-bold rtl:font-yekanBakhBold ltr:font-MontserratBold">
+               <div class="flex items-center gap-[10px] pb-3 mb-4 border-b border-[#E0E0E0]">
+                 <img alt="icon" src="../img/svg/Group 893.svg">
+                 <p>موجود در انبار (ارسال فوری)</p>
+               </div>
+               <div class="flex items-center gap-[10px]">
+                <img alt="icon" src="../img/svg/medal-star (2).svg">
+                <p>گارانتی 12 ماهه (UCI)</p>
+              </div>
+             </div>
+             <div class="bg-white rounded-[10px] py-4 px-[22px]">
+               <div class="mb-6">
+                <p class="font-bold rtl:font-yekanBakhBold ltr:font-MontserratBold">محل نصب:</p>
+              <div class="mt-3 flex-wrap flex items-center gap-[22px]">
+                <div class="inline-flex items-center gap-[10px]">
+                  <label class="relative flex items-center p-1 rounded-full cursor-pointer" htmlfor="black">
+                    <input name="install" type="radio" class="before:content[''] bg-[#E7E7E7] peer relative h-6 w-6 cursor-pointer appearance-none overflow-hidden rounded-[5px] text-[#ECECEC] transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-[#ECECEC] before:opacity-0 before:transition-opacity checked:border-orange checked:before:bg-orange hover:before:opacity-10" id="black">
+                    <span class="absolute text-primary transition-opacity opacity-0 pointer-events-none rounded-[5px] top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                      <div class="w-6 h-6 rounded-[5px] bg-primary"></div>
+                    </span>
+                  </label>
+                  <p class="font-semibold rtl:font-yekanBakhBold ltr:font-MontserratBold text-black opacity-60">
+                    تهران
+                </div>
+                <div class="inline-flex items-center gap-[10px]">
+                  <label class="relative flex items-center p-1 rounded-full cursor-pointer" htmlfor="black">
+                    <input name="install" type="radio" class="before:content[''] bg-[#E7E7E7] peer relative h-6 w-6 cursor-pointer appearance-none overflow-hidden rounded-[5px] text-[#ECECEC] transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-[#ECECEC] before:opacity-0 before:transition-opacity checked:border-orange checked:before:bg-orange hover:before:opacity-10" id="black">
+                    <span class="absolute text-primary transition-opacity opacity-0 pointer-events-none rounded-[5px] top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                      <div class="w-6 h-6 rounded-[5px] bg-primary"></div>
+                    </span>
+                  </label>
+                  <p class="font-semibold rtl:font-yekanBakhBold ltr:font-MontserratBold text-black opacity-60">
+                    شهرستان
+                </div>
+              </div>
+               </div>
+               <div>
+                <p class="font-bold rtl:font-yekanBakhBold ltr:font-MontserratBold">آپشن های اضافی:</p>
+              <div class="mt-3 flex-wrap flex items-center gap-[22px]">
+                <div class="inline-flex items-center gap-[10px]">
+                  <label class="relative flex items-center p-1 rounded-full cursor-pointer" htmlfor="black">
+                    <input name="option" type="radio" class="before:content[''] bg-[#E7E7E7] peer relative h-6 w-6 cursor-pointer appearance-none overflow-hidden rounded-[5px] text-[#ECECEC] transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-[#ECECEC] before:opacity-0 before:transition-opacity checked:border-orange checked:before:bg-orange hover:before:opacity-10" id="black">
+                    <span class="absolute text-primary transition-opacity opacity-0 pointer-events-none rounded-[5px] top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                      <div class="w-6 h-6 rounded-[5px] bg-primary"></div>
+                    </span>
+                  </label>
+                  <p class="font-semibold rtl:font-yekanBakhBold ltr:font-MontserratBold text-black opacity-60">
+                    بارکدخوان
+                </div>
+                <div class="inline-flex items-center gap-[10px]">
+                  <label class="relative flex items-center p-1 rounded-full cursor-pointer" htmlfor="black">
+                    <input name="option" type="radio" class="before:content[''] bg-[#E7E7E7] peer relative h-6 w-6 cursor-pointer appearance-none overflow-hidden rounded-[5px] text-[#ECECEC] transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-[#ECECEC] before:opacity-0 before:transition-opacity checked:border-orange checked:before:bg-orange hover:before:opacity-10" id="black">
+                    <span class="absolute text-primary transition-opacity opacity-0 pointer-events-none rounded-[5px] top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                      <div class="w-6 h-6 rounded-[5px] bg-primary"></div>
+                    </span>
+                  </label>
+                  <p class="font-semibold rtl:font-yekanBakhBold ltr:font-MontserratBold text-black opacity-60">
+                    کارتخوان UCI
+                </div>
+              </div>
+               </div>
+             </div>
+             <div class="mt-5 flex-between gap-4">
+              <div class="flex items-center gap-2 h-[51px] px-2 rounded-[5px] border border-primary overflow-hidden">
+                <button class="flex-shrink-0 hover:scale-110 w-6 h-full flex-center cursor-pointer">
+                    <img alt="icon" src="../img/svg/fi-rr-minus-small.svg">
+                </button>
+                <input class="w-10 h-full font-bold rtl:font-yekanBakhBold ltr:font-MontserratBold text-xl block bg-transparent outline-none border-0 text-center" value="1">
+                <button class="flex-shrink-0 hover:scale-110 w-6 h-full flex-center cursor-pointer">
+                  <img alt="icon" src="../img/svg/fi-rr-plus-small.svg">
+                </button>
+              </div>
+              <div>
+                <div class="flex items-center justify-end gap-3">
+                  <p class="w-[46px] h-[26px] text-white rounded-lg bg-[#FF1919] font-semibold flex-center">10%</p>
+                   <p class="font-semibold text-[#393939] line-through">37,000,000</p>
+                </div>
+                <div class="flex items-center gap-[6px] mt-[5px]">
+                  <p class="text-2xl rtl:font-yekanBakhBold ltr:font-MontserratBold font-black text-[#00D222]">36,000,000</p>
+                  <p class="text-sm text-[#424242]">تومان</p>
+                </div>
+              </div>
+             </div>
+             <a class="flex-center mt-7 btnHover px-3 text-lg font-bold rtl:font-yekanBakhBold ltr:font-MontserratBold h-[51px] rounded-[10px] bg-secondary text-white">
+              افزودن به سبد خرید
+             </a>
+             <div class="mt-[30px] font-bold rtl:font-yekanBakhBold ltr:font-MontserratBold">
+              <div class="flex items-center gap-[14px] mb-5">
+                <img alt="icon" src="../img/svg/truck-tick.svg">
+                <p>زمان تحویل: 10 روز بعد از ثبت سفارش</p>
+              </div>
+              <div class="flex items-center gap-[14px]">
+               <img alt="icon" src="../img/svg/box.svg">
+               <p>شیوه ارسال: باربری / تیپاکس</p>
+             </div>
+            </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
