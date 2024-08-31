@@ -177,11 +177,11 @@ input[type="number"] {
 .acordionBtn .arrow.active{
   background-color: #E8E8E8;
 }
-.acordionContent{
+.acordionContent,.allContent{
   max-height: 0;
   overflow: hidden;
 }
-.acordionContent.active{
+.acordionContent.active,.allContent.active{
   max-height: 2000px;
 }
 /* swiper */

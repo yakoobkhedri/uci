@@ -1700,6 +1700,11 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.-rotate-90 {
+  --tw-rotate: -90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -3017,12 +3022,12 @@ input[type="number"] {
   background-color: #E8E8E8;
 }
 
-.acordionContent{
+.acordionContent,.allContent{
   max-height: 0;
   overflow: hidden;
 }
 
-.acordionContent.active{
+.acordionContent.active,.allContent.active{
   max-height: 2000px;
 }
 
@@ -3303,6 +3308,18 @@ input[type="number"] {
   transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.after\:text-sm::after {
+  content: var(--tw-content);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.after\:\!text-sm::after {
+  content: var(--tw-content);
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
 }
 
 .after\:content-none::after {
@@ -3735,6 +3752,22 @@ input[type="number"] {
 
 :is([dir="rtl"] .rtl\:right-\[87px\]) {
   right: 87px;
+}
+
+:is([dir="rtl"] .rtl\:-left-7) {
+  left: -1.75rem;
+}
+
+:is([dir="rtl"] .rtl\:-left-6) {
+  left: -1.5rem;
+}
+
+:is([dir="rtl"] .rtl\:-left-4) {
+  left: -1rem;
+}
+
+:is([dir="rtl"] .rtl\:-left-3) {
+  left: -0.75rem;
 }
 
 :is([dir="rtl"] .rtl\:order-first) {
