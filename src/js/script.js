@@ -2,6 +2,7 @@
 let hamIcon = document.getElementById('hamIcon');
 let mobileMenu = document.querySelector('.mobileMenu');
 let dropdownBtn =Array.from(document.getElementsByClassName('dropdownBtn'));
+let dropdownBtn2 =Array.from(document.getElementsByClassName('dropdownBtn2'));
 
 
 dropdownBtn.forEach((item)=>{
@@ -10,7 +11,12 @@ dropdownBtn.forEach((item)=>{
     item.nextElementSibling.classList.toggle('active');
   })
 })
-
+dropdownBtn2.forEach((item)=>{
+  item.addEventListener('click', function () {
+    item.querySelector('.arrowSvg').classList.toggle('active');
+    item.nextElementSibling.classList.toggle('active');
+  })
+})
 hamIcon.addEventListener('click', function () {
   hamIcon.classList.toggle('active');
   document.querySelector('.mobileMenu').classList.toggle('active');
