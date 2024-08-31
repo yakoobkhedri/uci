@@ -94,6 +94,16 @@ seeAll.forEach((item)=>{
   })
 })
 
+// tabs
+
+let tab = Array.from(document.querySelectorAll('.tabs .swiper-slide'));
+
+tab.forEach((item)=>{
+  item.addEventListener('click', function () {
+    alert()
+  })
+})
+
 // acordion
 
 let acordionBtn = Array.from(document.getElementsByClassName('acordionBtn'));
