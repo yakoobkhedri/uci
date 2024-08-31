@@ -139,8 +139,7 @@ input[type="number"] {
 }
 /* editor section */
 .editorSection ul {
-  margin-right: 1rem;
-  padding-right: 23px;
+  @apply rtl:mr-4 ltr:ml-4 rtl:pr-6 ltr:pl-6;
 }
 .editorSection ul li::before {
   content: url('../src/img/svg/Vector6.svg');
@@ -149,6 +148,9 @@ input[type="number"] {
   height: 20px;
   border-radius: 50%;
   right: -34px;
+}
+.editorSection ul li::before {
+  @apply rtl:-right-[34px] ltr:-left-[34px]
 }
 /* lang dropdown */
 .langDropdown {
