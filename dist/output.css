@@ -910,6 +910,22 @@ video {
   grid-column: span 8 / span 8;
 }
 
+.col-span-10 {
+  grid-column: span 10 / span 10;
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
+.col-span-9 {
+  grid-column: span 9 / span 9;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -1803,6 +1819,14 @@ video {
 
 .gap-\[6px\] {
   gap: 6px;
+}
+
+.gap-14 {
+  gap: 3.5rem;
+}
+
+.gap-12 {
+  gap: 3rem;
 }
 
 .gap-x-0 {
@@ -3527,6 +3551,10 @@ input[type="number"] {
   padding-right: 1rem;
 }
 
+:is([dir="ltr"] .ltr\:pl-5) {
+  padding-left: 1.25rem;
+}
+
 :is([dir="ltr"] .ltr\:text-left) {
   text-align: left;
 }
@@ -3722,6 +3750,10 @@ input[type="number"] {
 
 :is([dir="rtl"] .rtl\:pr-8) {
   padding-right: 2rem;
+}
+
+:is([dir="rtl"] .rtl\:pr-5) {
+  padding-right: 1.25rem;
 }
 
 :is([dir="rtl"] .rtl\:text-left) {
