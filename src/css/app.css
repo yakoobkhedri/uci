@@ -78,10 +78,6 @@ header ul li.active::after {
   background-color: #FFFFFF0F;
   backdrop-filter: blur(4px);
 }
-.bg-blur3{
-  background-color: #FFFFFF36;
-  backdrop-filter: blur(4px);
-}
 #hamIcon.active svg:last-child{
   display: block;
 }
@@ -185,16 +181,17 @@ input[type="number"] {
 }
 .acordionContent.active,.allContent.active{
   max-height: 2000px;
+  overflow: visible;
 }
 /* tab */
-.tabContent > div{
+/* .tabContent > div{
   display: none;
   animation: in 1s;
   transform-origin: top left;
 }
 .tabContent > div.active{
   display: block;
-}
+} */
 
 @keyframes in {
   0% {

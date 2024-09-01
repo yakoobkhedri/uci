@@ -97,21 +97,11 @@ seeAll.forEach((item)=>{
 // tabs
 
 let tab = Array.from(document.querySelectorAll('.tabs .swiper-slide'));
-let tabContent = Array.from(document.querySelectorAll('.tabContent > div'));
 
 tab.forEach((item) => {
   item.addEventListener('click', function() {
-      let tabId = item.dataset.id;
       tab.forEach((items) => {items.classList.remove('active')});
       item.classList.add('active');
-      tabContent.forEach((content) => {
-          let contentId = content.dataset.id;
-          if (tabId === contentId) {
-              content.classList.add('active');
-          } else {
-            content.classList.remove('active');
-          }
-      })
   })
 })
 // acordion
