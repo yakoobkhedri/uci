@@ -341,14 +341,10 @@ var tabs = new Swiper(".tabs", {
 var karbord = new Swiper(".karbord", {
   slidesPerView: 1.3,
   spaceBetween: 24,
-  autoplay: true,
   breakpoints: {
     768: {
       slidesPerView: 2,
     },
-    1200: {
-      slidesPerView: 3,
-    }
   },
   pagination: {
     el: ".swiper-pagination",
