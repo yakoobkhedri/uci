@@ -363,6 +363,9 @@ box-shadow: 0px 5px 5px 0px #4F24FF2B;
 .shadow-4{
   box-shadow: 0px 12px 56px 0px #0000000F;
 }
+.shadow-5{
+  box-shadow: 0px 10px 60px 0px #4F24FF69;
+}
 .shadow-next{
   box-shadow: -2px 0px 24px 0px #0000001A;
 }
