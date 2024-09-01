@@ -902,9 +902,9 @@
                  <p class="relative font-semibold mt-2 text-center">سفارش</p>
                 </div>
            </div>
-           <div class="mt-16">
-            <div class="max-w-content mx-auto px-4">
-              <div class="flex items-start relative z-10 top-11 gap-6">
+           <div class="mt-1">
+            <div>
+              <div class="flex items-start relative z-2 top-[62px] gap-6">
                 <div class="rounded-[14px] shadow-2 relative bg-[#4F24FF1A] flex-shrink-0 w-[61px] h-[61px] flex items-center justify-center">
                   <div class="flex items-center justify-center w-[50px] h-[50px] rounded-[14px] bg-primary">
                     <img alt="icon" src="../img/svg/shopping-cart.svg" class="block w-6 h-6">
@@ -912,11 +912,101 @@
                 </div>
                 <p class="font-bold relative text-xl rtl:font-yekanBakhBold ltr:font-MontserratBold">سبد خرید</p>
               </div>
-              <div class="relative pt-20 bg-white rounded-[10px]">
+              <div class="relative p-6 bg-white rounded-[10px]">
                 <!-- shape -->
-                 <img alt="shape" src="../img/Vector 789.png" class="absolute ltr:[transform:rotateY(180deg)] w-[288px] sm:w-auto -top-[21px] sm:-top-7 rtl:right-4 ltr:left-4">
+                 <img alt="shape" src="../img/Vector 789.png" class="absolute z-0 ltr:[transform:rotateY(180deg)] w-[389px] h-[60px] -top-[17px] rtl:right-4 ltr:left-4">
                 <!--  -->
-                
+                <a class="text-[#A4A4A4] relative z-2 group hover:text-primary transition flex items-center justify-end gap-2 font-semibold">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="transition group-hover:fill-primary" d="M10.5 6.74847H6.75V10.4985C6.75 10.6974 6.67098 10.8882 6.53033 11.0288C6.38968 11.1695 6.19891 11.2485 6 11.2485C5.80109 11.2485 5.61032 11.1695 5.46967 11.0288C5.32902 10.8882 5.25 10.6974 5.25 10.4985V6.74847H1.5C1.30109 6.74847 1.11032 6.66946 0.96967 6.5288C0.829018 6.38815 0.75 6.19739 0.75 5.99847C0.75 5.79956 0.829018 5.6088 0.96967 5.46814C1.11032 5.32749 1.30109 5.24847 1.5 5.24847H5.25V1.49847C5.25 1.29956 5.32902 1.1088 5.46967 0.968144C5.61032 0.827492 5.80109 0.748474 6 0.748474C6.19891 0.748474 6.38968 0.827492 6.53033 0.968144C6.67098 1.1088 6.75 1.29956 6.75 1.49847V5.24847H10.5C10.6989 5.24847 10.8897 5.32749 11.0303 5.46814C11.171 5.6088 11.25 5.79956 11.25 5.99847C11.25 6.19739 11.171 6.38815 11.0303 6.5288C10.8897 6.66946 10.6989 6.74847 10.5 6.74847Z" fill="#A4A4A4"/>
+                  </svg>
+                  <p>افزودن آدرس جدید</p>
+                </a>
+                <div class="rounded-[20px] shadow-4 mt-8 p-5 bg-white">
+                  <h5 class="font-bold text-lg rtl:font-yekanBakhBold ltr:font-MontserratBold">آدرس گیرنده</h5>
+                  <div class="mt-3 flex-between gap-3 flex-wrap">
+                    <div class="flex items-center gap-[10px] font-semibold text-lg text-[#767676]">
+                     <img alt="icon" src="../img/Group 1128.png" class="flex-shrink-0 w-6 h-6">
+                     <p>تهران،میدان شیخ بهایی ،خیابان کارخانه</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                      <div class="flex items-center group font-bold rtl:font-yekanBakhBold ltr:font-MontserratBold gap-1.5 transition cursor-pointer hover:text-black text-[#767676]">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="transition group-hover:stroke-primary" d="M6.35533 7.43354C6.12782 7.66139 6.00002 7.97021 6 8.2922V10.0002H7.71867C8.04067 10.0002 8.35 9.8722 8.578 9.6442L13.6447 4.57487C13.7575 4.46207 13.847 4.32816 13.908 4.18077C13.9691 4.03338 14.0005 3.87541 14.0005 3.71587C14.0005 3.55633 13.9691 3.39836 13.908 3.25097C13.847 3.10358 13.7575 2.96966 13.6447 2.85687L13.144 2.3562C13.0312 2.24328 12.8972 2.1537 12.7498 2.09258C12.6023 2.03146 12.4443 2 12.2847 2C12.1251 2 11.967 2.03146 11.8195 2.09258C11.6721 2.1537 11.5381 2.24328 11.4253 2.3562L6.35533 7.43354Z" stroke="#767676" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path class="transition group-hover:stroke-primary" d="M14 8.00018C14 10.8289 14 12.2428 13.1213 13.1215C12.2427 14.0002 10.828 14.0002 8 14.0002C5.17133 14.0002 3.75733 14.0002 2.87867 13.1215C2 12.2428 2 10.8282 2 8.00018C2 5.17152 2 3.75752 2.87867 2.87885C3.75733 2.00018 5.172 2.00018 8 2.00018" stroke="#767676" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <p>ویرایش</p>
+                      </div>
+                      <div class="flex items-center group font-bold rtl:font-yekanBakhBold ltr:font-MontserratBold gap-1.5 transition cursor-pointer hover:text-black text-[#767676]">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path class="transition group-hover:fill-red-600" fill-rule="evenodd" clip-rule="evenodd" d="M7.7295 0.583343L7.6207 0.583235C7.10809 0.58247 6.65819 0.581798 6.2573 0.739465C5.90676 0.87733 5.59644 1.10099 5.3548 1.38995C5.08808 1.70889 4.94685 2.1178 4.79225 2.58334H2.66634H1.33301C0.918794 2.58334 0.583008 2.91913 0.583008 3.33334C0.583008 3.74756 0.918794 4.08334 1.33301 4.08334H1.95916L2.31027 10.0521L2.31526 10.1371C2.35949 10.8908 2.38768 11.3712 2.48871 11.7873C2.93183 13.6125 4.40888 15.0053 6.25699 15.3404C6.67835 15.4169 7.1595 15.4168 7.91452 15.4167L7.99967 15.4167L8.08483 15.4167C8.83985 15.4168 9.321 15.4169 9.74236 15.3404C11.5905 15.0053 13.0675 13.6125 13.5106 11.7873C13.6117 11.3712 13.6399 10.8908 13.6841 10.1371L13.6891 10.0521L14.0402 4.08334H14.6663C15.0806 4.08334 15.4163 3.74756 15.4163 3.33334C15.4163 2.91913 15.0806 2.58334 14.6663 2.58334H13.333H11.2071C11.0525 2.1178 10.9113 1.70889 10.6445 1.38995C10.4029 1.10099 10.0926 0.87733 9.74205 0.739465C9.34116 0.581798 8.89126 0.58247 8.37865 0.583235L8.26985 0.583343H7.7295ZM10.6488 4.08334C10.6604 4.08361 10.672 4.08361 10.6836 4.08334H12.5376L12.1917 9.96402C12.1407 10.8312 12.118 11.1657 12.053 11.4334C11.7498 12.6823 10.7392 13.6352 9.47469 13.8645C9.20365 13.9137 8.86839 13.9167 7.99967 13.9167C7.13096 13.9167 6.7957 13.9137 6.52466 13.8645C5.26017 13.6352 4.24956 12.6823 3.94637 11.4334C3.88138 11.1657 3.85869 10.8312 3.80768 9.96403L3.46176 4.08334H5.31573C5.32735 4.08361 5.33894 4.08361 5.3505 4.08334H10.6488ZM9.61489 2.58334C9.56191 2.44969 9.52976 2.39513 9.49387 2.35221C9.41333 2.25589 9.30989 2.18134 9.19304 2.13538C9.09277 2.09595 8.95588 2.08334 8.26985 2.08334H7.7295C7.04347 2.08334 6.90658 2.09595 6.80631 2.13538C6.68946 2.18134 6.58602 2.25589 6.50548 2.35221C6.46959 2.39513 6.43744 2.44969 6.38446 2.58334H9.61489ZM7.41634 6.66668C7.41634 6.25246 7.08055 5.91668 6.66634 5.91668C6.25213 5.91668 5.91634 6.25246 5.91634 6.66668V11.3333C5.91634 11.7476 6.25213 12.0833 6.66634 12.0833C7.08055 12.0833 7.41634 11.7476 7.41634 11.3333V6.66668ZM9.33301 5.91668C9.74722 5.91668 10.083 6.25246 10.083 6.66668V9.33334C10.083 9.74756 9.74722 10.0833 9.33301 10.0833C8.91879 10.0833 8.58301 9.74756 8.58301 9.33334V6.66668C8.58301 6.25246 8.91879 5.91668 9.33301 5.91668Z" fill="#7796A8"/>
+                        </svg>
+                        <p>حذف</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-8 grid grid-cols-2 gap-6">
+                  <div class="border border-[#C7C6C6] flex items-center gap-[30px] rounded-[20px] bg-white p-6">
+                    <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png" class="w-[76px] h-[103px] flex-shrink-0">
+                    <div>
+                     <p class="font-semibold rtl:font-PeydaBold ltr:font-MontserratBold">کش لس AMP 8200 مدل سیار</p>
+                     <div class="mt-[15px] flex items-center gap-7 font-semibold">
+                       <div class="flex items-center gap-2">
+                         <p>رنگ:</p>
+                         <div class="w-7 h-7 rounded-full bg-[#8BD30C]"></div>
+                       </div>
+                       <p>تعداد: ۲ عدد</p>
+                     </div>
+                     <div class="mt-[10px] flex items-center gap-2">
+                       <p class="font-black rtl:font-yekanBakhBold ltr:font-MontserratBold text-2xl text-[#00D222]">36,000,000</p>
+                       <p class="text-sm">تومان</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="border border-[#C7C6C6] flex items-center gap-[30px] rounded-[20px] bg-white p-6">
+                    <img alt="img" src="../img/point-sale-machine-design-resource 1 (2).png" class="w-[76px] h-[103px] flex-shrink-0">
+                    <div>
+                     <p class="font-semibold rtl:font-PeydaBold ltr:font-MontserratBold">کش لس AMP 8200 مدل سیار</p>
+                     <div class="mt-[15px] flex items-center gap-7 font-semibold">
+                       <div class="flex items-center gap-2">
+                         <p>رنگ:</p>
+                         <div class="w-7 h-7 rounded-full bg-[#8BD30C]"></div>
+                       </div>
+                       <p>تعداد: ۲ عدد</p>
+                     </div>
+                     <div class="mt-[10px] flex items-center gap-2">
+                       <p class="font-black rtl:font-yekanBakhBold ltr:font-MontserratBold text-2xl text-[#00D222]">36,000,000</p>
+                       <p class="text-sm">تومان</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="flex items-start relative z-2 top-[62px] gap-6">
+                <div class="rounded-[14px] shadow-2 relative bg-[#4F24FF1A] flex-shrink-0 w-[61px] h-[61px] flex items-center justify-center">
+                  <div class="flex items-center justify-center w-[50px] h-[50px] rounded-[14px] bg-primary">
+                    <img alt="icon" src="../img/svg/frame.svg" class="block w-6 h-6">
+                  </div>
+                </div>
+                <p class="font-bold relative text-xl rtl:font-yekanBakhBold ltr:font-MontserratBold">اطلاعات کاربری</p>
+              </div>
+              <div class="relative p-6 bg-white rounded-[10px]">
+                <!-- shape -->
+                 <img alt="shape" src="../img/Vector 789.png" class="absolute z-0 ltr:[transform:rotateY(180deg)] w-[389px] h-[60px] -top-[17px] rtl:right-4 ltr:left-4">
+                <!--  -->
+                <a class="text-[#A4A4A4] relative z-2 group hover:text-primary transition flex items-center justify-end gap-2 font-semibold">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="transition group-hover:stroke-primary" d="M7.14975 8.36273C6.89379 8.61906 6.75002 8.96649 6.75 9.32873V11.2502H8.6835C9.04575 11.2502 9.39375 11.1062 9.65025 10.8497L15.3502 5.14673C15.4772 5.01983 15.5779 4.86918 15.6466 4.70336C15.7152 4.53755 15.7506 4.35983 15.7506 4.18035C15.7506 4.00087 15.7152 3.82315 15.6466 3.65734C15.5779 3.49153 15.4772 3.34087 15.3502 3.21398L14.787 2.65073C14.6601 2.52369 14.5094 2.42291 14.3435 2.35415C14.1776 2.28539 13.9998 2.25 13.8203 2.25C13.6407 2.25 13.4629 2.28539 13.297 2.35415C13.1311 2.42291 12.9804 2.52369 12.8535 2.65073L7.14975 8.36273Z" stroke="#A4A4A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path class="transition group-hover:stroke-primary" d="M15.75 9.00024C15.75 12.1825 15.75 13.7732 14.7615 14.7617C13.773 15.7502 12.1815 15.7502 9 15.7502C5.81775 15.7502 4.227 15.7502 3.2385 14.7617C2.25 13.7732 2.25 12.1817 2.25 9.00024C2.25 5.81799 2.25 4.22724 3.2385 3.23874C4.227 2.25024 5.8185 2.25024 9 2.25024" stroke="#A4A4A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <p>ویرایش اطلاعات</p>
+                </a>
+                <div class="mt-9">
+                  
+                </div>
               </div>
             </div>
            </div>

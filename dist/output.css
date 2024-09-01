@@ -1184,6 +1184,10 @@ video {
   margin-top: 90px;
 }
 
+.mt-\[15px\] {
+  margin-top: 15px;
+}
+
 .line-clamp-1 {
   overflow: hidden;
   display: -webkit-box;
@@ -1465,6 +1469,10 @@ video {
   height: 100%;
 }
 
+.h-\[103px\] {
+  height: 103px;
+}
+
 .\!w-\[47px\] {
   width: 47px !important;
 }
@@ -1669,6 +1677,18 @@ video {
   width: 100%;
 }
 
+.w-\[44\%\] {
+  width: 44%;
+}
+
+.w-\[389px\] {
+  width: 389px;
+}
+
+.w-\[76px\] {
+  width: 76px;
+}
+
 .min-w-\[240px\] {
   min-width: 240px;
 }
@@ -1864,6 +1884,10 @@ video {
 
 .gap-\[6px\] {
   gap: 6px;
+}
+
+.gap-\[30px\] {
+  gap: 30px;
 }
 
 .gap-x-0 {
@@ -2112,6 +2136,11 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-\[\#C7C6C6\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(199 198 198 / var(--tw-border-opacity));
+}
+
 .bg-\[\#0054FF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(0 84 255 / var(--tw-bg-opacity));
@@ -2289,6 +2318,10 @@ video {
 
 .p-\[22px\] {
   padding: 22px;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .px-1 {
@@ -2554,6 +2587,10 @@ video {
 
 .pt-\[30px\] {
   padding-top: 30px;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .text-left {
@@ -3463,6 +3500,16 @@ input[type="number"] {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:text-black:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.hover\:text-red-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
 .hover\:opacity-100:hover {
   opacity: 1;
 }
@@ -3516,12 +3563,20 @@ input[type="number"] {
   fill: #fff;
 }
 
+.group:hover .group-hover\:fill-red-600 {
+  fill: #dc2626;
+}
+
 .group:hover .group-hover\:stroke-primary {
   stroke: #4F24FF;
 }
 
 .group:hover .group-hover\:stroke-white {
   stroke: #fff;
+}
+
+.group:hover .group-hover\:stroke-red-600 {
+  stroke: #dc2626;
 }
 
 .group:hover .group-hover\:text-primary {
@@ -3883,6 +3938,10 @@ input[type="number"] {
 
 :is([dir="rtl"] .rtl\:right-\[87px\]) {
   right: 87px;
+}
+
+:is([dir="rtl"] .rtl\:-right-\[29px\]) {
+  right: -29px;
 }
 
 :is([dir="rtl"] .rtl\:order-first) {
