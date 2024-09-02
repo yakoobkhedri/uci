@@ -116,6 +116,8 @@ seeAll.forEach((item)=>{
 // tabs
 
 let tab = Array.from(document.querySelectorAll('.tabs .swiper-slide'));
+let tabContent = Array.from(document.querySelectorAll('.tabContent > div'));
+let orderTabs = Array.from(document.querySelectorAll('.tabs p'));
 
 tab.forEach((item) => {
   item.addEventListener('click', function() {
@@ -123,6 +125,23 @@ tab.forEach((item) => {
       item.classList.add('active');
   })
 })
+
+orderTabs.forEach((item) => {
+  item.addEventListener('click', function() {
+    orderTabs.forEach((items) => {items.classList.remove('active')});
+      item.classList.add('active');
+      let tabId = item.dataset.id;
+      tabContent.forEach((content) => {
+          let contentId = content.dataset.id;
+          if (tabId === contentId) {
+              content.classList.add('active');
+          } else {
+            content.classList.remove('active');
+          }
+      })
+  })
+})
+
 // acordion
 
 let acordionBtn = Array.from(document.getElementsByClassName('acordionBtn'));
@@ -133,6 +152,18 @@ acordionBtn.forEach((item)=> {
     item.querySelector('img').classList.toggle('active');
     item.querySelector('.arrow').classList.toggle('active');
   })
+})
+
+// open Sidebar
+
+let openSidebar = document.getElementById('openSidebar');
+let closeSidebar = document.getElementById('closeSidebar');
+
+openSidebar.addEventListener('click' , function () {
+  document.getElementById('sidebar').classList.add('active');
+});
+closeSidebar.addEventListener('click' , function () {
+  document.getElementById('sidebar').classList.remove('active');
 })
 
 // swiper

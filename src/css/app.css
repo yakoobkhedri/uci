@@ -184,14 +184,17 @@ input[type="number"] {
   overflow: visible;
 }
 /* tab */
-/* .tabContent > div{
+.tabs p.active{
+  color: #4f24ff;
+}
+.tabContent > div{
   display: none;
   animation: in 1s;
   transform-origin: top left;
 }
 .tabContent > div.active{
   display: block;
-} */
+}
 
 @keyframes in {
   0% {
@@ -204,13 +207,14 @@ input[type="number"] {
   }
 }
 /* sidebar */
+.sidebar.active{
+  @apply rtl:right-0 ltr:left-0;
+}
 .sidebar ul li a.active{
   color: white;
 }
 .sidebar ul li a.active img:first-child{
-  opacity: 100%;
-  visibility: visible;
-  right: -24px;
+  @apply opacity-100 visible rtl:-right-6 ltr:-left-6
 }
 .sidebar ul li a.active svg path{
   fill: white;
