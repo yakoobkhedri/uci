@@ -13,6 +13,31 @@
 
   <!-- address && profile edit -->
   <div class="modal">
+    <div style="visibility: hidden; opacity: 0;" data-button="add-address-modal"
+    class="modal-container overflow-auto bg-black/60 backdrop-blur-sm fixed inset-0 z-50 transition-all flex-center px-4 sm:px-7">
+    <form
+      class="modal-content mb-20 mt-[196px] bg-white shadow-4 max-w-[770px] w-full rounded-[20px] p-5 sm:p-7">
+      <div class="close-button cursor-pointer inline-flex items-center gap-[10px] font-bold text-lg sm:text-2xl text-primary rtl:font-yekanBakhBold ltr:font-MontserratBold">
+        <img alt="icon" src="../img/svg/arrow-right (2).svg" class="ltr:[transform:rotateY(180deg)]">
+        <h4>افزودن آدرس جدید</h4>
+      </div>
+      <p class="mt-8 text-sm font-bold">موقعیت مکانی خود را وارد کنید *</p>
+      <div class="rounded-[5px] mt-4 px-3 font-semibold text-sm h-14 max-w-[360px] flex items-center gap-1.5 bg-[#F9F9F9]">
+        <img alt="img" src="../img/svg/map (2).svg" class="flex-shrink-0">
+        <input placeholder="جستجوی آدرس" class="flex-grow bg-transparent outline-none">
+      </div>
+      <div class="rounded-[5px] h-[445px] mt-4 overflow-hidden">
+        <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207344.0754342176!2d51.51246591933516!3d35.707740217686975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e00491ff3dcd9%3A0xf0b3697c567024bc!2z2KrZh9ix2KfZhtiMINin2LPYqtin2YYg2KrZh9ix2KfZhtiMINin24zYsdin2YY!5e0!3m2!1sfa!2s!4v1708858730182!5m2!1sfa!2s" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="flex-between mt-8 sm:mt-14 gap-3 flex-wrap">
+        <p class="text-sm font-bold">بسته شما به این آدرس ارسال خواهد شد.</p>
+        <button class="btnHover rounded-[10px] font-bold text-lg rtl:font-yekanBakhBold ltr:font-MontserratBold bg-primary flex-center gap-2 text-white h-14 px-[13px]">
+          <img alt="icon" src="../img/svg/archive-tick.svg">
+          <p>تایید و ادامه</p>
+        </button>
+      </div>
+    </form>
+  </div>
     <div style="visibility: hidden; opacity: 0;" data-button="profile-edit-modal"
       class="modal-container overflow-auto bg-black/60 backdrop-blur-sm fixed inset-0 z-50 transition-all flex-center px-4 sm:px-7">
       <form
@@ -21,8 +46,8 @@
           <img alt="icon" src="../img/svg/arrow-right (2).svg" class="ltr:[transform:rotateY(180deg)]">
           <h4>اطلاعات حساب کاربری</h4>
         </div>
-        <div class="sm:mt-[52px] mt-9 grid grid-cols-12 gap-2 md:gap-8">
-          <div class="md:col-span-7 col-span-12">
+        <div class="sm:mt-[52px] mt-7 grid grid-cols-12 gap-5 md:gap-8">
+          <div class="md:col-span-7 col-span-12 order-last md:order-first">
             <div>
               <label class="font-bold rtl:font-yekanBakhBold ltr:font-MontserratBold text-sm">نام و نام خانوادگی</label>
               <input placeholder="نگار امینی" class="rounded-[20px] w-full px-4 outline-none mt-2 font-semibold h-[56px] bg-[#F9F9F9]">
@@ -54,7 +79,7 @@
             </div>
           </div>
           <div class="md:col-span-5 col-span-12">
-            <div class="mt-[30px] rounded-[20px] border-2 border-dashed border-[#C7C6C6] px-5 py-10">
+            <div class="md:mt-[30px] rounded-[20px] border-2 border-dashed border-[#C7C6C6] px-5 py-10">
               <img alt="img" src="../img/1403-02-24 12.39 1 (2).png" class="rounded-full mx-auto w-[148px] h-[148px]">
               <div class="h-[49px] px-3 relative cursor-pointer rounded-[20px] transition bg-[#F8F8F8] hover:bg-[#DAD1FF] mt-7 flex items-center gap-[14px]">
                 <input type="file" class="absolute w-full h-full inset-0 opacity-0 cursor-pointer">
@@ -1538,7 +1563,7 @@
                   <img alt="shape" src="../img/Vector 789.png"
                     class="absolute z-0 ltr:[transform:rotateY(180deg)] w-[247px] sm:w-[389px] h-[60px] -top-4 sm:-top-[17px] rtl:right-4 ltr:left-4">
                   <!--  -->
-                  <a
+                  <a id="add-address-modal"
                     class="mt-12 sm:mt-0 text-[#A4A4A4] relative z-2 group hover:text-primary transition flex items-center justify-end gap-2 font-semibold">
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path class="transition group-hover:fill-primary"
@@ -1550,7 +1575,7 @@
                   <div class="rounded-[20px] shadow-4 mt-8 p-5 bg-white">
                     <h5 class="font-bold text-lg rtl:font-yekanBakhBold ltr:font-MontserratBold">آدرس گیرنده</h5>
                     <div class="mt-3 flex-between gap-3 flex-wrap">
-                      <div class="flex items-center gap-[10px] font-semibold text-lg text-[#767676]">
+                      <div class="flex items-center gap-[10px] font-semibold text-sm sm:text-lg text-[#767676]">
                         <img alt="icon" src="../img/Group 1128.png" class="flex-shrink-0 w-6 h-6">
                         <p>تهران،میدان شیخ بهایی ،خیابان کارخانه</p>
                       </div>
