@@ -31,13 +31,96 @@
       </div>
       <div class="flex-between mt-8 sm:mt-14 gap-3 flex-wrap">
         <p class="text-sm font-bold">بسته شما به این آدرس ارسال خواهد شد.</p>
-        <button class="btnHover rounded-[10px] font-bold text-lg rtl:font-yekanBakhBold ltr:font-MontserratBold bg-primary flex-center gap-2 text-white h-14 px-[13px]">
+        <div id="address-details-modal" class="btnHover cursor-pointer rounded-[10px] font-bold text-lg rtl:font-yekanBakhBold ltr:font-MontserratBold bg-primary flex-center gap-2 text-white h-14 px-[13px]">
           <img alt="icon" src="../img/svg/archive-tick.svg">
           <p>تایید و ادامه</p>
+        </div>
+      </div>
+    </form>
+    </div>
+    <div style="visibility: hidden; opacity: 0;" data-button="address-details-modal"
+    class="modal-container overflow-auto bg-black/60 backdrop-blur-sm fixed inset-0 z-50 transition-all flex-center px-4 sm:px-7">
+    <form
+      class="modal-content mb-20 mt-[641px] sm:mt-[220px] bg-white shadow-4 max-w-[770px] w-full rounded-[20px] p-5 sm:p-7">
+      <div class="close-button cursor-pointer inline-flex items-center gap-[10px] font-bold text-lg sm:text-2xl text-primary rtl:font-yekanBakhBold ltr:font-MontserratBold">
+        <img alt="icon" src="../img/svg/arrow-right (2).svg" class="ltr:[transform:rotateY(180deg)]">
+        <h4>جزئیات آدرس</h4>
+      </div>
+      <div class="mt-7">
+        <div>
+          <label class="font-bold text-sm">نشانی پستی *</label>
+          <textarea placeholder="تهران،میدان شیخ بهایی ،خیابان کارخانه" class="font-semibold p-[18px] outline-none block w-full resize-none text-lg rounded-[5px] bg-[#F9F9F9] mt-2 h-[150px]"></textarea>
+        </div>
+        <div class="mt-8 grid grid-cols-12 gap-5">
+          <div class="sm:col-span-5 col-span-12">
+            <div>
+              <label class="font-bold text-sm">استان *</label>
+              <select class="font-semibold p-[18px] outline-none block w-full resize-none text-lg rounded-[5px] bg-[#F9F9F9] mt-2 h-14">
+                <option>تهران</option>
+                <option>قم</option>
+              </select>
+            </div>
+          </div>
+          <div class="sm:col-span-7 col-span-12">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div>
+                <label class="font-bold text-sm">پلاک *</label>
+                <input class="font-semibold p-[18px] outline-none block w-full resize-none text-lg rounded-[5px] bg-[#F9F9F9] mt-2 h-14">
+              </div>
+              <div>
+                <label class="font-bold text-sm">واحد *</label>
+                <input class="font-semibold p-[18px] outline-none block w-full resize-none text-lg rounded-[5px] bg-[#F9F9F9] mt-2 h-14">
+              </div>
+              <div>
+                <label class="font-bold text-sm">کد پستی *</label>
+                <input class="font-semibold p-[18px] outline-none block w-full resize-none text-lg rounded-[5px] bg-[#F9F9F9] mt-2 h-14">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-6 grid grid-cols-12 gap-5">
+          <div class="sm:col-span-5 col-span-12">
+            <div>
+              <label class="font-bold text-sm">شهر *</label>
+              <select class="font-semibold p-[18px] outline-none block w-full resize-none text-lg rounded-[5px] bg-[#F9F9F9] mt-2 h-14">
+                <option>تهران</option>
+                <option>قم</option>
+              </select>
+            </div>
+          </div>
+          <div class="sm:col-span-7 col-span-12">
+            <div>
+              <label class="font-bold text-sm">شماره تلفن همراه *</label>
+              <input placeholder="09385873349" class="font-semibold p-[18px] outline-none block w-full resize-none text-lg rounded-[5px] bg-[#F9F9F9] mt-2 h-14">
+            </div>
+          </div>
+        </div>
+        <div class="mt-9">
+          <div class="inline-flex items-center gap-[10px]">
+            <label class="relative flex items-center p-1 rounded-full cursor-pointer" htmlfor="black">
+              <input name="yes" type="checkbox" class="before:content[''] bg-[#E7E7E7] peer relative h-6 w-6 cursor-pointer appearance-none overflow-hidden rounded-[5px] text-[#ECECEC] transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-[#ECECEC] before:opacity-0 before:transition-opacity checked:border-orange checked:before:bg-orange hover:before:opacity-10" id="black">
+              <span class="absolute text-primary transition-opacity opacity-0 pointer-events-none rounded-[5px] top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                <div class="w-6 h-6 rounded-[5px] bg-primary"></div>
+              </span>
+            </label>
+            <p class="font-semibold text-sm">
+              گیرنده سفارش خودم هستم.
+            </p>
+          </div>
+        </div>
+        <div class="mt-9 grid grid-cols-12">
+          <div class="sm:col-span-5 col-span-12">
+            <label class="font-bold text-sm">نام و نام خانوادگی گیرنده *</label>
+            <input placeholder="نگار امینی" class="font-semibold p-[18px] outline-none block w-full resize-none text-lg rounded-[5px] bg-[#F9F9F9] mt-2 h-14">
+          </div>
+        </div>
+        <button class="btnHover ltr:ml-auto rtl:mr-auto rounded-[10px] font-bold text-lg rtl:font-yekanBakhBold ltr:font-MontserratBold mt-7 bg-primary flex-center gap-2 text-white h-14 px-[13px]">
+          <img alt="icon" src="../img/svg/archive-tick.svg">
+          <p>ثبت آدرس</p>
         </button>
       </div>
     </form>
-  </div>
+    </div>
     <div style="visibility: hidden; opacity: 0;" data-button="profile-edit-modal"
       class="modal-container overflow-auto bg-black/60 backdrop-blur-sm fixed inset-0 z-50 transition-all flex-center px-4 sm:px-7">
       <form
@@ -49,15 +132,15 @@
         <div class="sm:mt-[52px] mt-7 grid grid-cols-12 gap-5 md:gap-8">
           <div class="md:col-span-7 col-span-12 order-last md:order-first">
             <div>
-              <label class="font-bold rtl:font-yekanBakhBold ltr:font-MontserratBold text-sm">نام و نام خانوادگی</label>
+              <label class="font-bold text-sm">نام و نام خانوادگی</label>
               <input placeholder="نگار امینی" class="rounded-[20px] w-full px-4 outline-none mt-2 font-semibold h-[56px] bg-[#F9F9F9]">
             </div>
             <div class="mt-6">
-              <label class="font-bold rtl:font-yekanBakhBold ltr:font-MontserratBold text-sm">شماره تماس</label>
+              <label class="font-bold text-sm">شماره تماس</label>
               <input placeholder="09149492490" class="rounded-[20px] w-full px-4 outline-none mt-2 font-semibold h-[56px] bg-[#F9F9F9]">
             </div>
             <div class="mt-6">
-              <label class="font-bold rtl:font-yekanBakhBold ltr:font-MontserratBold text-sm">نشانی پستی</label>
+              <label class="font-bold text-sm">نشانی پستی</label>
               <div class="relative">
                 <textarea placeholder=" تهران،شهر تهران ،میدان شیخ بهایی خیابان کارخانه پلاک ۵ واحد ۹" class="p-4 resize-none rounded-[20px] h-[153px] w-full outline-none mt-2 font-semibold bg-[#F9F9F9]"></textarea>
                 <div class="flex items-center gap-3 text-xs absolute bottom-4 rtl:left-4 ltr:right-4">
@@ -84,11 +167,11 @@
               <div class="h-[49px] px-3 relative cursor-pointer rounded-[20px] transition bg-[#F8F8F8] hover:bg-[#DAD1FF] mt-7 flex items-center gap-[14px]">
                 <input type="file" class="absolute w-full h-full inset-0 opacity-0 cursor-pointer">
                 <img alt="icon" src="../img/svg/user-edit.svg" class="flex-shrink-0">
-                <p class="font-bold text-sm rtl:font-yekanBakhBold ltr:font-MontserratBold">تغییر تصویر پروفایل</p>
+                <p class="font-bold text-sm">تغییر تصویر پروفایل</p>
               </div>
               <div class="h-[49px] px-3 cursor-pointer rounded-[20px] transition bg-[#F8F8F8] hover:bg-[#DAD1FF] mt-[22px] flex items-center gap-[14px]">
                 <img alt="icon" src="../img/svg/trash (2).svg" class="flex-shrink-0">
-                <p class="font-bold text-sm rtl:font-yekanBakhBold ltr:font-MontserratBold">حذف تصویر پروفایل</p>
+                <p class="font-bold text-sm">حذف تصویر پروفایل</p>
               </div>
             </div>
           </div>
