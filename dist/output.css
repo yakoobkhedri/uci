@@ -1234,6 +1234,10 @@ video {
   margin-top: 196px;
 }
 
+.mt-\[87px\] {
+  margin-top: 87px;
+}
+
 .line-clamp-1 {
   overflow: hidden;
   display: -webkit-box;
@@ -1541,6 +1545,10 @@ video {
 
 .h-\[445px\] {
   height: 445px;
+}
+
+.h-\[250px\] {
+  height: 250px;
 }
 
 .\!w-\[47px\] {
@@ -4465,6 +4473,10 @@ input[type="number"] {
     margin-top: 52px;
   }
 
+  .sm\:mt-\[196px\] {
+    margin-top: 196px;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -4579,6 +4591,10 @@ input[type="number"] {
 
   .sm\:h-\[200px\] {
     height: 200px;
+  }
+
+  .sm\:h-\[445px\] {
+    height: 445px;
   }
 
   .sm\:\!w-\[83px\] {
