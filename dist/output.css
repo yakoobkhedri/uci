@@ -947,6 +947,10 @@ video {
   z-index: 50;
 }
 
+.z-\[9\] {
+  z-index: 9;
+}
+
 .order-last {
   order: 9999;
 }
