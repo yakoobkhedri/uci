@@ -1257,6 +1257,10 @@ video {
   margin-top: 90px;
 }
 
+.-mt-5 {
+  margin-top: -1.25rem;
+}
+
 .line-clamp-1 {
   overflow: hidden;
   display: -webkit-box;
@@ -1892,6 +1896,37 @@ video {
 
 .animate-bounce {
   animation: bounce 1s infinite;
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .cursor-pointer {
@@ -2534,6 +2569,10 @@ video {
   padding: 22px;
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -2672,6 +2711,16 @@ video {
 .py-\[71px\] {
   padding-top: 71px;
   padding-bottom: 71px;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .pb-0 {
@@ -3073,6 +3122,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#0E1935\] {
+  --tw-text-opacity: 1;
+  color: rgb(14 25 53 / var(--tw-text-opacity));
 }
 
 .line-through {
@@ -4926,6 +4980,10 @@ input[type="number"] {
 
   .sm\:p-\[22px\] {
     padding: 22px;
+  }
+
+  .sm\:p-10 {
+    padding: 2.5rem;
   }
 
   .sm\:px-16 {
