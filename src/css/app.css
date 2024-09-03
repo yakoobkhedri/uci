@@ -270,13 +270,24 @@ input[type="number"] {
   transition: all .4s;
   opacity: 100%;
 }
-
 .solution .swiper-pagination-bullet-active,
 .work .swiper-pagination-bullet-active,
 .karbordBox .swiper-pagination-bullet-active {
   width: 43px !important;
   background-color: white !important;
   border-radius: 10px !important;
+}
+.departemanBox .swiper-pagination-bullet{
+  width: 10px !important;
+  height: 6px !important;
+  background-color: #D9D9D9 !important;
+  border-radius: 60px !important;
+  transition: all .4s;
+  opacity: 100%;
+}
+.departemanBox .swiper-pagination-bullet-active{
+  width: 33px !important;
+  background-color: #1E2D48 !important;
 }
 .mySwiper .swiper-slide {
   opacity: 0.4;
@@ -369,6 +380,9 @@ box-shadow: 0px 5px 5px 0px #4F24FF2B;
 }
 .shadow-6 {
   box-shadow: 0px 12px 56px 0px #4F24FF26;
+}
+.shadow-7{
+  box-shadow: 0.95px 34.68px 104.14px 52px #D1AF89B2;
 }
 .shadow-next{
   box-shadow: -2px 0px 24px 0px #0000001A;

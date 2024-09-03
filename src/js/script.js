@@ -359,12 +359,35 @@ var tabs = new Swiper(".tabs", {
   },
 });
 var karbord = new Swiper(".karbord", {
-  slidesPerView: 1.3,
+  slidesPerView: 1,
   spaceBetween: 24,
   breakpoints: {
     768: {
       slidesPerView: 2,
     },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+var departeman = new Swiper(".departeman", {
+  slidesPerView: 1,
+  spaceBetween: 64,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   pagination: {
     el: ".swiper-pagination",
