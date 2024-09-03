@@ -631,6 +631,10 @@ video {
   bottom: -2.75rem !important;
 }
 
+.\!-bottom-2 {
+  bottom: -0.5rem !important;
+}
+
 .\!-bottom-9 {
   bottom: -2.25rem !important;
 }
@@ -927,22 +931,6 @@ video {
   top: auto;
 }
 
-.bottom-1 {
-  bottom: 0.25rem;
-}
-
-.\!-bottom-4 {
-  bottom: -1rem !important;
-}
-
-.\!-bottom-3 {
-  bottom: -0.75rem !important;
-}
-
-.\!-bottom-2 {
-  bottom: -0.5rem !important;
-}
-
 .-z-0 {
   z-index: 0;
 }
@@ -1083,6 +1071,11 @@ video {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.my-\[112px\] {
+  margin-top: 112px;
+  margin-bottom: 112px;
 }
 
 .-mt-2 {
@@ -3387,6 +3380,10 @@ video {
   transition-duration: 150ms;
 }
 
+.\[transform\:rotateY\(180deg\)\] {
+  transform: rotateY(180deg);
+}
+
 @font-face {
   font-family: yekanBakh-Regular;
 
@@ -4329,6 +4326,10 @@ input[type="number"] {
   right: auto;
 }
 
+:is([dir="ltr"] .ltr\:-right-14) {
+  right: -3.5rem;
+}
+
 :is([dir="ltr"] .ltr\:order-last) {
   order: 9999;
 }
@@ -4379,6 +4380,34 @@ input[type="number"] {
 
 :is([dir="ltr"] .ltr\:mr-auto) {
   margin-right: auto;
+}
+
+:is([dir="ltr"] .ltr\:ml-\[132px\]) {
+  margin-left: 132px;
+}
+
+:is([dir="ltr"] .ltr\:ml-\[136px\]) {
+  margin-left: 136px;
+}
+
+:is([dir="ltr"] .ltr\:ml-\[144px\]) {
+  margin-left: 144px;
+}
+
+:is([dir="ltr"] .ltr\:ml-\[150px\]) {
+  margin-left: 150px;
+}
+
+:is([dir="ltr"] .ltr\:ml-\[155px\]) {
+  margin-left: 155px;
+}
+
+:is([dir="ltr"] .ltr\:ml-\[160px\]) {
+  margin-left: 160px;
+}
+
+:is([dir="ltr"] .ltr\:ml-\[170px\]) {
+  margin-left: 170px;
 }
 
 :is([dir="ltr"] .ltr\:-rotate-180) {
@@ -4493,6 +4522,14 @@ input[type="number"] {
   transform: rotateY(180deg);
 }
 
+:is([dir="ltr"] .ltr\:\[transform\:rotateY\(-180deg\)\]) {
+  transform: rotateY(-180deg);
+}
+
+:is([dir="ltr"] .ltr\:\[transform\:rotateY\(0deg\)\]) {
+  transform: rotateY(0deg);
+}
+
 .group:hover :is([dir="ltr"] .group-hover\:ltr\:-left-6) {
   left: -1.5rem;
 }
@@ -4605,6 +4642,10 @@ input[type="number"] {
   right: 87px;
 }
 
+:is([dir="rtl"] .rtl\:-left-14) {
+  left: -3.5rem;
+}
+
 :is([dir="rtl"] .rtl\:order-first) {
   order: -9999;
 }
@@ -4663,6 +4704,34 @@ input[type="number"] {
 
 :is([dir="rtl"] .rtl\:mr-auto) {
   margin-right: auto;
+}
+
+:is([dir="rtl"] .rtl\:mr-\[132px\]) {
+  margin-right: 132px;
+}
+
+:is([dir="rtl"] .rtl\:mr-\[136px\]) {
+  margin-right: 136px;
+}
+
+:is([dir="rtl"] .rtl\:mr-\[144px\]) {
+  margin-right: 144px;
+}
+
+:is([dir="rtl"] .rtl\:mr-\[150px\]) {
+  margin-right: 150px;
+}
+
+:is([dir="rtl"] .rtl\:mr-\[155px\]) {
+  margin-right: 155px;
+}
+
+:is([dir="rtl"] .rtl\:mr-\[160px\]) {
+  margin-right: 160px;
+}
+
+:is([dir="rtl"] .rtl\:mr-\[170px\]) {
+  margin-right: 170px;
 }
 
 :is([dir="rtl"] .rtl\:rotate-0) {
