@@ -6,10 +6,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link href="../../dist/output.css" rel="stylesheet">
-  <title>وبلاگ</title>
+  <title>جزئیات بلاگ</title>
 </head>
 
 <body class="max-w-[1536px] w-full mx-auto relative rtl:font-yekanBakhRegular ltr:font-MontserratRegular">
+
+    <!-- comment modal -->
+    <div class="modal">
+      <div style="visibility: hidden; opacity: 0;" data-button="add-comment-modal" class="modal-container overflow-auto bg-black/60 backdrop-blur-sm fixed inset-0 z-50 transition-all flex justify-center items-center px-4 sm:px-7">
+        <div class="modal-content my-24 sm:my-0 bg-white lg:bg-transparent max-w-[846px] md:min-h-[398px] w-full rounded-[27px] p-5 pt-8 lg:pt-5 pb-10 md:p-7 flex flex-col md:flex-row justify-center md:justify-start items-center gap-7 md:gap-14 relative">
+            <!-- bg -->
+             <img alt="bg" src="../img/Rectangle 50 (2).png" class="absolute ltr:[transform:rotateY(180deg)] hidden lg:block inset-0 w-full h-full -z-0">
+            <!-- shape -->
+              <div class="absolute -top-9 right-10 ltr:left-10 ltr:right-auto ltr:md:left-[67px] md:right-[67px] shadow-20 w-[70px] h-[70px] rounded-full bg-primary flex items-center justify-center">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25.2269 25.3037C21.2392 29.2919 15.3343 30.1535 10.502 27.9188C9.78868 27.6316 9.20383 27.3994 8.64783 27.3994C7.09915 27.4086 5.17151 28.9102 4.16965 27.9096C3.1678 26.9076 4.67058 24.9785 4.67058 23.4204C4.67058 22.8644 4.44765 22.2899 4.16047 21.5752C1.92466 16.7437 2.78752 10.8369 6.77526 6.85001C11.8658 1.75757 20.1363 1.75757 25.2269 6.8487C30.3267 11.949 30.3175 20.2126 25.2269 25.3037Z" stroke="white" stroke-width="1.38158" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path opacity="0.4" d="M21.1403 16.6177H21.1493" stroke="white" stroke-width="1.84211" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path opacity="0.4" d="M15.9093 16.6177H15.9184" stroke="white" stroke-width="1.84211" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path opacity="0.4" d="M10.6782 16.6177H10.6873" stroke="white" stroke-width="1.84211" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            <!--  -->
+            <form class="flex-grow w-full relative z-10">
+              <span class="text-xl font-black rtl:font-yekanBakhBold ltr:font-MontserratBold mb-4 text-primary text-center ltr:lg:text-left lg:text-right block ltr:lg:ml-[140px] ltr:lg:mr-0 lg:mr-[140px] relative -top-2 lg:-top-0">ارسال دیدگاه</span>
+              <div class="flex flex-col md:flex-row items-center gap-6 mb-6">
+                  <div class="rounded-[12px] flex-grow w-full ltr:pr-4 ltr:pl-0 pl-4 flex items-center justify-between gap-3 bg-[#0000000A] text-sm font-normal h-14">
+                      <input placeholder="نام و نام خانوادگی" class="flex-grow py-4 ltr:pl-4 ltr:pr-0 pr-4 bg-transparent outline-none w-full">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                          <g opacity="0.1">
+                              <path d="M10 13.145C13.6156 13.145 16.6667 13.7325 16.6667 15.9992C16.6667 18.2667 13.5956 18.8334 10 18.8334C6.38535 18.8334 3.33337 18.2459 3.33337 15.9792C3.33337 13.7117 6.40453 13.145 10 13.145ZM10 2.16675C12.4493 2.16675 14.4117 4.12843 14.4117 6.57596C14.4117 9.02348 12.4493 10.986 10 10.986C7.55162 10.986 5.58839 9.02348 5.58839 6.57596C5.58839 4.12843 7.55162 2.16675 10 2.16675Z" fill="black"></path>
+                          </g>
+                      </svg>
+                  </div>
+                  <div class="rounded-[12px] flex-grow w-full ltr:pr-4 ltr:pl-0 pl-4 flex items-center justify-between gap-3 bg-[#0000000A] text-sm font-normal h-14">
+                      <input placeholder="شماره تماس" class="flex-grow py-4 ltr:pl-4 ltr:pr-0 pr-4 bg-transparent outline-none w-full">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                          <g opacity="0.1">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.60982 10.8936C12.9341 14.2169 13.6882 10.3722 15.8047 12.4873C17.8453 14.5272 19.0181 14.9359 16.4327 17.5205C16.1089 17.7808 14.0514 20.9118 6.82054 13.683C-0.411191 6.45325 2.71803 4.39362 2.97835 4.06988C5.56993 1.47812 5.97159 2.65774 8.01212 4.69769C10.1287 6.81366 6.28559 7.57026 9.60982 10.8936Z" fill="black"></path>
+                          </g>
+                      </svg>
+                  </div>
+              </div>
+              <div class="relative mb-5 bg-[#0000000A] rounded-[12px] h-[137px]">
+                  <textarea class="bg-transparent outline-none w-full h-full p-4 text-sm resize-none" placeholder="پیام شما"></textarea>
+                  <svg class="absolute ltr:right-4 ltr:left-auto left-4 top-4" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <g opacity="0.1">
+                          <path d="M10.0166 1.66675C14.75 1.66675 18.3333 5.54757 18.3333 9.98756C18.3333 15.137 14.1333 18.3334 9.99996 18.3334C8.63329 18.3334 7.11662 17.9662 5.89996 17.2485C5.47496 16.9897 5.11663 16.7978 4.65829 16.948L2.97496 17.4488C2.54996 17.5823 2.16663 17.2485 2.29163 16.7978L2.84996 14.9283C2.94163 14.6696 2.92496 14.3942 2.79163 14.1772C2.07496 12.8585 1.66663 11.4147 1.66663 10.0126C1.66663 5.62268 5.17496 1.66675 10.0166 1.66675ZM13.825 8.95268C13.2333 8.95268 12.7583 9.42839 12.7583 10.0209C12.7583 10.6052 13.2333 11.0892 13.825 11.0892C14.4166 11.0892 14.8916 10.6052 14.8916 10.0209C14.8916 9.42839 14.4166 8.95268 13.825 8.95268ZM9.98329 8.95268C9.39996 8.94433 8.91662 9.42839 8.91662 10.0126C8.91662 10.6052 9.39162 11.0809 9.98329 11.0892C10.575 11.0892 11.05 10.6052 11.05 10.0209C11.05 9.42839 10.575 8.95268 9.98329 8.95268ZM6.14162 8.95268C5.54996 8.95268 5.07496 9.42839 5.07496 10.0209C5.07496 10.6052 5.55829 11.0892 6.14162 11.0892C6.73329 11.0809 7.20829 10.6052 7.20829 10.0209C7.20829 9.42839 6.73329 8.95268 6.14162 8.95268Z" fill="black"></path>
+                      </g>
+                  </svg>
+              </div>
+              <div class="flex items-center justify-between mt-6 gap-6 flex-wrap md:flex-nowrap">
+                  <div class="flex items-center gap-5 flex-grow">
+                      <div class="bg-[#0000000A] rtl:font-yekanBakhBold ltr:font-MontserratBold max-w-[176px] w-full rounded-[12px] flex items-center justify-center h-14 font-black text-black text-[22px]">
+                          856985
+                      </div>
+                      <div class="rounded-[12px] max-w-full md:max-w-[332px] w-full ltr:pr-4 ltr:pl-0 pl-4 flex items-center justify-between gap-3 bg-[#0000000A] text-sm font-normal h-14">
+                          <input placeholder="کد امنیتی" class="flex-grow py-4 ltr:pl-4 ltr:pr-0 pr-4 bg-transparent outline-none w-full">
+                          <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                              <g opacity="0.1">
+                                  <path d="M13.6169 2.1665C16.4419 2.1665 18.3335 4.14984 18.3335 7.09984V13.9082C18.3335 16.8498 16.4419 18.8332 13.6169 18.8332H6.39187C3.56687 18.8332 1.66687 16.8498 1.66687 13.9082V7.09984C1.66687 4.14984 3.56687 2.1665 6.39187 2.1665H13.6169ZM13.7335 9.50067C13.1835 9.50067 12.7335 9.94984 12.7335 10.4998C12.7335 11.0498 13.1835 11.4998 13.7335 11.4998C14.2835 11.4998 14.7252 11.0498 14.7252 10.4998C14.7252 9.94984 14.2835 9.50067 13.7335 9.50067ZM10.0002 9.50067C9.4502 9.50067 9.0002 9.94984 9.0002 10.4998C9.0002 11.0498 9.4502 11.4998 10.0002 11.4998C10.5502 11.4998 11.0002 11.0498 11.0002 10.4998C11.0002 9.94984 10.5502 9.50067 10.0002 9.50067ZM6.26687 9.50067C5.71687 9.50067 5.26687 9.94984 5.26687 10.4998C5.26687 11.0498 5.71687 11.4998 6.26687 11.4998C6.81687 11.4998 7.26687 11.0498 7.26687 10.4998C7.26687 9.94984 6.81687 9.50067 6.26687 9.50067Z" fill="black"></path>
+                              </g>
+                          </svg>
+                      </div>
+                  </div>
+                  <button class="bg-primary text-lg btnHover h-14 md:w-72 w-full cursor-pointer rounded-[14px] shadow-20 text-white rtl:font-yekanBakhBold ltr:font-MontserratBold font-extrabold">
+                    ارسال دیدگاه
+                  </button>
+                </div>
+            </form>
+            <button class="absolute top-4 left-4 ltr:right-4 ltr:left-auto close-button p-2 z-10">
+                <svg class="w-4" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3" d="M16 2L2 16M2 2L16 16" stroke="black" stroke-width="2.15385" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </button>
+        </div>
+       </div>
+    </div>
 
   <!-- header -->
   <header class="relative pt-4 lg:pt-0">
@@ -750,7 +822,7 @@
             class="ltr:[transform:rotateY(180deg)] absolute top-11 rtl:left-10 ltr:right-10 w-[83%] h-[104px]">
           <div class="flex items-center gap-5 md:gap-10 relative">
             <img alt="svg" src="../img/svg/Group 5016.svg" class="w-8 sm:w-auto">
-            <p class="font-black rtl:font-PeydaBold ltr:font-MontserratBold text-lg sm:text-2xl md:text-[32px]">وبلاگ</p>
+            <p class="font-black rtl:font-PeydaBold ltr:font-MontserratBold text-lg sm:text-2xl md:text-[32px]">لورم ایپسوم متن ساختگی با تولید سادگی</p>
           </div>
           <div class="rounded-[14px] bg-[#4F24FF1A] flex-shrink-0 relative w-[74px] h-[74px] flex items-center justify-center">
             <div class="flex items-center justify-center w-[60px] h-[60px] rounded-[14px] bg-primary">
@@ -761,10 +833,10 @@
       </div>
     </section>
 
-    <!-- blog -->
+    <!-- blog details -->
      <section class="relative mt-24">
        <div class="max-w-content mx-auto px-4">
-         <div class="grid grid-cols-12 gap-6">
+        <div class="grid grid-cols-12 gap-y-6 sm:gap-6">
           <div class="lg:col-span-4 col-span-12">
             <form class="rounded-[15px] shadow-4 bg-white h-[67px] p-2 rtl:pr-4 ltr:pl-4 flex items-center gap-2">
               <input class="flex-grow w-full outline-none text-sm font-extrabold rtl:font-PeydaBold ltr:font-MontserratBold" placeholder="جستجو در بین مقالات ">
@@ -777,7 +849,7 @@
               <ul class="font-semibold text-sm mt-6">
                 <li class="py-3 border-b last:border-none border-[#F4F4F4]">
                   <a class="flex-between hover:text-primary transition group gap-2 text-[#9F9F9F]">
-                    <p class="lg:line-clamp-1">لورم ایپسوم متن ساختگی با تولید سادگی</p>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی</p>
                     <svg class="ltr:rotate-180 flex-shrink-0" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:stroke-primary transition" d="M6.67587 10.62L1.59998 6.81667C1.00053 6.36751 1.00053 5.63251 1.59998 5.18334L6.67587 1.38" stroke="#C6C6C6" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -785,7 +857,7 @@
                 </li>
                 <li class="py-3 border-b last:border-none border-[#F4F4F4]">
                   <a class="flex-between hover:text-primary transition group gap-2 text-[#9F9F9F]">
-                    <p class="lg:line-clamp-1">لورم ایپسوم متن ساختگی با تولید سادگی</p>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی</p>
                     <svg class="ltr:rotate-180 flex-shrink-0" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:stroke-primary transition" d="M6.67587 10.62L1.59998 6.81667C1.00053 6.36751 1.00053 5.63251 1.59998 5.18334L6.67587 1.38" stroke="#C6C6C6" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -793,7 +865,7 @@
                 </li>
                 <li class="py-3 border-b last:border-none border-[#F4F4F4]">
                   <a class="flex-between hover:text-primary transition group gap-2 text-[#9F9F9F]">
-                    <p class="lg:line-clamp-1">لورم ایپسوم متن ساختگی با تولید سادگی</p>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی</p>
                     <svg class="ltr:rotate-180 flex-shrink-0" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:stroke-primary transition" d="M6.67587 10.62L1.59998 6.81667C1.00053 6.36751 1.00053 5.63251 1.59998 5.18334L6.67587 1.38" stroke="#C6C6C6" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -801,7 +873,7 @@
                 </li>
                 <li class="py-3 border-b last:border-none border-[#F4F4F4]">
                   <a class="flex-between hover:text-primary transition group gap-2 text-[#9F9F9F]">
-                    <p class="lg:line-clamp-1">لورم ایپسوم متن ساختگی با تولید سادگی</p>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی</p>
                     <svg class="ltr:rotate-180 flex-shrink-0" width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:stroke-primary transition" d="M6.67587 10.62L1.59998 6.81667C1.00053 6.36751 1.00053 5.63251 1.59998 5.18334L6.67587 1.38" stroke="#C6C6C6" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -811,236 +883,276 @@
             </div>
           </div>
           <div class="lg:col-span-8 col-span-12">
-            <div class="shadow-4 h-full bg-white rounded-[20px] py-5 px-4 grid grid-cols-12 gap-y-[30px] sm:gap-[30px]">
-              <div class="sm:col-span-7 col-span-12">
-                <img alt="img" src="../img/image (11).png" class="rounded-[10px] w-full h-full">
-              </div>
-              <div class="sm:col-span-5 col-span-12 flex flex-col justify-between">
-               <div>
-                <a class="font-bold sm:h-[50px] sm:line-clamp-2 hover:text-primary transition">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</a>
-                <div class="mt-4 flex flex-wrap items-center gap-4">
-                  <div class="flex items-center gap-1.5">
-                    <img alt="icon" src="../img/svg/calendar (2).svg">
-                    <p class="text-sm text-[#767676]">1402-11-08</p>
+            <div class="editorSection  bg-white rounded-[20px] pt-5 pb-11 px-4 shadow-4">
+              <div class="grid grid-cols-12 gap-y-[30px] sm:gap-[30px]">
+                <div class="sm:col-span-7 col-span-12">
+                  <img alt="img" src="../img/image (11).png" class="rounded-[10px] w-full sm:h-[284px]">
+                </div>
+                <div class="sm:col-span-5 col-span-12 flex flex-col justify-between">
+                 <div>
+                  <a class="font-bold hover:text-primary transition">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</a>
+                  <div class="mt-4 flex flex-wrap items-center gap-4">
+                    <div class="flex items-center gap-1.5">
+                      <img alt="icon" src="../img/svg/calendar (2).svg">
+                      <p class="text-sm text-[#767676]">1402-11-08</p>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                      <img alt="icon" src="../img/svg/layer.svg">
+                      <p class="text-sm text-[#767676]">دسته بندی</p>
+                    </div>
                   </div>
-                  <div class="flex items-center gap-1.5">
-                    <img alt="icon" src="../img/svg/layer.svg">
-                    <p class="text-sm text-[#767676]">دسته بندی</p>
+                  <p class="mt-3 text-[#9F9F9F]">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، 
+                  </p>
+                 </div>
+                </div>
+              </div>
+              <p class="mt-9 font-semibold text-[#9F9F9F]">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+              </p>
+              <div class="mt-6">
+                <ul class="mt-7 text-sm sm:text-base font-semibold text-[#9F9F9F]">
+                  <li class="mb-6 relative">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
+                    طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است،</li>
+                  <li class="mb-6 relative">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
+                    طراحان گرافیک است</li>
+                  <li class="mb-6 relative">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
+                    طراحان گرافیک است</li>
+                </ul>
+                <div class="mt-9 rounded-[20px] bg-[#F8F7FF] p-[22px]">
+                  <h5 class="sm:text-lg font-extrabold rtl:font-PeydaBold ltr:font-MontserratBold">عنوان جدول در این
+                    قسمت
+                  </h5>
+                  <div class="mt-4">
+                    <div class="bg-white font-semibold text-sm p-[10px] rounded-[10px] flex items-center gap-5">
+                      <div class="flex-shrink-0 rtl:-mr-5 w-[25px] h-[25px] rounded-[10px] bg-primary flex-center text-white">
+                        1
+                      </div>
+                      <p class="text-[#9F9F9F]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                        استفاده از طراحان گرافیک است</p>
+                    </div>
+                    <div class="bg-[#F5F5F5] font-semibold text-sm p-[10px] rounded-[10px] flex items-center gap-5">
+                      <div class="flex-shrink-0 rtl:-mr-5 w-[25px] h-[25px] rounded-[10px] bg-primary flex-center text-white">
+                        1
+                      </div>
+                      <p class="text-[#9F9F9F]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                        استفاده از طراحان گرافیک است</p>
+                    </div>
+                    <div class="bg-white font-semibold text-sm p-[10px] rounded-[10px] flex items-center gap-5">
+                      <div class="flex-shrink-0 rtl:-mr-5 w-[25px] h-[25px] rounded-[10px] bg-primary flex-center text-white">
+                        1
+                      </div>
+                      <p class="text-[#9F9F9F]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                        استفاده از طراحان گرافیک است</p>
+                    </div>
+                    <div class="bg-[#F5F5F5] font-semibold text-sm p-[10px] rounded-[10px] flex items-center gap-5">
+                      <div class="flex-shrink-0 rtl:-mr-5 w-[25px] h-[25px] rounded-[10px] bg-primary flex-center text-white">
+                        1
+                      </div>
+                      <p class="text-[#9F9F9F]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                        استفاده از طراحان گرافیک است</p>
+                    </div>
+                    <div class="bg-white font-semibold text-sm p-[10px] rounded-[10px] flex items-center gap-5">
+                      <div class="flex-shrink-0 rtl:-mr-5 w-[25px] h-[25px] rounded-[10px] bg-primary flex-center text-white">
+                        1
+                      </div>
+                      <p class="text-[#9F9F9F]">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                        استفاده از طراحان گرافیک است</p>
+                    </div>
                   </div>
                 </div>
-                <p class="sm:h-[148px] sm:line-clamp-6 mt-3 text-[#9F9F9F]">
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، 
-                </p>
-               </div>
-                <a class="rounded-[15px] mt-4 sm:mt-0 rtl:mr-auto ltr:ml-auto w-[49px] h-[68px] bg-primary flex-center btnHover shadow-8">
-                  <img alt="icon" src="../img/svg/arrow-down (6).svg" class="ltr:rotate-180">
-                </a>
               </div>
             </div>
           </div>
          </div>
-         <div class="mt-6 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="shadow-4 h-full bg-white rounded-[20px] pb-5 pt-4 px-[13px]">
-              <div>
-                <img alt="img" src="../img/image (12).png" class="rounded-[10px] w-full md:h-[225px]">
-              </div>
-              <div>
-               <div class="mt-[18px]">
-                <a class="font-bold md:h-[50px] md:line-clamp-2 hover:text-primary transition">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</a>
-                <p class="md:h-11 md:line-clamp-2 mt-2 text-[#9F9F9F] text-sm">
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است
-                </p>
-                <div class="flex-between gap-2 mt-4 md:mt-1.5">
-                  <div class="flex flex-wrap items-center gap-4 md:gap-7">
-                    <div class="flex items-center gap-1.5">
-                      <img alt="icon" src="../img/svg/calendar (2).svg">
-                      <p class="text-sm text-[#767676]">1402-11-08</p>
-                    </div>
-                    <div class="flex items-center gap-1.5">
-                      <img alt="icon" src="../img/svg/layer.svg">
-                      <p class="text-sm text-[#767676]">دسته بندی</p>
-                    </div>
-                  </div>
-                  <a class="rounded-[15px] w-[49px] h-[68px] bg-primary flex-center btnHover shadow-8">
-                    <img alt="icon" src="../img/svg/arrow-down (6).svg" class="ltr:rotate-180">
-                  </a>
-                </div>
-               </div>
-              </div>
-            </div>
-            <div class="shadow-4 h-full bg-white rounded-[20px] pb-5 pt-4 px-[13px]">
-              <div>
-                <img alt="img" src="../img/image (12).png" class="rounded-[10px] w-full md:h-[225px]">
-              </div>
-              <div>
-               <div class="mt-[18px]">
-                <a class="font-bold md:h-[50px] md:line-clamp-2 hover:text-primary transition">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</a>
-                <p class="md:h-11 md:line-clamp-2 mt-2 text-[#9F9F9F] text-sm">
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است
-                </p>
-                <div class="flex-between gap-2 mt-4 md:mt-1.5">
-                  <div class="flex flex-wrap items-center gap-4 md:gap-7">
-                    <div class="flex items-center gap-1.5">
-                      <img alt="icon" src="../img/svg/calendar (2).svg">
-                      <p class="text-sm text-[#767676]">1402-11-08</p>
-                    </div>
-                    <div class="flex items-center gap-1.5">
-                      <img alt="icon" src="../img/svg/layer.svg">
-                      <p class="text-sm text-[#767676]">دسته بندی</p>
-                    </div>
-                  </div>
-                  <a class="rounded-[15px] w-[49px] h-[68px] bg-primary flex-center btnHover shadow-8">
-                    <img alt="icon" src="../img/svg/arrow-down (6).svg" class="ltr:rotate-180">
-                  </a>
-                </div>
-               </div>
-              </div>
-            </div>
-            <div class="shadow-4 h-full bg-white rounded-[20px] pb-5 pt-4 px-[13px]">
-              <div>
-                <img alt="img" src="../img/image (12).png" class="rounded-[10px] w-full md:h-[225px]">
-              </div>
-              <div>
-               <div class="mt-[18px]">
-                <a class="font-bold md:h-[50px] md:line-clamp-2 hover:text-primary transition">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</a>
-                <p class="md:h-11 md:line-clamp-2 mt-2 text-[#9F9F9F] text-sm">
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است
-                </p>
-                <div class="flex-between gap-2 mt-4 md:mt-1.5">
-                  <div class="flex flex-wrap items-center gap-4 md:gap-7">
-                    <div class="flex items-center gap-1.5">
-                      <img alt="icon" src="../img/svg/calendar (2).svg">
-                      <p class="text-sm text-[#767676]">1402-11-08</p>
-                    </div>
-                    <div class="flex items-center gap-1.5">
-                      <img alt="icon" src="../img/svg/layer.svg">
-                      <p class="text-sm text-[#767676]">دسته بندی</p>
-                    </div>
-                  </div>
-                  <a class="rounded-[15px] w-[49px] h-[68px] bg-primary flex-center btnHover shadow-8">
-                    <img alt="icon" src="../img/svg/arrow-down (6).svg" class="ltr:rotate-180">
-                  </a>
-                </div>
-               </div>
-              </div>
-            </div>
-            <div class="shadow-4 h-full bg-white rounded-[20px] pb-5 pt-4 px-[13px]">
-              <div>
-                <img alt="img" src="../img/image (12).png" class="rounded-[10px] w-full md:h-[225px]">
-              </div>
-              <div>
-               <div class="mt-[18px]">
-                <a class="font-bold md:h-[50px] md:line-clamp-2 hover:text-primary transition">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</a>
-                <p class="md:h-11 md:line-clamp-2 mt-2 text-[#9F9F9F] text-sm">
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است
-                </p>
-                <div class="flex-between gap-2 mt-4 md:mt-1.5">
-                  <div class="flex flex-wrap items-center gap-4 md:gap-7">
-                    <div class="flex items-center gap-1.5">
-                      <img alt="icon" src="../img/svg/calendar (2).svg">
-                      <p class="text-sm text-[#767676]">1402-11-08</p>
-                    </div>
-                    <div class="flex items-center gap-1.5">
-                      <img alt="icon" src="../img/svg/layer.svg">
-                      <p class="text-sm text-[#767676]">دسته بندی</p>
-                    </div>
-                  </div>
-                  <a class="rounded-[15px] w-[49px] h-[68px] bg-primary flex-center btnHover shadow-8">
-                    <img alt="icon" src="../img/svg/arrow-down (6).svg" class="ltr:rotate-180">
-                  </a>
-                </div>
-               </div>
-              </div>
-            </div>
-            <div class="shadow-4 h-full bg-white rounded-[20px] pb-5 pt-4 px-[13px]">
-              <div>
-                <img alt="img" src="../img/image (12).png" class="rounded-[10px] w-full md:h-[225px]">
-              </div>
-              <div>
-               <div class="mt-[18px]">
-                <a class="font-bold md:h-[50px] md:line-clamp-2 hover:text-primary transition">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</a>
-                <p class="md:h-11 md:line-clamp-2 mt-2 text-[#9F9F9F] text-sm">
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است
-                </p>
-                <div class="flex-between gap-2 mt-4 md:mt-1.5">
-                  <div class="flex flex-wrap items-center gap-4 md:gap-7">
-                    <div class="flex items-center gap-1.5">
-                      <img alt="icon" src="../img/svg/calendar (2).svg">
-                      <p class="text-sm text-[#767676]">1402-11-08</p>
-                    </div>
-                    <div class="flex items-center gap-1.5">
-                      <img alt="icon" src="../img/svg/layer.svg">
-                      <p class="text-sm text-[#767676]">دسته بندی</p>
-                    </div>
-                  </div>
-                  <a class="rounded-[15px] w-[49px] h-[68px] bg-primary flex-center btnHover shadow-8">
-                    <img alt="icon" src="../img/svg/arrow-down (6).svg" class="ltr:rotate-180">
-                  </a>
-                </div>
-               </div>
-              </div>
-            </div>
-            <div class="shadow-4 h-full bg-white rounded-[20px] pb-5 pt-4 px-[13px]">
-              <div>
-                <img alt="img" src="../img/image (12).png" class="rounded-[10px] w-full md:h-[225px]">
-              </div>
-              <div>
-               <div class="mt-[18px]">
-                <a class="font-bold md:h-[50px] md:line-clamp-2 hover:text-primary transition">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</a>
-                <p class="md:h-11 md:line-clamp-2 mt-2 text-[#9F9F9F] text-sm">
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است
-                </p>
-                <div class="flex-between gap-2 mt-4 md:mt-1.5">
-                  <div class="flex flex-wrap items-center gap-4 md:gap-7">
-                    <div class="flex items-center gap-1.5">
-                      <img alt="icon" src="../img/svg/calendar (2).svg">
-                      <p class="text-sm text-[#767676]">1402-11-08</p>
-                    </div>
-                    <div class="flex items-center gap-1.5">
-                      <img alt="icon" src="../img/svg/layer.svg">
-                      <p class="text-sm text-[#767676]">دسته بندی</p>
-                    </div>
-                  </div>
-                  <a class="rounded-[15px] w-[49px] h-[68px] bg-primary flex-center btnHover shadow-8">
-                    <img alt="icon" src="../img/svg/arrow-down (6).svg" class="ltr:rotate-180">
-                  </a>
-                </div>
-               </div>
-              </div>
-            </div>
-         </div>
-         <!-- pagination -->
-         <div id="pagination2" class="block my-[77px]">
-          <ul class="flex-center gap-2 sm:gap-[14px] w-full h-full">
-              <li class="rounded-full hover:bg-secondary transition flex-center shadow-4 w-[61px] h-[61px] group">
-                  <a class="w-full h-full flex-center">
-                    <svg class="ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="transition group-hover:stroke-white" d="M14.43 18.0699L20.5 11.9999L14.43 5.92995" stroke="#FF6F1D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="transition group-hover:stroke-white" d="M3.50008 12L20.3301 12" stroke="#FF6F1D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </a>
-              </li>
-              <ul class="bg-white shadow-4 px-3 flex-center gap-3 sm:gap-4 rounded-[30px] h-[61px]">
-                <li class="h-full flex-center group cursor-pointer"><a class="active h-9 w-9 flex-center rounded-full group-hover:bg-secondary group-hover:text-white text-secondary font-bold transition-all rtl:font-yekanBakhBold ltr:font-MontserratBold text-lg sm:text-xl">1</a></li>
-                <li class="h-full flex-center group cursor-pointer"><a class="h-9 w-9 flex-center rounded-full group-hover:bg-secondary group-hover:text-white text-secondary font-bold transition-all rtl:font-yekanBakhBold ltr:font-MontserratBold text-lg sm:text-xl">2</a></li>
-                <li class="h-full flex-center group cursor-pointer"><a class="h-9 w-9 flex-center rounded-full group-hover:bg-secondary group-hover:text-white text-secondary font-bold transition-all rtl:font-yekanBakhBold ltr:font-MontserratBold text-lg sm:text-xl">3</a></li>
-                <li class="h-full sm:flex items-center justify-center group cursor-pointer hidden"><a class="h-9 w-9 flex-center rounded-full group-hover:bg-secondary group-hover:text-white text-secondary font-bold transition-all rtl:font-yekanBakhBold ltr:font-MontserratBold text-lg sm:text-xl">4</a></li>
-                <li class="h-full sm:flex items-center justify-center group cursor-pointer hidden"><a class="h-9 w-9 flex-center rounded-full group-hover:bg-secondary group-hover:text-white text-secondary font-bold transition-all rtl:font-yekanBakhBold ltr:font-MontserratBold text-lg sm:text-xl">5</a></li>
-                <li class="h-full sm:flex items-center justify-center group cursor-pointer hidden"><a class="h-9 w-9 flex-center rounded-full group-hover:bg-secondary group-hover:text-white text-secondary font-bold transition-all rtl:font-yekanBakhBold ltr:font-MontserratBold text-lg sm:text-xl">6</a></li>
-                <li class="h-full sm:flex items-center justify-center group cursor-pointer hidden"><a class="h-9 w-9 flex-center rounded-full group-hover:bg-secondary group-hover:text-white text-secondary font-bold transition-all rtl:font-yekanBakhBold ltr:font-MontserratBold text-lg sm:text-xl">7</a></li>
-              </ul>
-              <li class="rounded-full hover:bg-secondary transition flex-center shadow-4 w-[61px] h-[61px] group">
-                  <a class="w-full h-full flex-center">
-                    <svg class="ltr:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path class="transition group-hover:stroke-white" d="M9.57 5.93005L3.5 12.0001L9.57 18.0701" stroke="#FF6F1D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path class="transition group-hover:stroke-white" d="M20.4999 12H3.66992" stroke="#FF6F1D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </a>
-              </li>
-          </ul>
-        </div>
        </div>
      </section>
+
+     <!-- comments -->
+     <section class="mt-24 relative py-[71px]">
+      <!-- bg -->
+       <div class="h-[621px] inset-x-0 top-0 absolute">
+        <img alt="bg" src="../img/Group 5021.png" class="w-full h-full">
+        <img alt="bg" src="../img/svg/Vector 787.svg" class="w-full absolute top-0 inset-x-0">
+       </div>
+      <!--  -->
+      <div class="max-w-content mx-auto px-4 relative">
+        <div class="flex-between flex-wrap gap-3">
+          <div class="flex items-center gap-3">
+            <div class="w-5 h-5 rounded-[5px] bg-secondary flex-shrink-0"></div>
+            <h2 class="text-xl sm:text-[32px] font-black text-white rtl:font-PeydaBold ltr:font-MontserratBold">دیدگاه کاربران</h2>
+          </div>
+          <a id="add-comment-modal"
+            class="h-[53px] rounded-[15px] bg-secondary text-white px-8 text-base sm:text-lg font-extrabold flex-center btnHover rtl:font-yekanBakhBold ltr:font-MontserratBold">ارسال
+            دیدگاه</a>
+        </div>
+        <div class="mt-9">
+          <div class="mt-9">
+            <div class="mb-8">
+              <div class="border border-primary bg-white shadow-2 rounded-[15px] ltr:rounded-l-[60px] ltr:rounded-r-[15px] rounded-r-[60px] p-3 rtl:pl-6 ltr:pr-6 flex items-center justify-between flex-wrap md:flex-nowrap gap-5 mb-8">
+                <div class="flex items-center flex-wrap sm:flex-nowrap gap-[18px]">
+                  <img alt="avatar" src="../img/1403-02-24 12.39 1.png" class="w-[85px] h-[85px] rounded-full block mx-auto flex-shrink-0">
+                  <div>
+                    <p class="text-lg font-bold rtl:font-yekanBakhBold ltr:font-MontserratBold text-[#393939] text-center sm:text-right ltr:sm:text-left">
+                      نگار امینی</p>
+                    <p class="text-[#9F9F9F] font-semibold text-[15px] mt-2">لورم ایپسوم متن ساختگی با تولید
+                      سادگی نامفهوم از صنعت
+                      چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                      سطرآنچنان که لازم
+                      است.</p>
+                  </div>
+                </div>
+                <div class="flex-shrink-0 flex-grow md:flex-grow-0">
+                  <div class="flex items-center justify-end gap-1 cursor-pointer">
+                    <img alt="icon" src="../img/svg/undo.svg">
+                    <p class="text-lg text-[#393939] font-semibold">پاسخ</p>
+                  </div>
+                  <p class="text-primary font-semibold mt-2 text-left ltr:text-right">۱۴۰۱/۱۲/۱۲ /
+                    ۲۳:۱۶</p>
+                </div>
+              </div>
+              <div class="border border-primary bg-[#8263f9] shadow-2 relative rtl:md:mr-[104px] ltr:md:ml-[104px] mt-8 rounded-[15px] ltr:rounded-l-[60px] ltr:rounded-r-[15px] rounded-r-[60px] p-3 rtl:pl-6 ltr:pr-6 flex items-center justify-between flex-wrap md:flex-nowrap gap-5 mb-8">
+                <!-- arrow -->
+                <svg class="absolute rtl:right-20 rtl:sm:right-28 ltr:left-20 ltr:sm:left-28 -top-[17px]" width="32" height="17" viewBox="0 0 32 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g filter="url(#filter0_b_468_1839)">
+                    <path d="M7.77155 2.4301C8.98109 0.162499 11.9846 -0.392417 13.9245 1.2933L32 17H1.90735e-06L7.77155 2.4301Z" fill="#8263f9"></path>
+                  </g>
+                  <defs>
+                    <filter id="filter0_b_468_1839" x="-40" y="-39.688" width="112" height="96.688" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                      <feGaussianBlur in="BackgroundImageFix" stdDeviation="20"></feGaussianBlur>
+                      <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_468_1839"></feComposite>
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_468_1839" result="shape"></feBlend>
+                    </filter>
+                  </defs>
+                </svg>
+                <!--  -->
+                <div class="flex items-center flex-wrap sm:flex-nowrap gap-[18px]">
+                  <img alt="avatar" src="../img/1403-02-24 12.39 1.png" class="w-[85px] h-[85px] rounded-full block mx-auto flex-shrink-0">
+                  <div>
+                    <p class="text-lg font-bold rtl:font-yekanBakhBold ltr:font-MontserratBold text-white text-center sm:text-right ltr:sm:text-left">
+                      مدیریت</p>
+                    <p class="text-white font-semibold text-[15px] mt-2">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                      است
+                    </p>
+                  </div>
+                </div>
+                <div class="flex-shrink-0 flex-grow md:flex-grow-0">
+                  <div class="flex items-center justify-end gap-1 cursor-pointer">
+                    <img alt="icon" src="../img/svg/undo.svg">
+                    <p class="text-lg text-white font-semibold">پاسخ</p>
+                  </div>
+                  <p class="text-white font-semibold mt-2 text-left ltr:text-right">۱۴۰۱/۱۲/۱۲ /
+                    ۲۳:۱۶</p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-8">
+              <div class="border border-primary bg-white shadow-2 rounded-[15px] ltr:rounded-l-[60px] ltr:rounded-r-[15px] rounded-r-[60px] p-3 rtl:pl-6 ltr:pr-6 flex items-center justify-between flex-wrap md:flex-nowrap gap-5 mb-8">
+                <div class="flex items-center flex-wrap sm:flex-nowrap gap-[18px]">
+                  <img alt="avatar" src="../img/1403-02-24 12.39 1.png" class="w-[85px] h-[85px] rounded-full block mx-auto flex-shrink-0">
+                  <div>
+                    <p class="text-lg font-bold rtl:font-yekanBakhBold ltr:font-MontserratBold text-[#393939] text-center sm:text-right ltr:sm:text-left">
+                      نگار امینی</p>
+                    <p class="text-[#9F9F9F] font-semibold text-[15px] mt-2">لورم ایپسوم متن ساختگی با تولید
+                      سادگی نامفهوم از صنعت
+                      چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                      سطرآنچنان که لازم
+                      است.</p>
+                  </div>
+                </div>
+                <div class="flex-shrink-0 flex-grow md:flex-grow-0">
+                  <div class="flex items-center justify-end gap-1 cursor-pointer">
+                    <img alt="icon" src="../img/svg/undo.svg">
+                    <p class="text-lg text-[#393939] font-semibold">پاسخ</p>
+                  </div>
+                  <p class="text-primary font-semibold mt-2 text-left ltr:text-right">۱۴۰۱/۱۲/۱۲ /
+                    ۲۳:۱۶</p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-8">
+              <div class="border border-primary bg-white shadow-2 rounded-[15px] ltr:rounded-l-[60px] ltr:rounded-r-[15px] rounded-r-[60px] p-3 rtl:pl-6 ltr:pr-6 flex items-center justify-between flex-wrap md:flex-nowrap gap-5 mb-8">
+                <div class="flex items-center flex-wrap sm:flex-nowrap gap-[18px]">
+                  <img alt="avatar" src="../img/1403-02-24 12.39 1.png" class="w-[85px] h-[85px] rounded-full block mx-auto flex-shrink-0">
+                  <div>
+                    <p class="text-lg font-bold rtl:font-yekanBakhBold ltr:font-MontserratBold text-[#393939] text-center sm:text-right ltr:sm:text-left">
+                      نگار امینی</p>
+                    <p class="text-[#9F9F9F] font-semibold text-[15px] mt-2">لورم ایپسوم متن ساختگی با تولید
+                      سادگی نامفهوم از صنعت
+                      چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                      سطرآنچنان که لازم
+                      است.</p>
+                  </div>
+                </div>
+                <div class="flex-shrink-0 flex-grow md:flex-grow-0">
+                  <div class="flex items-center justify-end gap-1 cursor-pointer">
+                    <img alt="icon" src="../img/svg/undo.svg">
+                    <p class="text-lg text-[#393939] font-semibold">پاسخ</p>
+                  </div>
+                  <p class="text-primary font-semibold mt-2 text-left ltr:text-right">۱۴۰۱/۱۲/۱۲ /
+                    ۲۳:۱۶</p>
+                </div>
+              </div>
+            </div>
+            <div class="mb-8">
+              <div class="border border-primary bg-white shadow-2 rounded-[15px] ltr:rounded-l-[60px] ltr:rounded-r-[15px] rounded-r-[60px] p-3 rtl:pl-6 ltr:pr-6 flex items-center justify-between flex-wrap md:flex-nowrap gap-5 mb-8">
+                <div class="flex items-center flex-wrap sm:flex-nowrap gap-[18px]">
+                  <img alt="avatar" src="../img/1403-02-24 12.39 1.png" class="w-[85px] h-[85px] rounded-full block mx-auto flex-shrink-0">
+                  <div>
+                    <p class="text-lg font-bold rtl:font-yekanBakhBold ltr:font-MontserratBold text-[#393939] text-center sm:text-right ltr:sm:text-left">
+                      نگار امینی</p>
+                    <p class="text-[#9F9F9F] font-semibold text-[15px] mt-2">لورم ایپسوم متن ساختگی با تولید
+                      سادگی نامفهوم از صنعت
+                      چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                      سطرآنچنان که لازم
+                      است.</p>
+                  </div>
+                </div>
+                <div class="flex-shrink-0 flex-grow md:flex-grow-0">
+                  <div class="flex items-center justify-end gap-1 cursor-pointer">
+                    <img alt="icon" src="../img/svg/undo.svg">
+                    <p class="text-lg text-[#393939] font-semibold">پاسخ</p>
+                  </div>
+                  <p class="text-primary font-semibold mt-2 text-left ltr:text-right">۱۴۰۱/۱۲/۱۲ /
+                    ۲۳:۱۶</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- pagination -->
+        <div id="pagination" class="bg-[#F7F7F7] block rounded-[20px] mt-11 h-[59px] overflow-hidden">
+          <ul class="flex items-center justify-between gap-8 sm:gap-11 w-full h-full text-[15px]">
+            <li class="ml-auto ltr:mr-auto ltr:ml-0 h-full shadow-next group">
+              <a class="flex items-center gap-1 px-4 sm:px-8 h-full">
+                <svg class="ltr:[transform:rotateY(180deg)]" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.2004 7.80005L6.40039 4.06672C6.13372 3.80005 5.73372 3.80005 5.46706 4.06672C5.20039 4.33338 5.20039 4.73338 5.46706 5.00005L8.73372 8.33338L5.46706 11.6667C5.20039 11.9334 5.20039 12.3334 5.46706 12.6C5.60039 12.7334 5.73372 12.8 5.93372 12.8C6.13372 12.8 6.26706 12.7334 6.40039 12.6L10.2004 8.86672C10.4671 8.53338 10.4671 8.13338 10.2004 7.80005C10.2004 7.86672 10.2004 7.86672 10.2004 7.80005Z" fill="#1E2D48"></path>
+                </svg>
+                <p class="hidden sm:block mb-0 group-hover:opacity-100 transition-all">
+                  <span>صفحه</span> بعد
+                </p>
+              </a>
+            </li>
+            <li><a class="opacity-100 hover:opacity-100 transition-all rtl:font-yekanBakhBold ltr:font-MontserratBold text-xl">1</a>
+            </li>
+            <li><a class="opacity-20 hover:opacity-100 transition-all rtl:font-yekanBakhBold ltr:font-MontserratBold text-xl">2</a>
+            </li>
+            <li class="mr-auto ltr:ml-auto ltr:mr-0 h-full shadow-next group">
+              <a class="flex items-center gap-1 px-4 sm:px-8 h-full">
+                <p class="hidden sm:block mb-0 group-hover:opacity-100 transition-all">
+                  <span>صفحه</span> قبل
+                </p>
+                <svg class="ltr:[transform:rotateY(180deg)]" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.79961 8.19995L9.59961 11.9333C9.86628 12.2 10.2663 12.2 10.5329 11.9333C10.7996 11.6666 10.7996 11.2666 10.5329 11L7.26628 7.66662L10.5329 4.33328C10.7996 4.06662 10.7996 3.66662 10.5329 3.39995C10.3996 3.26662 10.2663 3.19995 10.0663 3.19995C9.86628 3.19995 9.73294 3.26662 9.59961 3.39995L5.79961 7.13328C5.53294 7.46662 5.53294 7.86662 5.79961 8.19995C5.79961 8.13328 5.79961 8.13328 5.79961 8.19995Z" fill="#1E2D48"></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
   </main>
 
@@ -1281,7 +1393,7 @@
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <!-- <script src="../js/modal.js"></script> -->
+  <script src="../js/modal.js"></script>
   <script src="../js/script.js"></script>
 </body>
 
