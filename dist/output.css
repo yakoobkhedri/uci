@@ -1003,6 +1003,10 @@ video {
   margin: auto;
 }
 
+.m-3 {
+  margin: 0.75rem;
+}
+
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
@@ -1310,6 +1314,18 @@ video {
   margin-top: 90px;
 }
 
+.mb-36 {
+  margin-bottom: 9rem;
+}
+
+.mb-28 {
+  margin-bottom: 7rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .line-clamp-1 {
   overflow: hidden;
   display: -webkit-box;
@@ -1336,6 +1352,13 @@ video {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 6;
+}
+
+.line-clamp-\[8\] {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 8;
 }
 
 .block {
@@ -1926,6 +1949,10 @@ video {
   width: 100%;
 }
 
+.w-72 {
+  width: 18rem;
+}
+
 .min-w-\[240px\] {
   min-width: 240px;
 }
@@ -2208,6 +2235,14 @@ video {
 
 .gap-y-8 {
   row-gap: 2rem;
+}
+
+.gap-y-14 {
+  row-gap: 3.5rem;
+}
+
+.gap-y-20 {
+  row-gap: 5rem;
 }
 
 .overflow-auto {
@@ -3146,6 +3181,11 @@ video {
   line-height: 1rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-black {
   font-weight: 900;
 }
@@ -4000,6 +4040,11 @@ input[type="number"] {
   top: 1rem;
 }
 
+.after\:top-2::after {
+  content: var(--tw-content);
+  top: 0.5rem;
+}
+
 .after\:-z-1::after {
   content: var(--tw-content);
   z-index: -1;
@@ -4330,6 +4375,10 @@ input[type="number"] {
   right: -3.5rem;
 }
 
+:is([dir="ltr"] .ltr\:-right-8) {
+  right: -2rem;
+}
+
 :is([dir="ltr"] .ltr\:order-last) {
   order: 9999;
 }
@@ -4646,6 +4695,10 @@ input[type="number"] {
   left: -3.5rem;
 }
 
+:is([dir="rtl"] .rtl\:-left-8) {
+  left: -2rem;
+}
+
 :is([dir="rtl"] .rtl\:order-first) {
   order: -9999;
 }
@@ -4824,6 +4877,12 @@ input[type="number"] {
   right: -1.5rem;
 }
 
+@media (max-width: 450px) {
+  .max-\[450px\]\:m-0 {
+    margin: 0px;
+  }
+}
+
 @media (min-width: 400px) {
   .min-\[400px\]\:-top-1 {
     top: -0.25rem;
@@ -4833,6 +4892,10 @@ input[type="number"] {
 @media (min-width: 450px) {
   .min-\[450px\]\:-top-1 {
     top: -0.25rem;
+  }
+
+  .min-\[450px\]\:m-3 {
+    margin: 0.75rem;
   }
 
   .min-\[450px\]\:mb-0 {
@@ -4941,6 +5004,10 @@ input[type="number"] {
     grid-column: span 8 / span 8;
   }
 
+  .sm\:m-0 {
+    margin: 0px;
+  }
+
   .sm\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -5040,6 +5107,10 @@ input[type="number"] {
 
   .sm\:mt-\[52px\] {
     margin-top: 52px;
+  }
+
+  .sm\:mb-36 {
+    margin-bottom: 9rem;
   }
 
   .sm\:block {
@@ -5216,6 +5287,10 @@ input[type="number"] {
 
   .sm\:w-full {
     width: 100%;
+  }
+
+  .sm\:w-80 {
+    width: 20rem;
   }
 
   .sm\:max-w-\[290px\] {
@@ -5511,6 +5586,11 @@ input[type="number"] {
     line-height: 80px;
   }
 
+  .after\:sm\:top-4::after {
+    content: var(--tw-content);
+    top: 1rem;
+  }
+
   :is([dir="ltr"] .ltr\:sm\:left-28) {
     left: 7rem;
   }
@@ -5541,6 +5621,14 @@ input[type="number"] {
 
   :is([dir="ltr"] .ltr\:sm\:ml-4) {
     margin-left: 1rem;
+  }
+
+  :is([dir="ltr"] .ltr\:sm\:mr-\[132px\]) {
+    margin-right: 132px;
+  }
+
+  :is([dir="ltr"] .ltr\:sm\:ml-\[170px\]) {
+    margin-left: 170px;
   }
 
   :is([dir="ltr"] .ltr\:sm\:rounded-l-\[30px\]) {
@@ -5603,6 +5691,14 @@ input[type="number"] {
 
   :is([dir="rtl"] .rtl\:sm\:mr-4) {
     margin-right: 1rem;
+  }
+
+  :is([dir="rtl"] .rtl\:sm\:ml-\[132px\]) {
+    margin-left: 132px;
+  }
+
+  :is([dir="rtl"] .rtl\:sm\:mr-\[170px\]) {
+    margin-right: 170px;
   }
 
   :is([dir="rtl"] .rtl\:sm\:rounded-l-\[30px\]) {
@@ -5721,6 +5817,10 @@ input[type="number"] {
     margin-top: 30px;
   }
 
+  .md\:mt-8 {
+    margin-top: 2rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -5823,6 +5923,10 @@ input[type="number"] {
 
   .md\:gap-8 {
     gap: 2rem;
+  }
+
+  .md\:gap-7 {
+    gap: 1.75rem;
   }
 
   .md\:gap-x-5 {
@@ -6001,6 +6105,18 @@ input[type="number"] {
     margin-top: 4rem;
   }
 
+  .lg\:mt-24 {
+    margin-top: 6rem;
+  }
+
+  .lg\:mt-36 {
+    margin-top: 9rem;
+  }
+
+  .lg\:mt-8 {
+    margin-top: 2rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -6037,12 +6153,20 @@ input[type="number"] {
     width: auto;
   }
 
+  .lg\:w-full {
+    width: 100%;
+  }
+
   .lg\:flex-shrink-0 {
     flex-shrink: 0;
   }
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
@@ -6067,6 +6191,10 @@ input[type="number"] {
 
   .lg\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .lg\:gap-8 {
+    gap: 2rem;
   }
 
   .lg\:gap-x-4 {
@@ -6150,6 +6278,10 @@ input[type="number"] {
     margin-right: 0px;
   }
 
+  :is([dir="ltr"] .ltr\:lg\:mr-\[132px\]) {
+    margin-right: 132px;
+  }
+
   :is([dir="ltr"] .lg\:ltr\:pl-9) {
     padding-left: 2.25rem;
   }
@@ -6160,6 +6292,10 @@ input[type="number"] {
 
   :is([dir="rtl"] .rtl\:lg\:right-0) {
     right: 0px;
+  }
+
+  :is([dir="rtl"] .rtl\:lg\:ml-\[132px\]) {
+    margin-left: 132px;
   }
 
   :is([dir="rtl"] .lg\:rtl\:pr-9) {
@@ -6254,6 +6390,11 @@ input[type="number"] {
   .xl\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .group:hover .xl\:group-hover\:top-9 {
