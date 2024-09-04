@@ -1338,13 +1338,6 @@ video {
   -webkit-line-clamp: 6;
 }
 
-.line-clamp-\[8\] {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 8;
-}
-
 .block {
   display: block;
 }
@@ -1625,6 +1618,10 @@ video {
   height: 61px;
 }
 
+.h-\[621px\] {
+  height: 621px;
+}
+
 .h-\[62px\] {
   height: 62px;
 }
@@ -1691,14 +1688,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[284px\] {
-  height: 284px;
-}
-
-.h-\[621px\] {
-  height: 621px;
 }
 
 .\!w-\[47px\] {
@@ -3842,6 +3831,10 @@ input[type="number"] {
   opacity: 100%;
 }
 
+.dropdown2-hover p{
+  text-wrap: nowrap;
+}
+
 .dropdown2-hover > div {
   opacity: 0;
 }
@@ -3852,11 +3845,28 @@ input[type="number"] {
 }
 
 :is([dir="ltr"] .dropdown2-hover:hover > div) {
-  left: 271px;
+  left: 285px;
 }
 
 :is([dir="rtl"] .dropdown2-hover:hover > div) {
-  right: 271px;
+  right: 285px;
+}
+
+.dropdown3-hover > div {
+  opacity: 0;
+}
+
+.dropdown3-hover:hover > div {
+  visibility: visible;
+  opacity: 1;
+}
+
+:is([dir="ltr"] .dropdown3-hover:hover > div) {
+  left: 225px;
+}
+
+:is([dir="rtl"] .dropdown3-hover:hover > div) {
+  right: 225px;
 }
 
 @keyframes shine {
@@ -5172,6 +5182,10 @@ input[type="number"] {
     height: 277px;
   }
 
+  .sm\:h-\[284px\] {
+    height: 284px;
+  }
+
   .sm\:h-\[286px\] {
     height: 286px;
   }
@@ -5222,10 +5236,6 @@ input[type="number"] {
 
   .sm\:h-auto {
     height: auto;
-  }
-
-  .sm\:h-\[284px\] {
-    height: 284px;
   }
 
   .sm\:\!w-\[83px\] {

@@ -344,12 +344,21 @@ input[type="number"] {
 .svg-main-hover:hover > a > img {
   opacity: 100%;
 }
+.dropdown2-hover p {
+  @apply text-nowrap;
+}
 .dropdown2-hover > div {
  opacity: 0;
 }
 .dropdown2-hover:hover > div {
-  @apply rtl:right-[271px] ltr:left-[271px] opacity-100 visible;
+  @apply rtl:right-[285px] ltr:left-[285px] opacity-100 visible;
 }
+.dropdown3-hover > div {
+  opacity: 0;
+ }
+ .dropdown3-hover:hover > div {
+   @apply rtl:right-[225px] ltr:left-[225px] opacity-100 visible;
+ }
 @keyframes shine {
   0% {
     left: -100px;
