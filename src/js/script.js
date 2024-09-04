@@ -248,18 +248,18 @@ var workSwiper = new Swiper(".workSwiper", {
 });
 
 var customers = new Swiper(".customers", {
-  slidesPerView: 2,
-  spaceBetween: 16,
+  slidesPerView: 1.5,
+  spaceBetween: 66,
   autoplay: true,
   loop:true,
   breakpoints: {
     576: {
-      spaceBetween: 24,
+      slidesPerView: 2,
     },
-    992: {
+    768: {
       slidesPerView: 3,
     },
-    1200: {
+    992: {
       slidesPerView: 4,
     }
   },
@@ -269,25 +269,24 @@ var customers = new Swiper(".customers", {
   },
 });
 var customers2 = new Swiper(".customers2", {
-  slidesPerView: 1,
-  spaceBetween: 16,
+  slidesPerView: 1.5,
+  spaceBetween: 66,
   autoplay: true,
   loop:true,
   breakpoints: {
     576: {
       slidesPerView: 2,
-      spaceBetween: 24,
     },
-    992: {
+    768: {
       slidesPerView: 3,
     },
-    1200: {
+    992: {
       slidesPerView: 4,
     }
   },
-  navigation: {
-    nextEl: ".swiper-button-next2",
-    prevEl: ".swiper-button-prev2",
+  pagination: {
+    el: ".swiper-pagination2",
+    clickable: true,
   },
 });
 var categorySwiper2 = new Swiper(".categorySwiper2", {
