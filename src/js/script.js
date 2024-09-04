@@ -370,6 +370,10 @@ var karbord = new Swiper(".karbord", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 var departeman = new Swiper(".departeman", {
   slidesPerView: 1,
