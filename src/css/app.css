@@ -78,6 +78,10 @@ header ul li.active::after {
   background-color: #FFFFFF0F;
   backdrop-filter: blur(4px);
 }
+.bg-blur3{
+  background-color: #997ff7ab;
+  backdrop-filter: blur(4px);
+}
 #hamIcon.active svg:last-child{
   display: block;
 }
@@ -148,6 +152,67 @@ input[type="number"] {
 .editorSection ul li::before {
   @apply rtl:-right-[34px] ltr:-left-[34px]
 }
+/* map */
+
+.selectormap .st0 {
+  fill: white;
+  stroke: #4f24ff;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  cursor: pointer;
+  transition: .7s
+}
+
+.selectormap .st0:hover {
+  fill: #4f24ff;
+  filter: drop-shadow(0 0 5px #4f24ff);
+  -webkit-filter: drop-shadow(0 0 5px #4f24ff);
+  transition: .7s
+}
+
+.selectormap svg {
+  height: 620px;
+  width: 795px;
+}
+
+#selectedprovince {
+  position: fixed;
+  color: white;
+  box-shadow: 0px 12px 56px 0px #0000000F;
+  border: 1px solid #4f24ff;
+  background: #4f24ff;
+  padding: 4px 7px;
+  font-weight: bold;
+  border-radius: 6px;
+  pointer-events: none;
+  opacity:0;
+  transition: all .5s;
+}
+
+#selectedprovince.visible {
+  opacity: 100%;
+  transition: all .5s
+}
+
+#selectedprovince:after {
+  content: " ";
+  position: absolute;
+  top: 56px;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #4f24ff transparent transparent;
+}
+
+#googlemapapi {
+  width: 100%;
+  padding-bottom: 56.25%;
+  margin: 25px 0 0 0
+}
+
 /* lang dropdown */
 .langDropdown {
   transition: all .4s;
@@ -407,11 +472,21 @@ box-shadow: 0px 5px 5px 0px #4F24FF2B;
 .shadow-9{
   box-shadow: -11.2px 8.8px 64px 0px #4F24FF52;
 }
+.shadow-10{
+  box-shadow: 0px 0px 82.42px 0px #0000001C;
+}
+.shadow-11{
+  box-shadow: 0px 29px 4px 0px #5C33F961;
+}
 .shadow-next{
   box-shadow: -2px 0px 24px 0px #0000001A;
 }
 .bg-main-gradient-hover:hover > a{
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(79, 36, 255, 0.1) 100%);
+}
+.bg-radial-gradient-gray{
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgb(255, 255, 255) 44%, rgb(217, 216, 216) 100%);
 }
 .bg-moshavere {
   background-image: url('../src/img/bg.png');
