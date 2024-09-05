@@ -158,8 +158,8 @@ acordionBtn.forEach((item)=> {
 	//fata or justic departments locations
 	var selpro = $("#selectedprovince")[0];
 	$("body").on("mousemove" , ".selectormap .st0", function(event){
-		selpro.style.left = event.clientX - $("#selectedprovince").width()/34 + "px";
-		selpro.style.top = event.clientY - 205 + "px";
+		selpro.style.left = event.clientX - $("#selectedprovince").width()/2 + "px";
+		selpro.style.top = event.clientY - 125 + "px";
 		selpro.innerHTML = $(this).attr("pname");
 	});
 	$("body").on("mouseover" , ".selectormap g", function(event){

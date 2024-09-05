@@ -979,10 +979,6 @@ video {
   grid-column: span 7 / span 7;
 }
 
-.col-span-8 {
-  grid-column: span 8 / span 8;
-}
-
 .col-span-9 {
   grid-column: span 9 / span 9;
 }
@@ -1240,10 +1236,6 @@ video {
 
 .mt-9 {
   margin-top: 2.25rem;
-}
-
-.mt-\[103px\] {
-  margin-top: 103px;
 }
 
 .mt-\[10px\] {
@@ -1826,10 +1818,6 @@ video {
   width: 300px;
 }
 
-.w-\[460px\] {
-  width: 460px;
-}
-
 .w-\[46px\] {
   width: 46px;
 }
@@ -2176,10 +2164,6 @@ video {
   gap: 30px;
 }
 
-.gap-\[67px\] {
-  gap: 67px;
-}
-
 .gap-\[6px\] {
   gap: 6px;
 }
@@ -2203,6 +2187,10 @@ video {
   row-gap: 2.75rem;
 }
 
+.gap-y-12 {
+  row-gap: 3rem;
+}
+
 .gap-y-16 {
   row-gap: 4rem;
 }
@@ -2221,6 +2209,10 @@ video {
 
 .gap-y-6 {
   row-gap: 1.5rem;
+}
+
+.gap-y-7 {
+  row-gap: 1.75rem;
 }
 
 .gap-y-8 {
@@ -3144,10 +3136,6 @@ video {
   font-size: 32px;
 }
 
-.text-\[40px\] {
-  font-size: 40px;
-}
-
 .text-\[6px\] {
   font-size: 6px;
 }
@@ -3638,8 +3626,20 @@ input[type="number"] {
 }
 
 .selectormap svg {
-  height: 620px;
-  width: 795px;
+  height: 381px !important;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .selectormap svg {
+    height: 468px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .selectormap svg {
+    height: 612px !important;
+  }
 }
 
 #selectedprovince {
@@ -4663,10 +4663,6 @@ input[type="number"] {
   padding-left: 18px;
 }
 
-:is([dir="ltr"] .ltr\:pl-\[77px\]) {
-  padding-left: 77px;
-}
-
 :is([dir="ltr"] .ltr\:pr-0) {
   padding-right: 0px;
 }
@@ -4958,10 +4954,6 @@ input[type="number"] {
   padding-right: 2rem;
 }
 
-:is([dir="rtl"] .rtl\:pr-\[77px\]) {
-  padding-right: 77px;
-}
-
 :is([dir="rtl"] .rtl\:text-left) {
   text-align: left;
 }
@@ -5038,6 +5030,15 @@ input[type="number"] {
 
   .min-\[450px\]\:w-full {
     width: 100%;
+  }
+
+  .min-\[450px\]\:flex-row {
+    flex-direction: row;
+  }
+
+  .min-\[450px\]\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
@@ -5516,6 +5517,10 @@ input[type="number"] {
     gap: 1.5rem;
   }
 
+  .sm\:gap-7 {
+    gap: 1.75rem;
+  }
+
   .sm\:gap-8 {
     gap: 2rem;
   }
@@ -5811,6 +5816,10 @@ input[type="number"] {
     border-bottom-right-radius: 30px;
   }
 
+  :is([dir="ltr"] .ltr\:sm\:pl-10) {
+    padding-left: 2.5rem;
+  }
+
   :is([dir="ltr"] .ltr\:sm\:pl-12) {
     padding-left: 3rem;
   }
@@ -5887,6 +5896,10 @@ input[type="number"] {
 
   :is([dir="rtl"] .rtl\:sm\:pl-\[117px\]) {
     padding-left: 117px;
+  }
+
+  :is([dir="rtl"] .rtl\:sm\:pr-10) {
+    padding-right: 2.5rem;
   }
 
   :is([dir="rtl"] .rtl\:sm\:pr-12) {
@@ -6154,6 +6167,10 @@ input[type="number"] {
     font-size: 39px;
   }
 
+  .md\:text-\[40px\] {
+    font-size: 40px;
+  }
+
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -6169,6 +6186,10 @@ input[type="number"] {
     line-height: 1.75rem;
   }
 
+  .md\:leading-\[56px\] {
+    line-height: 56px;
+  }
+
   :is([dir="ltr"] .ltr\:md\:left-\[67px\]) {
     left: 67px;
   }
@@ -6182,6 +6203,10 @@ input[type="number"] {
     border-bottom-right-radius: 30px;
   }
 
+  :is([dir="ltr"] .ltr\:md\:pl-\[77px\]) {
+    padding-left: 77px;
+  }
+
   :is([dir="rtl"] .rtl\:md\:mr-\[104px\]) {
     margin-right: 104px;
   }
@@ -6189,6 +6214,10 @@ input[type="number"] {
   :is([dir="rtl"] .rtl\:md\:rounded-l-\[30px\]) {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
+  }
+
+  :is([dir="rtl"] .rtl\:md\:pr-\[77px\]) {
+    padding-right: 77px;
   }
 }
 
@@ -6271,6 +6300,10 @@ input[type="number"] {
     margin-top: 2rem;
   }
 
+  .lg\:mt-\[103px\] {
+    margin-top: 103px;
+  }
+
   .lg\:line-clamp-1 {
     overflow: hidden;
     display: -webkit-box;
@@ -6302,6 +6335,10 @@ input[type="number"] {
     width: 1rem;
   }
 
+  .lg\:w-\[428px\] {
+    width: 428px;
+  }
+
   .lg\:w-\[70px\] {
     width: 70px;
   }
@@ -6320,6 +6357,10 @@ input[type="number"] {
 
   .lg\:flex-shrink-0 {
     flex-shrink: 0;
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-3 {
@@ -6348,6 +6389,10 @@ input[type="number"] {
 
   .lg\:gap-3 {
     gap: 0.75rem;
+  }
+
+  .lg\:gap-4 {
+    gap: 1rem;
   }
 
   .lg\:gap-6 {
@@ -6501,6 +6546,10 @@ input[type="number"] {
     height: 3rem;
   }
 
+  .xl\:w-\[460px\] {
+    width: 460px;
+  }
+
   .xl\:w-auto {
     width: auto;
   }
@@ -6523,6 +6572,10 @@ input[type="number"] {
 
   .xl\:gap-4 {
     gap: 1rem;
+  }
+
+  .xl\:gap-\[67px\] {
+    gap: 67px;
   }
 
   .xl\:gap-x-14 {
