@@ -350,6 +350,9 @@ input[type="number"] {
 .dropdown2-hover > div {
  opacity: 0;
 }
+.dropdown2-hover img{
+  @apply ltr:rotate-180;
+}
 .dropdown2-hover:hover > div {
   @apply rtl:right-[285px] ltr:left-[285px] opacity-100 visible;
 }
@@ -400,6 +403,9 @@ box-shadow: 0px 5px 5px 0px #4F24FF2B;
 }
 .shadow-8{
   box-shadow: 0px 12px 56px 0px #4F24FF75;
+}
+.shadow-9{
+  box-shadow: -11.2px 8.8px 64px 0px #4F24FF52;
 }
 .shadow-next{
   box-shadow: -2px 0px 24px 0px #0000001A;
