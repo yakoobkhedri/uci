@@ -169,7 +169,7 @@ input[type="number"] {
   fill: #4f24ff;
   filter: drop-shadow(0 0 5px #4f24ff);
   -webkit-filter: drop-shadow(0 0 5px #4f24ff);
-  transition: .7s
+  transition: .7s;
 }
 
 .selectormap svg {
